@@ -205,7 +205,7 @@ $(function () {
         $this.attr('src', src);
         $this.attr('srcset', srcset);
       });
-    }, 600);
+    }, 800);
     var heroSlider = new Swiper(".js-hero-slider", {
       // lazy: true,
       effect: "fade",
