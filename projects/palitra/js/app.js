@@ -444,7 +444,8 @@ $(function () {
   ;
   $(document).on('keydown', function (evt) {
     if (evt.keyCode == 27) {
-      $('.c-map').removeClass('fullscreen');
+      $('.c-map').removeClass('fullscreen'); 
+      
     }
   });
   $('.js-menu').on('click', function () {
