@@ -197,15 +197,17 @@ $(function () {
 
   if ($('.js-hero-slider').length) {
     $('.js-hero-slide[data-slide-index="0"]').find('.banner__item-title, .banner__item-button').addClass('is-active');
-    $('.js-lazy-img').each(function () {
-      var $this = $(this);
-      var src = $this.data('src');
-      var srcset = $this.data('srcset');
-      $this.attr('src', src);
-      $this.attr('srcset', srcset);
-    });
+    setTimeout(function () {
+      $('.js-lazy-img').each(function () {
+        var $this = $(this);
+        var src = $this.data('src');
+        var srcset = $this.data('srcset');
+        $this.attr('src', src);
+        $this.attr('srcset', srcset);
+      });
+    }, 600);
     var heroSlider = new Swiper(".js-hero-slider", {
-      lazy: true,
+      // lazy: true,
       effect: "fade",
       loop: false,
       speed: 2000,
@@ -444,8 +446,7 @@ $(function () {
   ;
   $(document).on('keydown', function (evt) {
     if (evt.keyCode == 27) {
-      $('.c-map').removeClass('fullscreen'); 
-      
+      $('.c-map').removeClass('fullscreen');
     }
   });
   $('.js-menu').on('click', function () {
