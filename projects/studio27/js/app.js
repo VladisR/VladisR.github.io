@@ -340,7 +340,7 @@ $(function () {
     }
 
     var baseUrl = "files";
-    var $state = $('<span class="it-wr"><span class="it-icon"><img src="' + baseUrl + '/' + state.element.getAttribute('img-name').toLowerCase() + '.png" /></span>' + state.text + '</span>');
+    var $state = $('<span class="it-wr"><span class="it-icon"><img src="' + baseUrl + '/' + state.element.getAttribute('data-imgname').toLowerCase() + '.png" /></span>' + state.text + '</span>');
     return $state;
   }
 
@@ -419,54 +419,7 @@ $(function () {
         }
       }
     });
-  }); // var catalogSlider = new Swiper(".js-list-carousel", {
-  //     navigation: {
-  //       nextEl: ".swiper-button-next",
-  //       prevEl: ".swiper-button-prev"
-  //     },
-  //     scrollbar: {
-  //       el: ".swiper-scrollbar",
-  //       hide: false,
-  //       draggable: true
-  //     },
-  //     pagination: {
-  //       el: ".swiper-pagination",
-  //       clickable: true
-  //     },
-  //     speed: 300,
-  //     spaceBetween: 33,
-  //     slidesPerView: 2,
-  //     slideActiveClass: 'is-active',
-  //     freeMode: false,
-  //     breakpoints: {
-  //       0: {
-  //         slidesPerView: 1,
-  //         slidesPerGroup: 1,
-  //         spaceBetween: 17
-  //       },
-  //       375: {
-  //         slidesPerView: 1,
-  //         slidesPerGroup: 1,
-  //         spaceBetween: 33
-  //       },
-  //       575: {
-  //         slidesPerView: 2,
-  //         slidesPerGroup: 1,
-  //         spaceBetween: 33
-  //       },
-  //       992: {
-  //         slidesPerView: 3,
-  //         slidesPerGroup: 2,
-  //         spaceBetween: 33
-  //       },
-  //       1200: {
-  //         slidesPerView: 4,
-  //         slidesPerGroup: 3,
-  //         spaceBetween: 43
-  //       },
-  //     }
-  // });
-
+  });
   var catalogSlider2 = new Swiper(".js-list-carousel2", {
     navigation: {
       nextEl: ".swiper-button-next",
