@@ -302,7 +302,7 @@ $(function () {
   });
 
   function initMap() {
-    var coords = $('#c-map').data('coords').split(',');
+    var coords = $('.c-map').data('coords').split(',');
     var btnZoomIn = document.querySelector('.js-map-btn.plus');
     var btnZoomOut = document.querySelector('.js-map-btn.minus');
     var map = new google.maps.Map(document.getElementById('c-map'), {
