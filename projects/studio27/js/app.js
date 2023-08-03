@@ -34,6 +34,7 @@ $(function () {
 
   var isApple = /iPod|iPad|iPhone/i.test(navigator.userAgent) || navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1,
       isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Mobile|Opera Mini/i.test(navigator.userAgent) || navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1;
+  var isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
   $(window).on('resize', function () {
     isApple = /iPod|iPad|iPhone/i.test(navigator.userAgent) || navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1;
     isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Mobile|Opera Mini/i.test(navigator.userAgent) || navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1;
@@ -394,6 +395,16 @@ $(function () {
       }, false);
     }
   }, 200);
+
+  if (isSafari) {
+    $('.js-file-extension').each(function () {
+      var srcset = $(this).attr('srcset').replace(/webp/gi, 'jpg');
+      var src = $(this).attr('src').replace(/webp/gi, 'jpg');
+      $(this).attr('srcset', srcset);
+      $(this).attr('src', src);
+    });
+  }
+
   $('.js-list-carousel').each(function () {
     var cslider = this;
     var catalogSlider = new Swiper(cslider, {

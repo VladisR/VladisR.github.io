@@ -1823,9 +1823,7 @@ html {
 .intro {
   position: relative;
   margin-bottom: 15px;
-}
-.intro background #000 {
-  content: '';
+  background: #000;
 }
 .intro:before {
   content: '';
@@ -1835,7 +1833,6 @@ html {
   right: 0;
   bottom: 0;
   background: linear-gradient(142.08deg, #000 16.28%, #26314f 96.33%);
-  z-index: -1;
 }
 .intro__image {
   position: absolute;
@@ -1845,7 +1842,8 @@ html {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  z-index: -1;
+  -o-object-position: center 40%;
+     object-position: center 40%;
 }
 .intro__video {
   position: absolute;
@@ -1880,6 +1878,7 @@ html {
   min-height: 351px;
   color: #fff;
   padding-bottom: 36px;
+  z-index: 2;
 }
 .intro__title {
   font-size: 32px;
