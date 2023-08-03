@@ -264,7 +264,6 @@ $(function () {
         elements.filter('[data-id="' + marker.id + '"]').addClass('is-opened');
         map.setCenter(marker.getPosition());
         map.setZoom(11);
-        console.log(marker.id);
       });
     });
     btnZoomIn.addEventListener('click', function () {
