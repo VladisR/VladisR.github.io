@@ -36,6 +36,7 @@ $(function () {
 
   var isApple = /iPod|iPad|iPhone/i.test(navigator.userAgent) || navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1,
       isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Mobile|Opera Mini/i.test(navigator.userAgent) || navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1;
+  var isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
   $(window).on('resize', function () {
     isApple = /iPod|iPad|iPhone/i.test(navigator.userAgent) || navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1;
     isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Mobile|Opera Mini/i.test(navigator.userAgent) || navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1;
@@ -48,6 +49,19 @@ $(function () {
     partnersSlider();
   });
   $('input[type="tel"]').mask("+7(999) 999-99-99");
+
+  if (isSafari) {
+    $('.js-file-extension').each(function () {
+      var srcset = $(this).attr('srcset');
+      var src = $(this).attr('src');
+
+      if (srcset) {
+        $(this).attr('srcset', srcset.replace(/webp/gi, 'jpg'));
+      }
+
+      $(this).attr('src', src.replace(/webp/gi, 'jpg'));
+    });
+  }
 
   function addWide() {
     setTimeout(function () {
@@ -199,7 +213,6 @@ $(function () {
     $('.js-hero-slide[data-slide-index="0"]').find('.banner__item-title, .banner__item-button').addClass('is-active');
     var sliderFlag = 1;
     var heroSlider = new Swiper(".js-hero-slider", {
-      // lazy: true,
       effect: "fade",
       loop: false,
       speed: 2000,
@@ -221,7 +234,6 @@ $(function () {
           $this.attr('src', src);
           $this.attr('srcset', srcset);
         });
-        console.log(111222);
         sliderFlag = 2;
       }
     });
