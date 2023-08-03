@@ -2022,6 +2022,20 @@ html {
   background-repeat: no-repeat;
   background-position: right 0;
   background-size: cover;
+  position: relative;
+}
+.list-block2__image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+.list-block2__image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .list-block2__in {
   padding-top: 40px;
@@ -3200,16 +3214,13 @@ select {
   margin-bottom: -95px;
   -webkit-overflow-scrolling: touch;
 }
-.services:after {
-  content: '';
+.services__image {
   position: absolute;
   right: -165px;
   bottom: 0;
   pointer-events: none;
   width: 397px;
   height: 354px;
-  background: url("../img/car-bg.png") center center no-repeat;
-  background-size: 100% 100%;
 }
 .services__items {
   display: -webkit-box;
@@ -3234,6 +3245,7 @@ select {
   bottom: 0;
   background: url("../img/i-overlay.png") center center no-repeat;
   background-size: cover;
+  pointer-events: none;
 }
 .services__item:hover .services__item-image img {
   -webkit-transform: scale(1.04);
@@ -5378,7 +5390,7 @@ select {
     padding-bottom: 403px;
     margin-bottom: -350px;
   }
-  .services:after {
+  .services__image {
     width: 1125px;
     height: 1004px;
     right: -537px;
