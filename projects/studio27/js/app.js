@@ -398,10 +398,14 @@ $(function () {
 
   if (isSafari) {
     $('.js-file-extension').each(function () {
-      var srcset = $(this).attr('srcset').replace(/webp/gi, 'jpg');
-      var src = $(this).attr('src').replace(/webp/gi, 'jpg');
-      $(this).attr('srcset', srcset);
-      $(this).attr('src', src);
+      var srcset = $(this).attr('srcset');
+      var src = $(this).attr('src');
+
+      if (srcset) {
+        $(this).attr('srcset', srcset.replace(/webp/gi, 'jpg'));
+      }
+
+      $(this).attr('src', src.replace(/webp/gi, 'jpg'));
     });
   }
 
