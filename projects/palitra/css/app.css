@@ -168,34 +168,6 @@ template {
   width: inherit;
   height: inherit;
 }
-@font-face {
-  font-family: 'Styrene A Web';
-  src: url("../fonts/StyreneAWeb-Bold.woff2") format('woff2'), url("../fonts/StyreneAWeb-Bold.woff") format('woff');
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Styrene A Web';
-  src: url("../fonts/StyreneAWeb-Medium.woff2") format('woff2'), url("../fonts/StyreneAWeb-Medium.woff") format('woff');
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Styrene A Web';
-  src: url("../fonts/StyreneAWeb-Light.woff2") format('woff2'), url("../fonts/StyreneAWeb-Light.woff") format('woff');
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Styrene A Web';
-  src: url("../fonts/StyreneAWeb-Regular.woff2") format('woff2'), url("../fonts/StyreneAWeb-Regular.woff") format('woff');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
 * {
   min-width: 0;
   min-height: 0;
@@ -989,6 +961,9 @@ html {
 .banner .swiper-slide {
   height: auto;
 }
+.banner .swiper-initialized .banner__item + .banner__item {
+  display: block;
+}
 .banner__item {
   position: relative;
   min-height: 500px;
@@ -1006,6 +981,9 @@ html {
       -ms-flex-pack: end;
           justify-content: flex-end;
   -webkit-overflow-scrolling: touch;
+}
+.banner__item + .banner__item {
+  display: none;
 }
 .banner__item:before {
   content: '';

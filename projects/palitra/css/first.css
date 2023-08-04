@@ -93,6 +93,9 @@
 .banner .swiper-slide {
   height: auto;
 }
+.banner .swiper-initialized .banner__item + .banner__item {
+  display: block;
+}
 .banner__item {
   position: relative;
   min-height: 500px;
@@ -110,6 +113,9 @@
       -ms-flex-pack: end;
           justify-content: flex-end;
   -webkit-overflow-scrolling: touch;
+}
+.banner__item + .banner__item {
+  display: none;
 }
 .banner__item:before {
   content: '';
