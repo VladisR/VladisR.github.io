@@ -117,14 +117,14 @@
 .banner__item + .banner__item {
   display: none;
 }
-.banner__item:before {
-  content: '';
+.banner__item-overlay {
   position: absolute;
   left: 0;
   top: 0;
-  right: 0;
-  bottom: 0;
-  background: url("../img/banner-ovrl.svg") 0 0 no-repeat;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
   z-index: 1;
   background-size: cover;
 }
