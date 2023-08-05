@@ -1998,6 +1998,15 @@
 			smoothscroll: 'js/vendors/smoothscroll.polyfill-0.4.4.js',
 			map: 'https://maps.googleapis.com/maps/api/js?key=AIzaSyBvxGHYNiUzRXCYRoYxuacudDWe7g8ghFw&sensor=false',
 		}
+	     function asyncCSS(href) {
+                var css = document.createElement('link');
+                css.rel = "stylesheet";
+                css.href = href;
+                document.head.appendChild(css);
+            }
+            asyncCSS('css/styles.css');
+            asyncCSS('css/fonts.css');
+            asyncCSS('css/plugins.min.css');
 	</script>
 	<script src="js/vendors/jquery-3.6.0.min.js?v=4cd5ddc413b3024d7b56331c" defer></script>
 	<script src="js/plugins.min.js?v=01af82495dc50641dfbfbf04" defer></script>
