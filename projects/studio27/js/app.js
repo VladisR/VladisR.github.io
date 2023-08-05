@@ -48,7 +48,7 @@ $(function () {
     }
 
     if ($('.intro').length) {
-      if ($(document).scrollTop() > $('.intro__content').offset().top - $('.header__content').height() - 30) {
+      if ($(document).scrollTop() > $('.intro__content').offset().top - $('.header__content').height() + 50) {
         $('.header__menu').addClass('white');
       } else {
         $('.header__menu').removeClass('white');
