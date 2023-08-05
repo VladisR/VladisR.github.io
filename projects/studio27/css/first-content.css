@@ -181,7 +181,7 @@ template {
           box-sizing: border-box;
 }
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: auto;
   font-family: sans-serif;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
 }

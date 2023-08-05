@@ -312,7 +312,7 @@ $(function () {
         closingForm();
       } else {
         var url = $this.attr('href').replace('#', '');
-        $('.b-modal').filter('[data-modal=' + url + ']').addClass('opened');
+        $('.b-modal').filter('[data-modal=' + url + ']').addClass('opened').removeAttr('style');
         disableHtmlScroll();
         addGutter();
       }
