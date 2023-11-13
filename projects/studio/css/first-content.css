@@ -656,15 +656,6 @@ p:last-child {
   margin-bottom: 15px;
   background: #000;
 }
-.intro:before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(142.08deg, #000 16.28%, #26314f 96.33%);
-}
 .intro__image {
   position: absolute;
   left: 0;
