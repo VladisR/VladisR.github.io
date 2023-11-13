@@ -260,7 +260,7 @@ $(function () {
       });
       markersArr.push(marker);
       marker.addListener('click', function () {
-        elementsParent.addClass('is-opened');
+        elementsParent.addClass('is-opened').removeAttr('style');
         elements.removeClass('is-opened');
         elements.filter('[data-id="' + marker.id + '"]').addClass('is-opened');
         map.setCenter(marker.getPosition());
