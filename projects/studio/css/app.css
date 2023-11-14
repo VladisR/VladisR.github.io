@@ -2341,6 +2341,7 @@ html {
   height: calc(var(--vh, 1vh) * 100);
   pointer-events: none;
   z-index: 100;
+  visibility: hidden;
 }
 .mobile-sidebar:before {
   content: "";
