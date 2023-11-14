@@ -1965,18 +1965,19 @@ html {
   bottom: 0;
   background: rgba(16,21,36,0.4);
   z-index: 12;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.3s ease opacity, 0.3s ease visibility;
+  transition: 0.3s ease opacity, 0.3s ease visibility;
+  display: none;
+}
+.locations.is-opened {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  opacity: 0;
-  visibility: hidden;
-  -webkit-transition: 0.3s ease opacity, 0.3s ease visibility;
-  transition: 0.3s ease opacity, 0.3s ease visibility;
-}
-.locations.is-opened {
   opacity: 1;
   visibility: visible;
 }
