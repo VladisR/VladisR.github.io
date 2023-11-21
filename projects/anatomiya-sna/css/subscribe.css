@@ -1,0 +1,98 @@
+.subscribe {
+  width: 247px;
+  margin-top: 5px;
+  margin-bottom: 24px;
+}
+.subscribe__header {
+  font-weight: 400;
+  margin-bottom: 8px;
+  font-size: 14px;
+  line-height: 18px;
+}
+.subscribe__control {
+  position: relative;
+  display: inline-block;
+}
+.subscribe__control input {
+  display: block;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
+  width: 246px;
+  height: 36px;
+  font-weight: 300;
+  outline: none;
+  font-size: 16px;
+  line-height: 36px;
+  background: var(--color8);
+  border-radius: 5px;
+  padding: 0 20px 0 19px;
+  color: #000;
+}
+.subscribe__control input::-webkit-input-placeholder {
+  color: #000;
+}
+.subscribe__control input::-moz-placeholder {
+  color: #000;
+}
+.subscribe__control input:-ms-input-placeholder {
+  color: #000;
+}
+.subscribe__control input::-ms-input-placeholder {
+  color: #000;
+}
+.subscribe__control input::placeholder {
+  color: #000;
+}
+.subscribe__control input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+.subscribe__control input:focus::-moz-placeholder {
+  color: transparent;
+}
+.subscribe__control input:focus:-ms-input-placeholder {
+  color: transparent;
+}
+.subscribe__control input:focus::-ms-input-placeholder {
+  color: transparent;
+}
+.subscribe__control input:focus::placeholder {
+  color: transparent;
+}
+.subscribe__control .svg-icon {
+  width: 15.64px;
+  height: 15.64px;
+  fill: var(--color9);
+  fill-rule: evenodd;
+  position: absolute;
+  right: 11px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.subscribe__iagree {
+  margin-top: 16px;
+  color: #393939;
+  font-size: 12px;
+  line-height: 11px;
+}
+@media (min-width: 768px) {
+  .subscribe {
+    width: auto;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .subscribe__header {
+    font-size: 20px;
+    line-height: 26px;
+    margin-bottom: 12px;
+  }
+  .subscribe__iagree {
+    font-size: 12px;
+    line-height: 13px;
+  }
+}

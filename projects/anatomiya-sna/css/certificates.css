@@ -1,0 +1,27 @@
+.certificates {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-left: -10px;
+}
+.certificates__item {
+  width: 25%;
+  padding-left: 10px;
+  margin-bottom: 11px;
+}
+.certificates__item img {
+  display: block;
+  width: 100%;
+  border-bottom: 2px solid #f1f1f1;
+}
+@media (min-width: 768px) {
+  .certificates {
+    margin-left: -23px;
+  }
+  .certificates__item {
+    padding-left: 23px;
+    margin-bottom: 23px;
+  }
+}

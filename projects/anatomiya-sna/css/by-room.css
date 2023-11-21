@@ -1,0 +1,125 @@
+.by-room {
+  margin-bottom: 20px;
+}
+.by-room__header {
+  margin-top: 0;
+  margin-bottom: 13px;
+}
+.by-room__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-left: -12px;
+}
+.by-room__item {
+  margin-bottom: 9px;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -ms-flex-preferred-size: calc(50% - 12px);
+      flex-basis: calc(50% - 12px);
+  max-width: calc(50% - 12px);
+  width: calc(50% - 12px);
+  margin-left: 12px;
+  color: #000;
+  text-decoration: none;
+  -webkit-transition: 0.3s ease color;
+  transition: 0.3s ease color;
+}
+.by-room__item:hover {
+  color: var(--colorAccent);
+}
+.by-room__item:hover .by-room__image img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.by-room__image {
+  display: block;
+  border-radius: 2px;
+  overflow: hidden;
+  position: relative;
+  -webkit-overflow-scrolling: touch;
+}
+.by-room__image img {
+  -webkit-transition: 0.3s ease transform;
+  transition: 0.3s ease transform;
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 2px;
+}
+.by-room__title {
+  display: block;
+  margin-top: 5px;
+  display: block;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+}
+@media (min-width: 768px) {
+  .by-room {
+    margin-bottom: 60px;
+  }
+  .by-room__header {
+    margin-bottom: 35px;
+  }
+  .by-room__items {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .by-room__item {
+    -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    -ms-flex-preferred-size: calc(33.33333% - 12px);
+        flex-basis: calc(33.33333% - 12px);
+    max-width: calc(33.33333% - 12px);
+    width: calc(33.33333% - 12px);
+  }
+  .by-room__item {
+    display: none;
+  }
+  .by-room__item:nth-child(-n+3) {
+    display: block;
+  }
+  .by-room__image {
+    border-radius: 3px;
+  }
+  .by-room__image img {
+    border-radius: 3px;
+  }
+  .by-room__title {
+    text-align: center;
+    font-size: 30px;
+    line-height: 38px;
+  }
+  .by-room .section-more__link {
+    top: -71px;
+  }
+}
+@media (min-width: 992px) {
+  .by-room__items {
+    margin-left: -34px;
+  }
+  .by-room__item {
+    -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    -ms-flex-preferred-size: calc(33.33333% - 34px);
+        flex-basis: calc(33.33333% - 34px);
+    max-width: calc(33.33333% - 34px);
+    width: calc(33.33333% - 34px);
+    margin-left: 34px;
+  }
+  .by-room__title {
+    margin-top: 18px;
+  }
+}

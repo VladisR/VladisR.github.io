@@ -1,0 +1,143 @@
+.product-raring__total {
+  margin-bottom: 31px;
+}
+.product-raring__display {
+  width: 116px;
+  height: 116px;
+  border-radius: 116px;
+  margin: 0 auto 13px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 6px solid var(--color38);
+  margin-bottom: 15px;
+}
+.product-raring__display-header {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+}
+.product-raring__display-value {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 46px;
+  margin-top: -3px;
+  margin-bottom: -2px;
+}
+.product-raring__display-from {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+}
+.product-raring__main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.product-raring__main .i-rating {
+  margin-bottom: 7px;
+}
+.product-raring__main .i-rating__star {
+  width: 34px;
+  height: 34px;
+}
+.product-raring__main .i-rating__star:last-child {
+  margin-right: 0;
+}
+.product-raring__header {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.product-raring__count {
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: 400;
+}
+@media (min-width: 768px) {
+  .product-raring {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .product-raring__body {
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
+    width: 33.33%;
+  }
+  .product-raring__total {
+    margin-bottom: 0;
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
+  }
+  .product-raring__display {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 160px;
+            flex: 0 0 160px;
+    max-width: 160px;
+    width: 160px;
+    height: 160px;
+    border-radius: 160px;
+    margin-bottom: 0;
+  }
+  .product-raring__display-header {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  .product-raring__display-value {
+    font-size: 48px;
+    line-height: 62px;
+    margin-top: -6px;
+  }
+  .product-raring__display-from {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  .product-raring__main {
+    padding-top: 7px;
+  }
+  .product-raring__header {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  .product-raring__count {
+    font-size: 16px;
+    line-height: 21px;
+  }
+}
+@media (min-width: 992px) {
+  .product-raring {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 23px;
+  }
+  .product-raring__total {
+    margin-right: 75px;
+  }
+  .product-raring__aside {
+    width: 100%;
+    max-width: 893px;
+    margin-left: auto;
+  }
+}

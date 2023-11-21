@@ -1,0 +1,53 @@
+.i-rating {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 16px;
+  line-height: 1;
+}
+.i-rating a,
+.i-rating span {
+  color: #9a9a9a;
+  margin-left: 5px;
+}
+.i-rating__star {
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+  background: var(--star) center center no-repeat;
+  background-size: contain;
+}
+.i-rating__star.is-active {
+  background: var(--starh) center center no-repeat;
+  background-size: contain;
+}
+.i-rating__star:has(~ .is-active) {
+  background: var(--starh) center center no-repeat;
+  background-size: contain;
+}
+.i-rating--dynamic:hover .i-rating__star:not(:hover) {
+  background: var(--starh) center center no-repeat;
+  background-size: contain;
+}
+.i-rating--dynamic .i-rating__star {
+  position: relative;
+}
+.i-rating--dynamic .i-rating__star:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 7px;
+  right: -7px;
+}
+.i-rating--dynamic .i-rating__star:hover {
+  background: var(--starh) center center no-repeat;
+  background-size: contain;
+}
+.i-rating--dynamic .i-rating__star:hover ~ div {
+  background: var(--star) center center no-repeat !important;
+  background-size: contain !important;
+}

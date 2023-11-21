@@ -1,0 +1,101 @@
+.product-mini {
+  background: var(--color15);
+  border-radius: 5px;
+  margin-bottom: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  padding: 7px 10px 7px 12px;
+}
+.product-mini:last-child {
+  margin-bottom: 0;
+}
+.product-mini__remove {
+  position: absolute;
+  top: 7px;
+  right: 8px;
+  width: 15px;
+  height: 15px;
+  border: 0;
+  cursor: pointer;
+}
+.product-mini__remove:after {
+  pointer-events: none;
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transition: 0.3s ease transform;
+  transition: 0.3s ease transform;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  background: var(--close) center center no-repeat;
+  background-size: contain;
+}
+.product-mini__remove:hover:after {
+  -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+}
+.product-mini__image {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 76px;
+          flex: 0 0 76px;
+  margin-right: 17px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 7px;
+  height: 57px;
+}
+.product-mini__image img {
+  height: inherit;
+  max-height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.product-mini__container {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1;
+          flex: 1 1;
+}
+.product-mini__name {
+  font-size: 15px;
+  font-weight: 400;
+}
+.product-mini__name a {
+  color: #000;
+  text-decoration: none;
+}
+.product-mini__param {
+  font-weight: 300;
+  font-size: 14px;
+  margin-bottom: 2px;
+}
+.product-mini__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.product-mini__price {
+  font-size: 19px;
+  color: var(--color18);
+  font-weight: 400;
+  margin-right: auto;
+  padding-right: 10px;
+}
+.product-mini__quantity {
+  font-size: 16px;
+  font-weight: 400;
+  min-width: 24px;
+}

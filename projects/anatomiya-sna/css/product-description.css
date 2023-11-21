@@ -1,0 +1,103 @@
+.product-description {
+  margin-bottom: 8px;
+}
+.product-description__text {
+  font-size: 14px;
+  line-height: 17px;
+  margin-bottom: 17px;
+}
+.product-description__text.is-hidden {
+  display: none;
+}
+.product-description__text p {
+  margin: 17px 0;
+}
+.product-description__text p:first-child {
+  margin-top: 0;
+}
+.product-description__text p:last-child {
+  margin-bottom: 0;
+}
+.product-description__more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  width: 100%;
+  height: 40px;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 300;
+  margin-top: 0;
+}
+.product-description__more span {
+  margin-left: 7px;
+  display: block;
+  position: relative;
+  top: 2px;
+}
+.product-description__more.is-hidden {
+  display: none;
+}
+.product-tabs .product-description .product-quote {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 12px;
+  margin-bottom: 0;
+}
+.product-tabs .product-description .product-quote__text {
+  font-weight: 400;
+}
+.product-tabs .product-description .product-quote__button .site-button {
+  margin-left: 0;
+}
+@media (min-width: 768px) {
+  .product-description__text {
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 22px;
+  }
+  .product-description__text p {
+    margin: 22px 0;
+  }
+  .product-description__text p:first-child {
+    margin-top: 0;
+  }
+  .product-description__text p:last-child {
+    margin-bottom: 0;
+  }
+  .product-description__more {
+    font-size: 20px;
+    line-height: 26px;
+    padding: 0 0 2px 0;
+    height: 50px;
+    margin-top: 2px;
+  }
+  .product-tabs .product-description .product-quote {
+    margin-top: 35px;
+    margin-bottom: 0;
+  }
+  .product-tabs .product-description .product-quote__text {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .product-tabs .product-description .product-quote__button {
+    margin-top: 17px;
+  }
+}
+@media (min-width: 992px) {
+  .product-description {
+    margin-top: -17px;
+    margin-bottom: -26px;
+  }
+  .product-tabs .product-description .product-quote {
+    margin-bottom: 0;
+  }
+  .product-tabs .product-description .product-quote__image {
+    margin-right: 26px;
+  }
+  .product-tabs .product-description .product-quote__button {
+    margin-top: 17px;
+  }
+}

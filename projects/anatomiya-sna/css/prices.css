@@ -1,0 +1,101 @@
+.prices {
+  margin-left: -10px;
+  margin-right: -10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.prices__header {
+  display: none;
+}
+.prices__items {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1;
+          flex: 1 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  overflow: hidden;
+  overflow-x: auto;
+  scrollbar-height: none;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  -webkit-overflow-scrolling: touch;
+}
+.prices__items::-webkit-scrollbar {
+  display: none;
+}
+.prices__item {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 15px;
+  margin-right: 20px;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  color: #000;
+  text-decoration: none;
+  padding-bottom: 2px;
+  border-bottom: 2px solid transparent;
+}
+.prices__item:hover {
+  border-color: #25bede;
+}
+.prices__item.is-active {
+  border-bottom-color: #25bede;
+  font-weight: 500;
+}
+.prices__item:last-child {
+  margin-right: 0;
+}
+.prices__item--more {
+  color: var(--color1);
+}
+@media (min-width: 768px) {
+  .prices__header {
+    display: block;
+    font-size: 26px;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    line-height: 19px;
+    font-weight: 400;
+    margin-right: 23px;
+    margin-top: -6px;
+  }
+  .prices {
+    margin-left: -30px;
+    margin-right: -30px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .prices__item {
+    font-size: 16px;
+  }
+}
+@media (min-width: 992px) {
+  .prices__header {
+    font-size: 30px;
+  }
+  .prices {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+    overflow: visible;
+    -ms-flex-flow: wrap;
+        flex-flow: wrap;
+    margin-bottom: 15px;
+  }
+  .prices__item {
+    margin-right: 24px;
+  }
+}

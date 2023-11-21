@@ -1,0 +1,118 @@
+.i-picture-single {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 23px;
+  margin-bottom: 32px;
+}
+.i-picture-single__image {
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  width: 36.67%;
+  margin-right: 18px;
+  min-height: 121px;
+}
+.i-picture-single__image img,
+.i-picture-single__image .i-color {
+  border-radius: 6px;
+}
+.i-picture-single__image img {
+  display: block;
+  width: 100%;
+}
+.i-picture-single__image .i-color {
+  width: 100%;
+  padding-top: 87%;
+  display: block;
+}
+.i-picture-single__item {
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+.i-picture-single__item:last-child {
+  margin-bottom: 0;
+}
+.i-picture-single__item-val {
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 2px;
+}
+.i-picture-single__item--type-2 {
+  font-weight: 400;
+}
+.i-picture-single.type-2 {
+  display: block;
+}
+.i-picture-single.type-2 .i-picture-single__image {
+  width: auto;
+  margin-right: 0;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.i-picture-single.type-2 .i-picture-single__image img {
+  display: inline-block;
+  vertical-align: bottom;
+}
+.i-picture-single.type-2 .i-picture-single__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.i-picture-single.type-2 .i-picture-single__item-name {
+  margin-right: auto;
+}
+.i-picture-single.type-2 .i-picture-single__item-val {
+  text-align: right;
+}
+@media (min-width: 575px) {
+  .i-picture-single.type-2 .i-picture-single__image img {
+    max-width: 80%;
+  }
+}
+@media (min-width: 992px) {
+  .i-picture-single {
+    display: block;
+    margin-bottom: 0px;
+    margin-top: 10px;
+  }
+  .i-picture-single__image {
+    width: 100%;
+    margin-bottom: 13px;
+  }
+  .i-picture-single__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 5px;
+    font-size: 12px;
+    line-height: 1;
+  }
+  .i-picture-single__item-name {
+    margin-right: auto;
+  }
+  .i-picture-single__item-val {
+    text-align: right;
+  }
+  .i-picture-single.type-2 .i-picture-single__image img {
+    max-width: 100%;
+  }
+  .i-picture-single.type-2 {
+    margin-top: 58px;
+    min-height: 290px;
+  }
+}
