@@ -1,0 +1,114 @@
+.selection-report {
+  margin-bottom: 54px;
+}
+.selection-report__text {
+  font-weight: 350;
+  font-size: 16px;
+  line-height: 20px;
+  position: relative;
+  padding-bottom: 41px;
+}
+.selection-report__text img {
+  position: absolute;
+  left: 52px;
+  bottom: 0;
+  width: 116px;
+  height: auto;
+  pointer-events: none;
+}
+.selection-report__text-in {
+  position: relative;
+}
+.selection-report__header {
+  text-align: right;
+  font-size: 20px;
+  line-height: 17px;
+  font-weight: 350;
+  margin-top: -22px;
+  margin-bottom: -3px;
+  color: rgba(51,57,70,0.7);
+}
+.selection-report__header span {
+  display: block;
+}
+@media (min-width: 768px) {
+  .selection-report {
+    margin-bottom: 142px;
+  }
+  .selection-report__body {
+    display: flex;
+  }
+  .selection-report__text {
+    flex: 0 0 442px;
+    max-width: 442px;
+    width: 442px;
+    font-size: 24px;
+    line-height: 30px;
+    padding-bottom: 72px;
+  }
+  .selection-report__text img {
+    width: 182px;
+    left: 88px;
+  }
+  .selection-report__header {
+    font-size: 32px;
+    line-height: 36px;
+    margin: 4px 0 0 auto;
+  }
+}
+@media (min-width: 1200px) {
+  .selection-report {
+    margin-bottom: 152px;
+  }
+  .selection-report__text {
+    flex: 0 0 591px;
+    max-width: 591px;
+    width: 591px;
+    font-size: 32px;
+    line-height: 41px;
+    padding-bottom: 122px;
+  }
+  .selection-report__text img {
+    width: 254px;
+    left: 83px;
+  }
+  .selection-report__header {
+    font-size: 40px;
+    line-height: 33px;
+  }
+  .selection-report__header span {
+    margin-top: 10px;
+    font-size: 36px;
+    line-height: 33px;
+  }
+}
+@media (min-width: 1440px) {
+  .selection-report {
+    margin-bottom: 134px;
+  }
+  .selection-report__text {
+    flex: 0 0 771px;
+    max-width: 771px;
+    width: 771px;
+    font-size: 40px;
+    line-height: 51px;
+    padding-bottom: 95px;
+  }
+  .selection-report__text img {
+    left: 150px;
+  }
+  .selection-report__header {
+    font-size: 48px;
+    line-height: 36px;
+    margin-top: 13px;
+  }
+  .selection-report__header span {
+    font-size: 48px;
+    line-height: 33px;
+  }
+}
+@media (min-width: 1600px) {
+  .selection-report {
+    margin-bottom: 131px;
+  }
+}

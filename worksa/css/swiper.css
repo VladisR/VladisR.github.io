@@ -1,0 +1,34 @@
+.swiper .swiper-button {
+  width: 43px;
+  height: 43px;
+  background: #e0fb52;
+  border-radius: 100px;
+  top: 50%;
+  margin-top: 0;
+  transform: translateY(-50%);
+  transition: 0.3s background;
+}
+.swiper .swiper-button:hover {
+  background: #333946;
+}
+.swiper .swiper-button:hover .svg-icon {
+  fill: #fff;
+}
+.swiper .swiper-button:after {
+  display: none;
+}
+.swiper .swiper-button .svg-icon {
+  transition: 0.3s fill;
+  width: 11px;
+  height: 9px;
+  fill: #333946;
+}
+.swiper .swiper-button-prev .svg-icon {
+  transform: rotate(180deg);
+}
+@media (min-width: 768px) {
+  .swiper .swiper-button {
+    width: 53px;
+    height: 53px;
+  }
+}

@@ -1,0 +1,23 @@
+.more-btn {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: #333946;
+}
+.more-btn .svg-icon {
+  margin-left: 10px;
+  width: 18px;
+  height: 18px;
+}
+.more-btn .cls2 {
+  display: none;
+}
+.more-btn.hide .cls1 {
+  display: none;
+}
+.more-btn.hide .cls2 {
+  display: inline;
+}
+.more-btn.hide .svg-icon svg {
+  transform: rotate(180deg);
+}

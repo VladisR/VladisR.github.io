@@ -1,0 +1,118 @@
+.site-button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none;
+  border: 0;
+  color: #000;
+  cursor: pointer;
+  border-radius: 3px;
+  background: var(--color2);
+  padding: 10px 20px;
+  line-height: 1;
+  font-size: 14px;
+  font-weight: 400;
+  -webkit-transition: 0.23s background, 0.23s border-color, 0.23s color;
+  transition: 0.23s background, 0.23s border-color, 0.23s color;
+}
+.site-button:hover {
+  background: var(--color2h);
+}
+.site-button.ghos {
+  background: none;
+  border: 1px solid #000;
+}
+.site-button.ghos:hover {
+  border-color: var(--color2);
+  background: var(--color2);
+}
+.site-button.link {
+  border-color: var(--color1);
+  border-radius: 5px;
+}
+.site-button.link:hover {
+  color: #fff;
+  border-color: var(--color1);
+  background: var(--color1);
+}
+.site-button.primary {
+  color: #fff;
+  border-color: var(--color1);
+  background-color: var(--color1);
+}
+.site-button.primary:hover {
+  background-color: var(--color1h);
+  border-color: var(--color1h);
+}
+.site-button.danger {
+  color: #fff;
+  border-color: var(--color5);
+  background-color: var(--color5);
+}
+.site-button.danger:hover {
+  background-color: var(--color5h2);
+  border-color: var(--color5h2);
+}
+.site-button.success {
+  color: #fff;
+  border-color: var(--color20);
+  background-color: var(--color20);
+}
+.site-button.success:hover {
+  background-color: var(--color20h);
+  border-color: var(--color20h);
+}
+.site-button .ad-prd {
+  display: block;
+}
+.site-button .in-crt {
+  display: none;
+}
+.site-button.in-cart {
+  border-color: #000;
+  background-color: #000;
+  color: #fff;
+}
+.site-button.in-cart:hover {
+  border-color: #000;
+  background-color: #000;
+  color: #fff;
+}
+.site-button.in-cart .ad-prd {
+  display: none;
+}
+.site-button.in-cart .in-crt {
+  display: block;
+}
+.site-button.large {
+  width: 100%;
+  min-height: 40px;
+}
+.site-button.show-more {
+  min-height: 40px;
+}
+@media (min-width: 768px) {
+  .site-button.show-more {
+    min-height: 50px;
+    font-size: 20px;
+  }
+}
+@media (min-width: 992px) {
+  .site-button.desctop-hide {
+    display: none;
+  }
+  .site-button.large {
+    min-height: 56px;
+    font-size: 20px;
+  }
+  .site-button.link {
+    min-height: 50px;
+    font-size: 16px;
+  }
+}

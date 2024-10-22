@@ -1,0 +1,1033 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Карточка товара</title>
+	<meta name="theme-color" content>
+	<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+	<meta name="format-detection" content="telephone=no">
+	<link type="image/png" href="favicon.png?v=2469e8adff26d43b51cce49e" rel="icon">
+	<meta name="msapplication-tap-highlight" content="no">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="MobileOptimized" content="320">
+	<meta name="HandheldFriendly" content="True">
+	<link href="css/app.min.css?v=30c9452beb0d4738e94de2ed" rel="stylesheet">
+</head>
+
+<body class="app">
+	<div class="app__wrapper">
+		<div class="mobile-sidebar js-bl-cl" data-id="mobile-sidebar">
+			<div class="mobile-sidebar__container js-bl-cn">
+				<div class="mobile-sidebar__content">
+					<div class="s-search" data-remodal-target="search">
+						<span class="s-search__button">
+							<span class="svg-icon svg-icon--search" aria-hidden="true">
+								<svg class="svg-icon__link">
+									<use xlink:href="#search"></use>
+								</svg>
+							</span>
+						</span>
+						<span class="s-search__text">Поиск...</span>
+					</div><!-- s-search -->
+					<nav class="categories js-categories">
+						<ul>
+							<li>
+								<a href="catalog.html">Все впечатления</a>
+								<ul>
+									<li><a href="catalog.html">Свадьба</a></li>
+									<li><a href="catalog.html">Новый год</a></li>
+									<li><a href="catalog.html">День рождения</a></li>
+									<li><a href="catalog.html">23 февраля</a></li>
+									<li><a href="catalog.html">8 марта</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="catalog.html">На праздник</a>
+								<ul>
+									<li><a href="catalog.html">Свадьба</a></li>
+									<li><a href="catalog.html">Новый год</a></li>
+									<li><a href="catalog.html">День рождения</a></li>
+									<li><a href="catalog.html">23 февраля</a></li>
+									<li><a href="catalog.html">8 марта</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="catalog.html">Хобби</a>
+								<ul>
+									<li><a href="catalog.html">Свадьба</a></li>
+									<li><a href="catalog.html">Новый год</a></li>
+									<li><a href="catalog.html">День рождения</a></li>
+									<li><a href="catalog.html">23 февраля</a></li>
+									<li><a href="catalog.html">8 марта</a></li>
+								</ul>
+							</li>
+							<li><a href="catalog.html">Для мужчины</a></li>
+							<li><a href="catalog.html">Для девушки</a></li>
+							<li><a href="catalog.html">Для двоих</a></li>
+							<li><a href="catalog.html">Спа</a></li>
+						</ul>
+					</nav><!-- categories -->
+					<div class="mobile-sidebar__bot">
+						<nav class="main-menu">
+							<ul>
+								<li><a href="#">О нас</a></li>
+								<li><a href="how-it-works.html">Как это работает</a></li>
+								<li><a href="#">Оплата и доставка</a></li>
+								<li><a href="contacts.html">Контакты</a></li>
+							</ul>
+						</nav><!-- main-menu -->
+						<div class="mobile-sidebar__col">
+							<div class="location" data-remodal-target="cities">
+								<span class="svg-icon svg-icon--location" aria-hidden="true">
+									<svg class="svg-icon__link">
+										<use xlink:href="#location"></use>
+									</svg>
+								</span> Москва и МО
+							</div>
+							<div class="mobile-sidebar__contacts">
+								<a class="mobile-sidebar__contacts-item" href="mailto:info@r-emotions.ru">
+									<span class="svg-icon svg-icon--email" aria-hidden="true">
+										<svg class="svg-icon__link">
+											<use xlink:href="#email"></use>
+										</svg>
+									</span> info@r-emotions.ru</a>
+								<a class="mobile-sidebar__contacts-item" href="tel:88002000600">
+									<span class="svg-icon svg-icon--phone" aria-hidden="true">
+										<svg class="svg-icon__link">
+											<use xlink:href="#phone"></use>
+										</svg>
+									</span> 8 800 2000-600</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!-- mobile-sidebar -->
+		<header class="app-header">
+			<div class="app-header__in">
+				<div class="app-header__content container">
+					<div class="app-header__content-top">
+						<div class="app-header__col">
+							<div class="app-header__burger h-item js-icn-target" data-target="mobile-sidebar">
+								<span>
+									<span class="svg-icon svg-icon--menu" aria-hidden="true">
+										<svg class="svg-icon__link">
+											<use xlink:href="#menu"></use>
+										</svg>
+									</span>
+									<span class="svg-icon svg-icon--close" aria-hidden="true">
+										<svg class="svg-icon__link">
+											<use xlink:href="#close"></use>
+										</svg>
+									</span>
+								</span> Меню
+							</div>
+							<div class="app-header__row">
+								<div class="location-wrapper">
+									<div class="location" data-remodal-target="cities">
+										<span class="svg-icon svg-icon--location" aria-hidden="true">
+											<svg class="svg-icon__link">
+												<use xlink:href="#location"></use>
+											</svg>
+										</span> Москва и МО
+									</div>
+								</div>
+								<div class="app-header__phone">
+									<a class="h-item" href="tel:88002000600">
+										<span class="svg-icon svg-icon--phone" aria-hidden="true">
+											<svg class="svg-icon__link">
+												<use xlink:href="#phone"></use>
+											</svg>
+										</span> 8 800 2000-600</a>
+								</div>
+							</div>
+							<nav class="main-menu">
+								<ul>
+									<li><a href="#">О нас</a></li>
+									<li><a href="how-it-works.html">Как это работает</a></li>
+									<li><a href="#">Оплата и доставка</a></li>
+									<li><a href="contacts.html">Контакты</a></li>
+								</ul>
+							</nav><!-- main-menu -->
+						</div>
+						<div class="app-header__logo"><a href="/"><img src="img/logo.svg" alt width="132" height="84"></a></div>
+						<div class="app-header__col app-header__col--right">
+							<a class="site-button" href="certificate.html">Активировать подарок</a>
+							<button class="app-header__search h-item" data-remodal-target="search">
+								<span class="svg-icon svg-icon--search" aria-hidden="true">
+									<svg class="svg-icon__link">
+										<use xlink:href="#search"></use>
+									</svg>
+								</span>
+							</button>
+							<a class="s-cart" href="cart.html">
+								<div class="s-cart__container">
+									<span class="s-cart__icon h-item">
+										<span class="svg-icon svg-icon--cart" aria-hidden="true">
+											<svg class="svg-icon__link">
+												<use xlink:href="#cart"></use>
+											</svg>
+										</span>
+									</span>
+									<span class="s-cart__amount">3</span>
+								</div>
+								<span class="s-cart__price">2 700<span>₽</span></span>
+							</a><!-- s-cart -->
+						</div>
+					</div>
+					<div class="app-header__content-bot">
+						<nav class="categories js-categories">
+							<ul>
+								<li>
+									<a href="catalog.html">Все впечатления</a>
+									<ul>
+										<li><a href="catalog.html">Свадьба</a></li>
+										<li><a href="catalog.html">Новый год</a></li>
+										<li><a href="catalog.html">День рождения</a></li>
+										<li><a href="catalog.html">23 февраля</a></li>
+										<li><a href="catalog.html">8 марта</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="catalog.html">На праздник</a>
+									<ul>
+										<li><a href="catalog.html">Свадьба</a></li>
+										<li><a href="catalog.html">Новый год</a></li>
+										<li><a href="catalog.html">День рождения</a></li>
+										<li><a href="catalog.html">23 февраля</a></li>
+										<li><a href="catalog.html">8 марта</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="catalog.html">Хобби</a>
+									<ul>
+										<li><a href="catalog.html">Свадьба</a></li>
+										<li><a href="catalog.html">Новый год</a></li>
+										<li><a href="catalog.html">День рождения</a></li>
+										<li><a href="catalog.html">23 февраля</a></li>
+										<li><a href="catalog.html">8 марта</a></li>
+									</ul>
+								</li>
+								<li><a href="catalog.html">Для мужчины</a></li>
+								<li><a href="catalog.html">Для девушки</a></li>
+								<li><a href="catalog.html">Для двоих</a></li>
+								<li><a href="catalog.html">Спа</a></li>
+							</ul>
+						</nav><!-- categories -->
+						<a class="site-button" href="certificate.html">
+							<span class="svg-icon svg-icon--certificate" aria-hidden="true">
+								<svg class="svg-icon__link">
+									<use xlink:href="#certificate"></use>
+								</svg>
+							</span>
+						</a>
+						<div class="s-search" data-remodal-target="search">
+							<span class="s-search__button">
+								<span class="svg-icon svg-icon--search" aria-hidden="true">
+									<svg class="svg-icon__link">
+										<use xlink:href="#search"></use>
+									</svg>
+								</span>
+							</span>
+							<span class="s-search__text">Поиск...</span>
+						</div><!-- s-search -->
+					</div>
+				</div>
+			</div>
+		</header><!-- header -->
+		<div class="app__content">
+			<main class="app__main">
+				<div class="container">
+					<div class="content-head">
+						<h1>Прогулка на катере</h1>
+						<span class="b-tag type-2">
+							<span class="svg-icon svg-icon--time" aria-hidden="true">
+								<svg class="svg-icon__link">
+									<use xlink:href="#time"></use>
+								</svg>
+							</span> Работает сейчас</span>
+					</div>
+					<!--content-head-->
+					<div class="product-card content-wrapper">
+						<div class="product-card__container">
+							<div class="product-card__images">
+								<div class="product-card__image">
+									<img class="js-image" src="files/card-img.jpg" alt width="746" height="500">
+								</div>
+								<div class="product-card__thumbnails-wrapper">
+									<div class="product-card__thumbnails js-product-thumbnails swiper">
+										<div class="product-card__thumbnails-in swiper-wrapper">
+											<div class="product-card__thumb swiper-slide is-active">
+												<span class="js-thumb" data-url="files/card-img.jpg">
+													<img src="files/thumb1.jpg" alt width="140" height="94">
+												</span>
+											</div>
+											<div class="product-card__thumb swiper-slide">
+												<span class="js-thumb" data-url="files/sales-img1.jpg">
+													<img src="files/thumb2.jpg" alt width="140" height="94">
+												</span>
+											</div>
+											<div class="product-card__thumb swiper-slide">
+												<span class="js-thumb" data-url="files/card-img.jpg">
+													<img src="files/thumb3.jpg" alt width="140" height="94">
+												</span>
+											</div>
+											<div class="product-card__thumb swiper-slide">
+												<span class="js-thumb" data-url="files/sales-img1.jpg">
+													<img src="files/thumb4.jpg" alt width="140" height="94">
+												</span>
+											</div>
+											<div class="product-card__thumb swiper-slide">
+												<span class="js-thumb" data-url="files/card-img.jpg">
+													<img src="files/thumb5.jpg" alt width="140" height="94">
+												</span>
+											</div>
+										</div>
+										<div class="swiper-button swiper-button-prev">
+											<span class="svg-icon svg-icon--arr-l" aria-hidden="true">
+												<svg class="svg-icon__link">
+													<use xlink:href="#arr-l"></use>
+												</svg>
+											</span>
+										</div>
+										<div class="swiper-button swiper-button-next">
+											<span class="svg-icon svg-icon--arr-r" aria-hidden="true">
+												<svg class="svg-icon__link">
+													<use xlink:href="#arr-r"></use>
+												</svg>
+											</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="product-card__content">
+								<form class="product-card__col sticky-sidebar" action="#">
+									<div class="product-card__col-in">
+										<div class="product-card__col-content">
+											<div class="product-params">
+												<div class="product-params__item">
+													<div class="product-params__item-name">Продолжительность</div>
+													<div class="product-params__item-values">
+														<label class="product-params__item-value">
+															<input name="time" type="radio" checked>
+															<span class="ttl">30 мин</span>
+														</label>
+														<label class="product-params__item-value">
+															<input name="time" type="radio">
+															<span class="ttl">60 мин (+1000 ₽)</span>
+														</label>
+														<label class="product-params__item-value">
+															<input name="time" type="radio">
+															<span class="ttl">90 мин (+1500 ₽)</span>
+														</label>
+													</div>
+												</div>
+												<div class="product-params__item">
+													<div class="product-params__item-name">кол-во Участников</div>
+													<div class="product-params__item-values">
+														<label class="product-params__item-value">
+															<input name="person" type="radio" checked>
+															<span class="ttl">2 чел</span>
+														</label>
+														<label class="product-params__item-value">
+															<input name="person" type="radio">
+															<span class="ttl">4 чел (+500 ₽)</span>
+														</label>
+														<label class="product-params__item-value">
+															<input name="person" type="radio">
+															<span class="ttl">6 чел (+1000 ₽)</span>
+														</label>
+													</div>
+												</div>
+												<div class="product-params__item">
+													<div class="product-params__item-name">Дополнительно</div>
+													<div class="product-params__item-values">
+														<label class="product-params__item-value">
+															<input type="checkbox">
+															<span class="ttl">Видеосъемка (+1000 ₽)</span>
+														</label>
+														<!--                               <label elem="item-value">
+                                        <input type="checkbox">
+                                        <span class="ttl">Тест 1 (+1000 ₽)</span>
+                                    </label>
+                                    <label elem="item-value">
+                                        <input type="checkbox">
+                                        <span class="ttl">Тест 2 (+2000 ₽)</span>
+                                    </label>
+                                    <label elem="item-value">
+                                        <input type="checkbox">
+                                        <span class="ttl">Тест 3 (+3000 ₽)</span>
+                                    </label> -->
+													</div>
+												</div>
+												<div class="product-params__item">
+													<div class="product-params__item-name">Вариант упаковки <a class="more-link" data-remodal-target="feedback" href="#">Подробнее</a></div>
+													<div class="product-params__item-value">
+														<select>
+															<option>Электронный сертификат</option>
+															<option>Электронный сертификат 1</option>
+															<option>Электронный сертификат 2</option>
+															<option>Электронный сертификат 3</option>
+														</select>
+													</div>
+												</div>
+											</div>
+											<div class="product-card__price"> 6 800 ₽ </div>
+											<button class="product-card__buy-btn site-button">В корзину</button>
+										</div>
+										<div class="product-card__col-footer">
+											<div class="product-params">
+												<div class="product-params__item product-params__item--delivery">
+													<div class="product-params__item-name">Доставка</div>
+													<div class="product-params__item-value">
+														<a class="more-link" data-remodal-target="feedback" href="#">Подробнее</a>
+													</div>
+												</div>
+												<div class="product-params__item">
+													<div class="product-params__item-name">На почту</div>
+													<div class="product-params__item-value"> бесплатно </div>
+												</div>
+												<div class="product-params__item">
+													<div class="product-params__item-name">Курьером в руки, в пред. МКАД</div>
+													<div class="product-params__item-value"> 300 ₽ </div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</form>
+								<div class="product-card__description">
+									<h2 class="h2">Описание</h2>
+									<p> Прогулочный катер «СМАРТ» воплотил в себе все лучшие качества прогулочного катера, класса боурайдер. Мощный двигатель, продуманная аэродинамика, белоснежный П-образный салон, мягкие кожаные сиденья, столик, туалет – на борту имеется все для комфортабельных прогулок и веселых вечеринок. В прохладные вечера для каждого гостя найдутся чистые пледы высокого качества, возможна установка тента. </p>
+									<h3 class="h3">В подарок входит</h3>
+									<ul>
+										<li>Самостоятельное управление катером;</li>
+										<li>Прогулка в разных скоростных режимах;</li>
+										<li>Аудиосистема высокого класса;</li>
+										<li>Прохладительные напитки, пледы и тент.</li>
+									</ul>
+									<h3 class="h3">Безопасность</h3>
+									<ul>
+										<li>Катер проходит ежегодное ТО;</li>
+										<li>Безопасность обеспечивается опытными капитанами.</li>
+									</ul>
+									<h3 class="h3">Что взять с собой</h3>
+									<ul>
+										<li>Одежда по погоде;</li>
+										<li>Солнечные очки в ясный день;</li>
+										<li>Можно прихватить купальник.</li>
+									</ul>
+									<h3 class="h3">Ограничения</h3>
+									<ul>
+										<li>Мы готовы катать вас с мая по октябрь;</li>
+										<li>На тиковой палубе необходимо снимать обувь;</li>
+										<li>При желании принести свою еду и напитки необходимо обсудить детали с менеджером;</li>
+										<li>Возможен перенос прогулки из-за погодных условий.</li>
+									</ul>
+									<div class="address-loacation js-tabs">
+										<h2 class="address-loacation__title h2">Получить впечатления можно по адресам</h2>
+										<div class="address-loacation__anhors">
+											<a class="b-tag js-tabs-title is-active" data-index="0" href="#">
+												<span class="svg-icon svg-icon--location" aria-hidden="true">
+													<svg class="svg-icon__link">
+														<use xlink:href="#location"></use>
+													</svg>
+												</span> Москва, ул.Гагарина,2/1</a>
+											<a class="b-tag js-tabs-title" data-index="1" href="#">
+												<span class="svg-icon svg-icon--location" aria-hidden="true">
+													<svg class="svg-icon__link">
+														<use xlink:href="#location"></use>
+													</svg>
+												</span> Москва, Петровская коса, 9Д</a>
+										</div>
+										<div class="address-loacation__container">
+											<div class="address-loacation__map c-map js-tabs-body is-active" data-coords="55.498194, 37.591386" data-index="0" data-zoom="17"></div>
+											<div class="address-loacation__map c-map js-tabs-body" data-coords="55.756818, 37.620571" data-index="1" data-zoom="17"></div>
+										</div>
+									</div><!-- address-loacation -->
+								</div>
+							</div>
+						</div>
+					</div><!-- product-card -->
+				</div>
+				<div class="bl-bg">
+					<div class="bl-bg__in">
+						<div class="container">
+							<div class="b-list2 type-2 mobile-x-scroll">
+								<div class="b-list2__head">
+									<h2 class="b-list2__title big-title h2">Отзывы</h2>
+								</div>
+								<div class="b-list2__container js-list-slider swiper">
+									<div class="b-list2__items mobile-x-scroll__content swiper-wrapper row-cols-lg-3">
+										<div class="b-list2__item swiper-slide">
+											<div class="b-list2__item-in">
+												<div class="b-list2__item-image"><img src="files/rev-img1.png" alt loading="lazy" width="416" height="170"></div>
+												<div class="b-list2__item-body">
+													<div class="b-list2__item-title">Евгения кузнецова</div>
+													<div class="b-list2__item-text"> Только положительные впечатления Красивая упаковка сертификата, доставка <br>
+                                            к указанному времени, эмоции получательницы. Я заказывала набор, чтобы уж точно угодить и подруге! </div>
+													<div class="b-tag">Полет на воздушном шаре</div>
+												</div>
+											</div>
+										</div>
+										<div class="b-list2__item swiper-slide">
+											<div class="b-list2__item-in">
+												<div class="b-list2__item-image"><img src="files/rev-img2.png" alt loading="lazy" width="416" height="170"></div>
+												<div class="b-list2__item-body">
+													<div class="b-list2__item-title">Петр ВАсильев</div>
+													<div class="b-list2__item-text"> До сих пор под впечатлением от экстремального вождения! Море драйва и адреналина, офигенный инструктор, не самая простая трасса. Такой формат подарка – это здорово! </div>
+													<div class="b-tag">Катер на двоих</div>
+												</div>
+											</div>
+										</div>
+										<div class="b-list2__item swiper-slide">
+											<div class="b-list2__item-in">
+												<div class="b-list2__item-image"><img src="files/rev-img3.png" alt loading="lazy" width="416" height="170"></div>
+												<div class="b-list2__item-body">
+													<div class="b-list2__item-title">ВАлентина Потапова</div>
+													<div class="b-list2__item-text"> В данном случае можно согласиться с Данилевским, считавшим, что фьюжн использует элемент политического процесса, хотя на первый взгляд, российские власти тут ни при чем. </div>
+													<div class="b-tag">SPA для королевских особ</div>
+												</div>
+											</div>
+										</div>
+										<div class="b-list2__item swiper-slide">
+											<div class="b-list2__item-in">
+												<div class="b-list2__item-image"><img src="files/rev-img2.png" alt loading="lazy" width="416" height="170"></div>
+												<div class="b-list2__item-body">
+													<div class="b-list2__item-title">Петр ВАсильев</div>
+													<div class="b-list2__item-text"> До сих пор под впечатлением от экстремального вождения! Море драйва и адреналина, офигенный инструктор, не самая простая трасса. Такой формат подарка – это здорово! </div>
+													<div class="b-tag">Катер на двоих</div>
+												</div>
+											</div>
+										</div>
+										<div class="b-list2__item swiper-slide">
+											<div class="b-list2__item-in">
+												<div class="b-list2__item-image"><img src="files/rev-img3.png" alt loading="lazy" width="416" height="170"></div>
+												<div class="b-list2__item-body">
+													<div class="b-list2__item-title">ВАлентина Потапова</div>
+													<div class="b-list2__item-text"> В данном случае можно согласиться с Данилевским, считавшим, что фьюжн использует элемент политического процесса, хотя на первый взгляд, российские власти тут ни при чем. </div>
+													<div class="b-tag">SPA для королевских особ</div>
+												</div>
+											</div>
+										</div>
+										<div class="b-list2__item swiper-slide">
+											<div class="b-list2__item-in">
+												<div class="b-list2__item-image"><img src="files/rev-img2.png" alt loading="lazy" width="416" height="170"></div>
+												<div class="b-list2__item-body">
+													<div class="b-list2__item-title">Петр ВАсильев</div>
+													<div class="b-list2__item-text"> До сих пор под впечатлением от экстремального вождения! Море драйва и адреналина, офигенный инструктор, не самая простая трасса. Такой формат подарка – это здорово! </div>
+													<div class="b-tag">Катер на двоих</div>
+												</div>
+											</div>
+										</div>
+										<div class="b-list2__item swiper-slide">
+											<div class="b-list2__item-in">
+												<div class="b-list2__item-image"><img src="files/rev-img3.png" alt loading="lazy" width="416" height="170"></div>
+												<div class="b-list2__item-body">
+													<div class="b-list2__item-title">ВАлентина Потапова</div>
+													<div class="b-list2__item-text"> В данном случае можно согласиться с Данилевским, считавшим, что фьюжн использует элемент политического процесса, хотя на первый взгляд, российские власти тут ни при чем. </div>
+													<div class="b-tag">SPA для королевских особ</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-navigation">
+										<div class="swiper-button swiper-button-prev">
+											<span class="svg-icon svg-icon--arr-l" aria-hidden="true">
+												<svg class="svg-icon__link">
+													<use xlink:href="#arr-l"></use>
+												</svg>
+											</span>
+										</div>
+										<div class="swiper-button swiper-button-next">
+											<span class="svg-icon svg-icon--arr-r" aria-hidden="true">
+												<svg class="svg-icon__link">
+													<use xlink:href="#arr-r"></use>
+												</svg>
+											</span>
+										</div>
+									</div>
+								</div>
+							</div><!-- b-list2 -->
+							<div class="wrapper-block">
+								<div class="how-it-works">
+									<h2 class="how-it-works__title h2">Как это работает?</h2>
+									<div class="how-it-works__items">
+										<div class="how-it-works__items-in">
+											<div class="how-it-works__item">
+												<div class="how-it-works__item-counter"></div>
+												<div class="how-it-works__item-container">
+													<div class="how-it-works__item-title">Выбираете подарочный сертификат</div> Покупаете один из подарков или набор нескольких <br>
+                    услуг на выбор.
+												</div>
+											</div>
+											<div class="how-it-works__item">
+												<div class="how-it-works__item-counter"></div>
+												<div class="how-it-works__item-container">
+													<div class="how-it-works__item-title">Дарите</div> Выбираете один из 2 вариантов упаковки: подарочный конверт или Online сертификат.
+												</div>
+											</div>
+											<div class="how-it-works__item">
+												<div class="how-it-works__item-counter"></div>
+												<div class="how-it-works__item-container">
+													<div class="how-it-works__item-title">Получатель активирует подарок</div> Сертификат действителен в течение 300 дней. Получатель сам выбирает дату и время проведения, по телефону <br>
+                    +7 (495) 154-30-68 или на сайте.
+												</div>
+											</div>
+											<div class="how-it-works__item">
+												<div class="how-it-works__item-counter"></div>
+												<div class="how-it-works__item-container">
+													<div class="how-it-works__item-title">Яркие впечатления гарантированы</div> Обладатель подарка получает массу положительных эмоций и благодарит вас за удивительное приключение!
+												</div>
+											</div>
+										</div>
+									</div>
+								</div><!-- how-it-works -->
+								<div class="advantages">
+									<div class="advantages__body">
+										<h2 class="advantages__title h2">Почему мы?</h2>
+										<div class="advantages__items">
+											<div class="advantages__item">
+												<div class="advantages__item-icon"><img src="files/icon-1.svg" alt width="85" height="85" loading="lazy"></div>
+												<div class="advantages__item-text">Обязательный контроль качества</div>
+											</div>
+											<div class="advantages__item">
+												<div class="advantages__item-icon"><img src="files/icon-2.svg" alt width="85" height="85" loading="lazy"></div>
+												<div class="advantages__item-text">Срок действия сертификата целый год</div>
+											</div>
+											<div class="advantages__item">
+												<div class="advantages__item-icon"><img src="files/icon-3.svg" alt width="85" height="85" loading="lazy"></div>
+												<div class="advantages__item-text">Всегда на связи и решим любой вопрос!</div>
+											</div>
+										</div>
+									</div>
+									<div class="b-contacts">
+										<div class="b-contacts__title">Остались вопросы?</div>
+										<div class="b-contacts__phone">
+											<a href="tel:88002000600">8 800 2000-600</a>
+										</div>
+									</div>
+								</div><!-- advantages -->
+							</div><!-- wrapper-block -->
+						</div>
+					</div>
+				</div>
+				<div class="bl-bg type-2">
+					<div class="bl-bg__in">
+						<div class="container">
+							<div class="product-list mobile-x-scroll">
+								<div class="product-list__title big-title">Похожие впечатления</div>
+								<div class="product-list__items mobile-x-scroll__content row-cols-lg-4">
+									<form class="product-item">
+										<div class="product-item__in">
+											<div class="product-item__stickers">
+												<div class="product-item__sticker"> 1 <span>день</span>
+												</div>
+											</div>
+											<div class="product-item__image">
+												<a href="product-card.html"><img src="files/prod-img1.jpg" alt width="306px" height="306px" loading="lazy"></a>
+											</div>
+											<div class="product-item__middle">
+												<div class="product-item__name"><a href="product-card.html">Полет на воздушном шаре</a></div>
+											</div>
+											<div class="product-item__bot">
+												<div class="product-item__price">6 800 ₽</div>
+												<button class="product-item__button site-button">В корзину</button>
+											</div>
+										</div>
+									</form>
+									<form class="product-item">
+										<div class="product-item__in">
+											<div class="product-item__stickers">
+												<div class="product-item__sticker"> 1 <span>день</span>
+												</div>
+											</div>
+											<div class="product-item__image">
+												<a href="product-card.html"><img src="files/prod-img2.jpg" alt width="306px" height="306px" loading="lazy"></a>
+											</div>
+											<div class="product-item__middle">
+												<div class="product-item__name"><a href="product-card.html">Прогулка на катере</a></div>
+											</div>
+											<div class="product-item__bot">
+												<div class="product-item__price">9 900 ₽</div>
+												<button class="product-item__button site-button">В корзину</button>
+											</div>
+										</div>
+									</form>
+									<form class="product-item">
+										<div class="product-item__in">
+											<div class="product-item__stickers">
+												<div class="product-item__sticker"> 1 <span>день</span>
+												</div>
+											</div>
+											<div class="product-item__image">
+												<a href="product-card.html"><img src="files/prod-img3.jpg" alt width="306px" height="306px" loading="lazy"></a>
+											</div>
+											<div class="product-item__middle">
+												<div class="product-item__name"><a href="product-card.html">Мастер-класс езды на мотоцикле</a></div>
+											</div>
+											<div class="product-item__bot">
+												<div class="product-item__price">2 700 ₽</div>
+												<button class="product-item__button site-button">В корзину</button>
+											</div>
+										</div>
+									</form>
+									<form class="product-item">
+										<div class="product-item__in">
+											<div class="product-item__stickers">
+												<div class="product-item__sticker"> 1 <span>день</span>
+												</div>
+											</div>
+											<div class="product-item__image">
+												<a href="product-card.html"><img src="files/prod-img4.jpg" alt width="306px" height="306px" loading="lazy"></a>
+											</div>
+											<div class="product-item__middle">
+												<div class="product-item__name"><a href="product-card.html">SPA для королевских особ</a></div>
+											</div>
+											<div class="product-item__bot">
+												<div class="product-item__price">17 500 ₽</div>
+												<button class="product-item__button site-button">В корзину</button>
+											</div>
+										</div>
+									</form>
+									<!-- product-item -->
+								</div>
+							</div><!-- product-list -->
+							<div class="product-list mobile-x-scroll">
+								<img class="product-list__hzimg" src="img/info-block2-i-3.svg" alt>
+								<div class="product-list__title big-title">Входит в наборы</div>
+								<div class="product-list__items mobile-x-scroll__content row-cols-lg-4">
+									<form class="product-item">
+										<div class="product-item__in">
+											<div class="product-item__stickers">
+												<div class="product-item__sticker"> 1 <span>день</span>
+												</div>
+											</div>
+											<div class="product-item__image">
+												<a href="product-card.html"><img src="files/prod-img1.jpg" alt width="306px" height="306px" loading="lazy"></a>
+											</div>
+											<div class="product-item__middle">
+												<div class="product-item__name"><a href="product-card.html">Полет на воздушном шаре</a></div>
+											</div>
+											<div class="product-item__bot">
+												<div class="product-item__price">6 800 ₽</div>
+												<button class="product-item__button site-button">В корзину</button>
+											</div>
+										</div>
+									</form>
+									<form class="product-item">
+										<div class="product-item__in">
+											<div class="product-item__stickers">
+												<div class="product-item__sticker"> 1 <span>день</span>
+												</div>
+											</div>
+											<div class="product-item__image">
+												<a href="product-card.html"><img src="files/prod-img2.jpg" alt width="306px" height="306px" loading="lazy"></a>
+											</div>
+											<div class="product-item__middle">
+												<div class="product-item__name"><a href="product-card.html">Прогулка на катере</a></div>
+											</div>
+											<div class="product-item__bot">
+												<div class="product-item__price">9 900 ₽</div>
+												<button class="product-item__button site-button">В корзину</button>
+											</div>
+										</div>
+									</form>
+									<form class="product-item">
+										<div class="product-item__in">
+											<div class="product-item__stickers">
+												<div class="product-item__sticker"> 1 <span>день</span>
+												</div>
+											</div>
+											<div class="product-item__image">
+												<a href="product-card.html"><img src="files/prod-img3.jpg" alt width="306px" height="306px" loading="lazy"></a>
+											</div>
+											<div class="product-item__middle">
+												<div class="product-item__name"><a href="product-card.html">Мастер-класс езды на мотоцикле</a></div>
+											</div>
+											<div class="product-item__bot">
+												<div class="product-item__price">2 700 ₽</div>
+												<button class="product-item__button site-button">В корзину</button>
+											</div>
+										</div>
+									</form>
+									<form class="product-item">
+										<div class="product-item__in">
+											<div class="product-item__stickers">
+												<div class="product-item__sticker"> 1 <span>день</span>
+												</div>
+											</div>
+											<div class="product-item__image">
+												<a href="product-card.html"><img src="files/prod-img4.jpg" alt width="306px" height="306px" loading="lazy"></a>
+											</div>
+											<div class="product-item__middle">
+												<div class="product-item__name"><a href="product-card.html">SPA для королевских особ</a></div>
+											</div>
+											<div class="product-item__bot">
+												<div class="product-item__price">17 500 ₽</div>
+												<button class="product-item__button site-button">В корзину</button>
+											</div>
+										</div>
+									</form>
+									<!-- product-item -->
+								</div>
+							</div><!-- product-list -->
+						</div>
+					</div>
+				</div>
+				<div class="remodal remodal--sign-up" data-remodal-id="feedback">
+					<button class="remodal__close" data-remodal-action="close" aria-label="Закрыть">
+						<span class="svg-icon svg-icon--close" aria-hidden="true">
+							<svg class="svg-icon__link">
+								<use xlink:href="#close"></use>
+							</svg>
+						</span>
+					</button>
+					<div class="remodal__content">
+						<div class="remodal__title h2">Свяжитесь с нами</div>
+						<form class="form">
+							<div class="form__item">
+								<div class="item-control">
+									<input type="text" required>
+									<div class="item-control__name">Представьтесь<span>*</span></div>
+								</div>
+							</div>
+							<div class="form__item">
+								<div class="item-control">
+									<input class="i-email" type="text" required>
+									<div class="item-control__name">Электронная почта<span>*</span></div>
+								</div>
+							</div>
+							<div class="form__item">
+								<div class="item-control">
+									<textarea placeholder="Ваше сообщение"></textarea>
+								</div>
+							</div>
+							<!--     <div elem="item">
+        <div block="item-control" class="error">
+            <input type="email" required>
+            <div elem="name">Электронная почта<span>*</span></div>
+            <div elem="note" mods="error">Заполните поле</div>
+        </div>
+    </div> -->
+							<div class="form__button">
+								<button class="site-button">Отправить</button>
+							</div>
+						</form><!-- form -->
+					</div>
+				</div><!-- remodal -->
+				<div class="remodal remodal--cities" data-remodal-id="cities">
+					<button class="remodal__close" data-remodal-action="close" aria-label="Закрыть">
+						<span class="svg-icon svg-icon--close" aria-hidden="true">
+							<svg class="svg-icon__link">
+								<use xlink:href="#close"></use>
+							</svg>
+						</span>
+					</button>
+					<div class="remodal__content">
+						<div class="remodal__title h2">Выберите город</div>
+						<div class="remodal__container">
+							<ul class="cities-list">
+								<li><a href="#">Москва</a></li>
+								<li><a href="#">Санкт-Петербург</a></li>
+								<li><a href="#">Екатеринбург</a></li>
+								<li><a href="#">Новосибирск</a></li>
+								<li><a href="#">Нижний Новгород</a></li>
+								<li><a href="#">Самара</a></li>
+								<li><a href="#">Омск</a></li>
+								<li><a href="#">Казань</a></li>
+								<li><a href="#">Челябинск</a></li>
+								<li><a href="#">Ростов-на-Дону</a></li>
+								<li><a href="#">Уфа</a></li>
+								<li><a href="#">Волгоград</a></li>
+								<li><a href="#">Пермь</a></li>
+								<li><a href="#">Красноярск</a></li>
+								<li><a href="#">Саратов</a></li>
+								<li><a href="#">Воронеж</a></li>
+								<li><a href="#">Тольятти</a></li>
+								<li><a href="#">Краснодар</a></li>
+								<li><a href="#">Ульяновск</a></li>
+								<li><a href="#">Ижевск</a></li>
+								<li><a href="#">Ярославль</a></li>
+								<li><a href="#">Барнаул</a></li>
+								<li><a href="#">Иркутск</a></li>
+								<li><a href="#">Владивосток</a></li>
+								<li><a href="#">Хабаровск</a></li>
+								<li><a href="#">Новокузнецк</a></li>
+								<li><a href="#">Оренбург</a></li>
+								<li><a href="#">Рязань</a></li>
+								<li><a href="#">Пенза</a></li>
+								<li><a href="#">Тюмень</a></li>
+								<li><a href="#">Набережные Челны</a></li>
+								<li><a href="#">Астрахань</a></li>
+								<li><a href="#">Липецк</a></li>
+							</ul><!-- cities-list -->
+						</div>
+					</div>
+				</div><!-- remodal -->
+				<div class="remodal remodal--search" data-remodal-id="search">
+					<button class="remodal__close" data-remodal-action="close" aria-label="Закрыть">
+						<span class="svg-icon svg-icon--close" aria-hidden="true">
+							<svg class="svg-icon__link">
+								<use xlink:href="#close"></use>
+							</svg>
+						</span>
+					</button>
+					<div class="remodal__content">
+						<form class="s-search">
+							<span class="s-search__button">
+								<span class="svg-icon svg-icon--search" aria-hidden="true">
+									<svg class="svg-icon__link">
+										<use xlink:href="#search"></use>
+									</svg>
+								</span>
+							</span>
+							<input class="s-search__text" type="search" placeholder="Поиск...">
+						</form><!-- s-search -->
+						<div class="remodal__container has-result">
+							<a class="s-product" href="#">
+								<span class="s-product__image"><img src="files/s-prod-img1.jpg" alt></span>
+								<span class="s-product__container">
+									<span class="s-product__name">Полет на воздушном шаре</span>
+									<span class="s-product__price">6 800 ₽</span>
+								</span>
+							</a>
+							<a class="s-product" href="#">
+								<span class="s-product__image"><img src="files/s-prod-img2.jpg" alt></span>
+								<span class="s-product__container">
+									<span class="s-product__name">Катер на двоих</span>
+									<span class="s-product__price">9 200 ₽</span>
+								</span>
+							</a>
+							<a class="s-product" href="#">
+								<span class="s-product__image"><img src="files/s-prod-img3.jpg" alt></span>
+								<span class="s-product__container">
+									<span class="s-product__name">Полет на воздушном шаре</span>
+									<span class="s-product__price">6 800 ₽</span>
+								</span>
+							</a>
+						</div>
+					</div>
+				</div><!-- remodal -->
+			</main><!-- app:main -->
+		</div><!-- app:content -->
+		<footer class="app-footer">
+			<div class="app-footer__in">
+				<div class="app-footer__content container">
+					<div class="app-footer__col">
+						<div class="app-footer__logo">
+							<a href=""><img src="img/logo.svg" alt width="172px" height="101px"></a>
+						</div>
+						<div class="app-footer__info app-footer__info--mobile">
+							<div class="app-footer__phone"><a href="tel:88002000600">8 800 2000 600</a></div>
+							<div class="app-footer__working-time"><span>Ежедневно</span> с 09:00 до 21:00</div>
+						</div>
+						<div class="social-links">
+							<a class="social-links__item" href="#"><img src="files/vk.svg" alt width="18" height="10"></a>
+							<a class="social-links__item" href="#"><img src="files/ok.svg" alt width="9" height="16"></a>
+							<a class="social-links__item" href="#"><img src="files/youtube.svg" alt width="16" height="10"></a>
+						</div><!-- social-links -->
+						<div class="app-footer__copyright">
+							<a href="#">Политика конфиденциальности</a>
+							<br>
+							<a href="#">Публичная оферта</a>
+						</div>
+					</div>
+					<div class="app-footer__container">
+						<nav class="app-footer__menu">
+							<ul>
+								<li><a href="#">О нас</a></li>
+								<li><a href="#">Как это работает</a></li>
+								<li><a href="#">Оплата и доставка</a></li>
+								<li><a href="#">Контакты</a></li>
+							</ul>
+						</nav>
+						<nav class="app-footer__menu">
+							<div class="app-footer__menu-title">По занятию:</div>
+							<ul>
+								<li><a href="#">Полеты</a></li>
+								<li><a href="#">Экстрим</a></li>
+								<li><a href="#">SPA</a></li>
+								<li><a href="#">Отдых на воде</a></li>
+								<li><a href="#">Романтика</a></li>
+								<li><a href="#">Мастер-классы</a></li>
+							</ul>
+						</nav>
+						<nav class="app-footer__menu">
+							<div class="app-footer__menu-title">По поводу:</div>
+							<ul>
+								<li><a href="#">Свадьба</a></li>
+								<li><a href="#">Новый год</a></li>
+								<li><a href="#">День рождения</a></li>
+								<li><a href="#">23 февраля</a></li>
+								<li><a href="#">8 марта</a></li>
+							</ul>
+						</nav>
+						<nav class="app-footer__menu">
+							<div class="app-footer__menu-title">По цене:</div>
+							<ul>
+								<li><a href="#">До 1 000 ₽</a></li>
+								<li><a href="#">До 5 000 ₽</a></li>
+								<li><a href="#">До 25 000 ₽</a></li>
+								<li><a href="#">от 25 000 ₽</a></li>
+							</ul>
+						</nav>
+						<nav class="app-footer__menu">
+							<div class="app-footer__menu-title">Для кого:</div>
+							<ul>
+								<li><a href="#">Мужчине</a></li>
+								<li><a href="#">Женщине</a></li>
+								<li><a href="#">Для двоих</a></li>
+								<li><a href="#">Детям</a></li>
+								<li><a href="#">Молодоженам</a></li>
+							</ul>
+						</nav>
+						<div class="app-footer__info">
+							<div class="app-footer__phone"><a href="tel:88002000600">8 800 2000 600</a></div>
+							<div class="app-footer__working-time"><span>Ежедневно</span> с 09:00 до 21:00</div>
+						</div>
+						<div class="app-footer__copyright">
+							<a href="#">Политика конфиденциальности</a>
+							<br>
+							<a href="#">Публичная оферта</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer><!-- footer -->
+	</div><!-- app:wrapper -->
+	<button id="back_to" class="page-scroller" type="button" title="В начало страницы" aria-hidden="true">
+		<svg class="page-scroller__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.54 18.99">
+			<path d="M6.88,17.49v-13A1.5,1.5,0,0,1,8.38,3h0a1.5,1.5,0,0,1,1.5,1.5v13A1.5,1.5,0,0,1,8.38,19h0A1.5,1.5,0,0,1,6.88,17.49Z" fill="#f35d2d"></path>
+			<path d="M.44,6.8,6.8.44a1.49,1.49,0,0,1,2.12,0h0a1.49,1.49,0,0,1,0,2.12L2.56,8.92a1.49,1.49,0,0,1-2.12,0h0A1.49,1.49,0,0,1,.44,6.8Z" fill="#f35d2d"></path>
+			<path d="M14,8.92,7.61,2.56a1.49,1.49,0,0,1,0-2.12h0a1.49,1.49,0,0,1,2.12,0L16.1,6.8a1.51,1.51,0,0,1,0,2.12h0A1.5,1.5,0,0,1,14,8.92Z" fill="#f35d2d"></path>
+		</svg>
+	</button><!-- page-scroller -->
+	<svg class="main-svg-sprite main-svg-sprite--icons" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="arr-d2" viewBox="0 0 9 6" xmlns="http://www.w3.org/2000/svg"><path d="M7.727 0H1.273C.403 0-.052 1.034.536 1.676l3.227 3.52a1 1 0 001.474 0l3.227-3.52C9.052 1.034 8.597 0 7.727 0z"></path></symbol><symbol id="arr-l" viewBox="0 0 21 18" xmlns="http://www.w3.org/2000/svg"><rect width="16" height="3" rx="1.5" transform="matrix(-1 0 0 1 20.5 7.5)"></rect><rect width="12" height="3" rx="1.5" transform="scale(-1 1) rotate(45 -4.69 -11.321)"></rect><rect width="12" height="3" rx="1.5" transform="scale(-1 1) rotate(-45 13.15 21.71)"></rect></symbol><symbol id="arr-l-2" viewBox="0 0 21 18" xmlns="http://www.w3.org/2000/svg"><rect width="16" height="3" rx="1.5" transform="matrix(-1 0 0 1 20.5 7.5)"></rect><rect width="12" height="3" rx="1.5" transform="scale(-1 1) rotate(45 -4.69 -11.321)"></rect><rect width="12" height="3" rx="1.5" transform="scale(-1 1) rotate(-45 13.15 21.71)"></rect></symbol><symbol id="arr-r" viewBox="0 0 21 18" xmlns="http://www.w3.org/2000/svg"><rect x=".5" y="7.5" width="16" height="3" rx="1.5"></rect><rect x="11.621" width="12" height="3" rx="1.5" transform="rotate(45 11.621 0)"></rect><rect x="9.5" y="15.657" width="12" height="3" rx="1.5" transform="rotate(-45 9.5 15.657)"></rect></symbol><symbol id="cart" viewBox="0 0 18 16" xmlns="http://www.w3.org/2000/svg"><path d="M2.16 1.284c-.514 0-1.002.004-1.486 0a.646.646 0 01-.6-.361C-.044.7-.019.48.131.275.262.09.453.005.682.002c.639 0 1.282-.004 1.92 0 .396.004.634.189.73.563.175.66.342 1.322.522 2.01H16.609c.914 0 1.569.8 1.348 1.652-.51 1.975-1.023 3.945-1.536 5.919-.18.691-.747 1.11-1.493 1.11H5.94c-.78 0-1.331-.419-1.519-1.15-.546-2.115-1.097-4.23-1.644-6.345-.213-.816-.409-1.636-.617-2.477zM8.093 14.484c-.004.836-.718 1.516-1.586 1.512-.863-.004-1.577-.692-1.577-1.524 0-.844.722-1.532 1.598-1.524.868.012 1.57.7 1.565 1.536zM14.44 12.952c.867.004 1.577.688 1.577 1.524 0 .844-.722 1.532-1.598 1.524-.864-.008-1.57-.696-1.57-1.532.009-.836.727-1.52 1.59-1.516z"></path></symbol><symbol id="certificate" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><path d="M16 29h9v-1.5h-9V29zm0-4.5h14V23H16v1.5zm0-4.5h14v-1.5H16V20zm0-4.5h14V14H16v1.5zm1 21.531L14.977 35H17v2.031zm3-3.531a1.5 1.5 0 00-1.5-1.5H13V9h20v16h3V9c0-1.654-1.346-3-3-3H13c-1.654 0-3 1.346-3 3v24.045c0 .781.289 1.501.812 2.025l6.061 6.085a2.883 2.883 0 002.025.845H29v-3h-9v-5.5zm14.5-1c-.827 0-1.5-.673-1.5-1.5s.673-1.5 1.5-1.5 1.5.673 1.5 1.5-.673 1.5-1.5 1.5zM39 31c0-2.481-2.019-4.5-4.5-4.5A4.505 4.505 0 0030 31c0 1.791 1.059 3.328 2.577 4.052l-2 5.999 2.846.949 1.077-3.231L35.577 42l2.846-.949-2-5.999C37.941 34.328 39 32.791 39 31z"></path></symbol><symbol id="close" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg"><path d="M13.461 10.985L9.477 7l3.984-3.985c.324-.323.539-.753.539-1.292 0-.43-.215-.861-.539-1.185C13.14.215 12.708 0 12.277 0c-.43 0-.862.215-1.292.538L7 4.523 3.015.538A1.783 1.783 0 001.723 0C1.185 0 .862.215.538.538.215.862 0 1.292 0 1.723c0 .43.215.97.538 1.292L4.523 7 .538 10.985A1.784 1.784 0 000 12.277c0 .43.215.862.538 1.184.324.324.754.539 1.185.539.43 0 .862-.215 1.292-.539L7 9.477l3.985 3.984c.323.324.754.539 1.292.539.43 0 .862-.215 1.184-.539.324-.322.539-.753.539-1.184 0-.538-.215-.97-.539-1.292z"></path></symbol><symbol id="email" viewBox="0 0 15 12" xmlns="http://www.w3.org/2000/svg"><path d="M1.658 0h11.684C14.444 0 15 .59 15 1.79v8.42c0 1.19-.556 1.79-1.658 1.79H1.658C.556 12 0 11.4 0 10.21V1.79C0 .59.556 0 1.658 0zm5.838 8.6l5.943-5.53c.212-.2.38-.66.115-1.07-.256-.41-.723-.42-1.032-.17L7.496 5.69 2.478 1.83c-.309-.25-.776-.24-1.032.17a.864.864 0 00.115 1.07L7.496 8.6z"></path></symbol><symbol id="filter" viewBox="0 0 16 13" xmlns="http://www.w3.org/2000/svg"><rect width="16" height="3" rx="1.5"></rect><rect x="2" y="5" width="12" height="3" rx="1.5"></rect><rect x="4" y="10" width="8" height="3" rx="1.5"></rect></symbol><symbol id="location" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg"><path d="M6.634 13.142c.369 1.108 1.068 1.147 1.561.091L13.802 1.22c.493-1.058.035-1.514-1.022-1.021L.767 5.805C-.29 6.298-.25 6.997.857 7.367L5.19 8.81l1.444 4.332z"></path></symbol><symbol id="menu" viewBox="0 0 16 13" xmlns="http://www.w3.org/2000/svg"><rect width="16" height="3" rx="1.5"></rect><rect y="5" width="16" height="3" rx="1.5"></rect><rect y="10" width="16" height="3" rx="1.5"></rect></symbol><symbol id="phone" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg"><path d="M12.883 9.523c-1.955-1.586-2.793-1.027-3.724 0l-.186.186s-.559.28-2.7-1.959-1.862-2.798-1.862-2.798l.186-.187c.931-.933 1.49-1.772 0-3.731C3.946.381 3.387.008 2.828.008 1.898-.085 1.246.661.78 1.221l-.279.186C-.15 2.06-.15 3.366.408 4.952c.652 1.679 1.862 3.451 3.445 5.13C6.553 12.694 9.345 14 11.114 14c.652 0 1.117-.187 1.396-.466l.28-.28c.558-.467 1.21-1.12 1.21-2.052 0-.56-.372-1.12-1.117-1.68z"></path></symbol><symbol id="remove" viewBox="0 0 15 19" xmlns="http://www.w3.org/2000/svg"><path d="M1.252 7.528h12.403c0 .341.016.674 0 1.007-.175 2.954-.358 5.171-.548 8.125a6.55 6.55 0 01-.128.966c-.127.592-.398.82-.978.884-.183.025-.374.025-.557.025H3.408c-.135 0-.262-.008-.398-.017-.724-.056-1.026-.332-1.106-1.07a33.39 33.39 0 01-.135-1.778c-.175-2.824-.342-4.904-.509-7.728-.008-.13-.008-.26-.008-.414zM.003 5.535c-.016-.69.024-1.34.366-1.932.302-.52.78-.763 1.352-.795.621-.033 1.25-.016 1.87-.024h.47c0-.382-.008-.715 0-1.055C4.091.592 4.585.049 5.69.024a64.368 64.368 0 013.54 0c1.099.033 1.584.552 1.632 1.664.016.349 0 .698 0 1.096h1.464c.302 0 .612-.009.915.024.724.073 1.265.438 1.48 1.16.143.495.183 1.015.278 1.567H.003zM5.46 2.759h4.05c0-.34-.009-.665 0-.982.007-.276-.096-.381-.367-.381-.859.008-1.726 0-2.585 0H5.46v1.363z"></path></symbol><symbol id="search" viewBox="0 0 15 16" xmlns="http://www.w3.org/2000/svg"><path d="M13.866 2.906C12.798 1.451 11.245.384 9.498.094 7.655-.197 5.909.19 4.453 1.257c-1.456 1.067-2.33 2.716-2.62 4.462-.291 1.94.29 3.686 1.552 5.14l-.388.389-.776.775c-.582.582-1.262 1.261-1.844 1.94a1.206 1.206 0 00-.097 1.649c.194.194.485.388.776.388.291 0 .583-.097.874-.388l.776-.776.776-.776 1.65-1.649c1.844 1.067 4.076 1.164 5.92.291 1.94-.873 3.299-2.618 3.784-4.655.388-1.843.097-3.686-.97-5.14zM12.7 6.69c0 1.164-.485 2.23-1.261 3.007a4.259 4.259 0 01-3.009 1.26 4.259 4.259 0 01-3.008-1.26c-.873-.873-1.261-1.94-1.261-3.104 0-1.164.485-2.23 1.261-3.007a4.258 4.258 0 013.008-1.26c2.33 0 4.27 1.94 4.27 4.364z"></path></symbol><symbol id="time" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg"><path d="M7.019 0A7.002 7.002 0 000 6.969C-.016 10.84 3.113 13.984 6.99 14c3.844.012 6.991-3.113 7.01-6.963C14.022 3.166 10.89.013 7.019 0zm2.318 8.662l-.684.685c-.237.234-.475.237-.71.006-.487-.484-.974-.969-1.459-1.456A1.62 1.62 0 016 6.703c.003-.522 0-1.04 0-1.562V3.5c0-.325.178-.497.503-.5h1c.316 0 .494.178.494.49 0 .876.003 1.75 0 2.626 0 .315.106.578.328.796.337.335.672.67 1.006 1.007.256.256.256.49.006.743z"></path></symbol></svg><svg class="main-svg-sprite main-svg-sprite--colored" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="marmelad" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><style>.ast6{fill:#fff}</style><path fill="#f7e018" d="M272 274.8c-37.5 0-67.9-30.4-67.9-67.9 0-31.4-25.6-57-57-57-37.5 0-67.9-30.4-67.9-67.9s30.4-67.9 67.9-67.9c106.3 0 192.8 86.5 192.8 192.8 0 37.5-30.4 67.9-67.9 67.9z"></path><path fill="#1988c6" d="M243.8 394.9c0-37.5 30.4-67.9 67.9-67.9 31.4 0 57-25.6 57-57 0-37.5 30.4-67.9 67.9-67.9s67.9 30.4 67.9 67.9c0 106.3-86.5 192.8-192.8 192.8-37.5 0-67.9-30.4-67.9-67.9z"></path><path fill="#f16524" d="M133.5 200.3c31.3 20.7 39.9 62.8 19.2 94.1-17.3 26.2-10.1 61.6 16.1 79 31.3 20.7 39.9 62.8 19.2 94.1s-62.8 39.9-94.1 19.2C5.2 427.9-19.2 308.1 39.4 219.5c20.7-31.3 62.8-39.9 94.1-19.2z"></path><path fill="#e5cd1a" d="M234.1 206.9c0-31.4-25.6-57-57-57-37.5 0-67.9-30.4-67.9-67.9 0-33.7 24.5-61.7 56.7-67-6.2-.6-12.5-.9-18.8-.9-37.5 0-67.9 30.4-67.9 67.9s30.4 67.9 67.9 67.9c31.4 0 57 25.6 57 57 0 37.5 30.4 67.9 67.9 67.9 5.2 0 10.2-.6 15-1.7-30.3-6.8-52.9-33.8-52.9-66.2z"></path><path fill="#1c73ba" d="M273.8 394.9c0-37.5 30.4-67.9 67.9-67.9 31.4 0 57-25.6 57-57 0-32.3 22.6-59.4 52.9-66.2-4.8-1.1-9.8-1.7-15-1.7-37.5 0-67.9 30.4-67.9 67.9 0 31.4-25.6 57-57 57-37.5 0-67.9 30.4-67.9 67.9s30.4 67.9 67.9 67.9c6.4 0 12.6-.3 18.8-.9-32.1-5.3-56.7-33.3-56.7-67z"></path><path fill="#e54c21" d="M123.9 486.6C35.2 427.9 10.8 308.1 69.4 219.5c10.1-15.2 25.2-25.1 41.7-28.8-26.8-6.1-55.7 4.5-71.7 28.8C-19.2 308.2 5.2 428 93.9 486.6c16.1 10.6 35 13.5 52.4 9.6-7.8-1.8-15.4-5-22.4-9.6z"></path><path d="M347.4 206.9c0-110.4-89.8-200.3-200.3-200.3-41.6 0-75.4 33.8-75.4 75.4s33.8 75.4 75.4 75.4c27.3 0 49.5 22.2 49.5 49.5 0 41.6 33.8 75.4 75.4 75.4 41.6 0 75.4-33.8 75.4-75.4zm-135.8 0c0-35.6-28.9-64.5-64.5-64.5-33.3 0-60.4-27.1-60.4-60.4s27.1-60.4 60.4-60.4c102.2 0 185.3 83.1 185.3 185.3 0 33.3-27.1 60.4-60.4 60.4s-60.4-27.1-60.4-60.4z"></path><path class="ast6" d="M120.7 82h-15c0 22.9 18.6 41.4 41.4 41.4 17.7 0 34.7 5.5 49 15.9l8.8-12.1c-16.9-12.3-36.9-18.8-57.8-18.8-14.5.1-26.4-11.8-26.4-26.4zm186.7 80.2c-12.8-45.8-44.8-84.1-87.7-105l-6.6 13.5c39.1 19 68.2 53.8 79.8 95.5l14.5-4zM190.9 62.1c4.5 1.4 9.1 3 13.5 4.8l5.7-13.9c-4.8-2-9.8-3.8-14.8-5.3l-4.4 14.4zM185.2 45c-5.1-1.2-10.3-2.2-15.5-2.9l-2 14.9c4.7.6 9.4 1.5 14.1 2.6l3.4-14.6z"></path><path d="M436.6 194.7c-41.6 0-75.4 33.8-75.4 75.4 0 27.3-22.2 49.5-49.5 49.5-41.6 0-75.4 33.8-75.4 75.4s33.8 75.4 75.4 75.4c110.4 0 200.3-89.8 200.3-200.3 0-41.6-33.8-75.4-75.4-75.4zM311.7 455.3c-33.3 0-60.4-27.1-60.4-60.4s27.1-60.4 60.4-60.4c35.6 0 64.5-28.9 64.5-64.5 0-33.3 27.1-60.4 60.4-60.4S497 236.7 497 270c0 102.2-83.1 185.3-185.3 185.3z"></path><path d="M407.5 312.4l14.1 5.1c1.8-5.1 3.3-10.3 4.3-15.6l-14.7-2.8c-.9 4.6-2.1 9-3.7 13.3zm-10.7 20.3l12.2 8.7c3.1-4.4 5.9-9.1 8.3-13.9l-13.4-6.6c-2 4.1-4.4 8-7.1 11.8z"></path><path class="ast6" d="M363.3 326.9c-14.2 12.9-32.5 19.9-51.6 19.9-26.5 0-48.1 21.6-48.1 48.1h15c0-18.2 14.8-33.1 33.1-33.1 22.8 0 44.7-8.5 61.6-23.8l-10-11.1z"></path><path d="M365.6 418.5l5.1 14.1c4.9-1.8 9.8-3.8 14.5-6l-6.4-13.6c-4.3 2.1-8.7 3.9-13.2 5.5zm-22.9 6.4l2.9 14.7c5.1-1 10.2-2.3 15.2-3.8l-4.3-14.4c-4.5 1.5-9.2 2.6-13.8 3.5zm-23.7 2.9l.7 15c5.2-.2 10.5-.7 15.6-1.4l-2-14.9c-4.8.7-9.5 1.1-14.3 1.3z"></path><path class="ast6" d="M481.9 254.1l-14.1 5c1.2 3.5 1.9 7.2 1.9 11 0 32.2-9.7 63.3-28 89.7l12.3 8.5c20.1-29 30.7-63 30.7-98.3 0-5.4-1-10.8-2.8-15.9zM454 225.3c-5.5-2.2-11.4-3.3-17.4-3.3v15c4.1 0 8.1.8 11.9 2.2l5.5-13.9zm10.2 26.5l12.5-8.3c-3.3-5-7.4-9.2-12.3-12.7l-8.7 12.2c3.4 2.5 6.2 5.4 8.5 8.8z"></path><path d="M172.9 367c-22.8-15-29-45.8-14-68.6 11.1-16.8 15-36.9 11-56.6-4-19.7-15.5-36.7-32.3-47.8-16.8-11.1-36.9-15-56.6-11-19.7 4-36.7 15.5-47.8 32.3-60.9 92.1-35.5 216.6 56.6 277.5 12.5 8.3 26.8 12.5 41.4 12.5 5.1 0 10.2-.5 15.2-1.5 19.7-4 36.7-15.5 47.8-32.3s15-36.9 11-56.6c-4-19.8-15.5-36.8-32.3-47.9zm8.8 96.2c-8.9 13.5-22.5 22.6-38.3 25.9-15.8 3.2-31.9.1-45.4-8.8C12.8 424-10.7 308.8 45.7 223.6c8.9-13.5 22.5-22.6 38.3-25.9 4.1-.8 8.1-1.2 12.2-1.2 11.7 0 23.2 3.4 33.2 10 13.5 8.9 22.6 22.5 25.9 38.3 3.2 15.8.1 31.9-8.8 45.4-19.6 29.7-11.4 69.7 18.2 89.4 13.5 8.9 22.6 22.5 25.9 38.3 3.1 15.8 0 31.9-8.9 45.3z"></path><path class="ast6" d="M116.8 452C100.1 441 86 427.1 75 410.8l-12.4 8.4c12.2 18 27.6 33.2 45.9 45.3 6.9 4.5 14.7 6.9 22.8 6.9 2.8 0 5.6-.3 8.4-.9l-3-14.7c-7 1.5-14.1.1-19.9-3.8zm5.1-200.4c.4 1.8.5 3.6.5 5.4 0 5.1-1.5 10.2-4.4 14.5-10.7 16.2-16.3 34.8-16.3 54.1 0 6.6.7 13.3 2 19.9l14.7-3c-1.1-5.6-1.7-11.3-1.7-16.9 0-16.3 4.8-32.1 13.8-45.8 4.5-6.8 6.9-14.7 6.9-22.8 0-2.8-.3-5.6-.8-8.4-.3-1.3-.6-2.6-1-3.9l-14.3 4.4c.3.8.5 1.7.6 2.5zm-3.9-9.5l12.4-8.4c-3-4.5-6.9-8.3-11.5-11.4-.6-.4-1.1-.7-1.7-1.1l-7.7 12.9c.4.2.7.5 1.1.7 3 2 5.4 4.4 7.4 7.3zm-15.7-10.9l3.6-14.6c-5.9-1.5-12.1-1.6-18.2-.3l3 14.7c3.9-.8 7.9-.7 11.6.2z"></path></symbol></svg>
+	<link href="css/plugins.min.css?v=97bf72f0e100193b6cb0e4bb" rel="stylesheet">
+	<script>
+		var site_defers = {
+			smoothscroll: 'js/vendors/smoothscroll.polyfill-0.4.4.js',
+		}
+		// start >>> только для демонстрации вёрстки
+		// позволяет переключать URL на котором находятся статические ресурсы
+		var theme_uri = location.hostname === 'localhost' ? 'http://localhost:8967' : 'https://dev.solvers.group/emotion-market';
+		/* end >>> только для демонстрации вёрстки */
+		var emotionMarket = {
+			theme_uri: theme_uri, // используется в скриптах для подключения статических ресурсов
+			assets_uri: theme_uri,
+			yandex_maps_api_key: '5fa6f5ee-c55e-4f35-a5b3-c67b3c581d82',
+		}
+		var defers = {
+			ymaps: `https://api-maps.yandex.ru/2.1/?apikey=${emotionMarket.yandex_maps_api_key}&lang=ru_RU`,
+		}
+	</script>
+	<script src="js/vendors/jquery-3.6.0.min.js?v=4cd5ddc413b3024d7b56331c" defer></script>
+	<script src="js/plugins.min.js?v=e0e51987b6e38253cf354c4b" defer></script>
+	<script src="js/app.min.js?v=2756e920a455cf607d6867c6" defer></script>
+</body><!-- app -->
+
+</html>

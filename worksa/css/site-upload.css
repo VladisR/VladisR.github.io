@@ -1,0 +1,53 @@
+.site-upload {
+  position: relative;
+  cursor: pointer;
+  border: 1px solid #b3b3b3;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  height: 46px;
+  -webkit-overflow-scrolling: touch;
+}
+.site-upload input {
+  position: absolute;
+  left: -200px;
+  top: -100px;
+  opacity: 0;
+  width: 300%;
+  height: 300%;
+  cursor: pointer;
+}
+.site-upload__icon {
+  flex: 0 0 50px;
+  max-width: 50px;
+  width: 50px;
+  margin-top: -1px;
+  margin-bottom: -1px;
+  margin-left: -1px;
+  background-color: #333946;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+}
+.site-upload__icon .svg-icon {
+  display: block;
+  width: 36px;
+  height: 30px;
+  fill: #e0fb52;
+}
+.site-upload__text {
+  align-self: center;
+  margin-left: 14px;
+  flex: 1 1;
+  font-size: 16px;
+  padding-right: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #ced5e9;
+  -webkit-overflow-scrolling: touch;
+}
+.site-upload__text.is-active {
+  color: #333946;
+}

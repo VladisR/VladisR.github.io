@@ -1,0 +1,1 @@
+.decor-line{height:0;position:relative}.decor-line:before{background:#e0fb52;content:"";display:block;height:54px;left:0;position:absolute;right:0;top:-255px}@media (min-width:768px){.decor-line:before{top:-640px}}@media (min-width:1200px){.decor-line:before{top:-397px}}@media (min-width:1366px){.decor-line:before{top:-438px}}

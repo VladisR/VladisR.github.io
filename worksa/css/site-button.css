@@ -1,0 +1,47 @@
+.site-button {
+  background: #333946;
+  color: #fff;
+  border: 0;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: none;
+  border-radius: 12px;
+  font-weight: 350;
+  font-size: 12px;
+  line-height: 14px;
+  padding: 12px 12px;
+  transition: 0.25s background, 0.25s color;
+}
+.site-button.type-2 {
+  background: #e0fb52;
+  color: #333946;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  min-height: 46px;
+}
+.site-button.type-2:hover {
+  color: #fff;
+  background: #333946;
+}
+.site-button.type-2 .svg-icon--arrow-r2 {
+  width: 7px;
+  height: 14px;
+  margin-left: 13px;
+}
+.site-button:hover {
+  background: #4c5468;
+}
+@media (min-width: 1440px) {
+  .site-button {
+    padding: 14px 14px;
+    font-size: 16px;
+    line-height: 19px;
+  }
+}

@@ -1,0 +1,8 @@
+.detailed-reviews {
+  margin-top: 22px;
+}
+@media (min-width: 992px) {
+  .detailed-reviews {
+    margin-top: 0;
+  }
+}

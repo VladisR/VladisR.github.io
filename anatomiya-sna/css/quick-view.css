@@ -1,0 +1,149 @@
+.quick-view {
+  width: 100%;
+  max-width: 1120px;
+  overflow-y: auto;
+  position: relative;
+  padding: 16px 10px 0;
+  -webkit-overflow-scrolling: touch;
+}
+.quick-view__title {
+  margin-bottom: 20px;
+}
+.quick-view .product-card__image--half:nth-child(4) ~ * {
+  display: none;
+}
+.site-popup.type-2:has(.quick-view) .site-popup__close:before {
+  opacity: 1;
+  background: #fff;
+}
+@media (min-width: 768px) {
+  .quick-view {
+    padding: 16px 35px 8px;
+  }
+  .quick-view .product-tabs__header {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+  }
+  .quick-view .product-composition {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .site-popup.type-2 .site-popup__container .quick-view__title.h2 {
+    font-size: 40px;
+    margin-bottom: 22px;
+  }
+}
+@media (min-width: 992px) {
+  .quick-view {
+    padding-top: 23px;
+  }
+  .quick-view::-webkit-scrollbar {
+    width: 4px;
+  }
+  .quick-view::-webkit-scrollbar-track {
+    margin-top: 0;
+  }
+  .quick-view::-webkit-scrollbar-thumb {
+    background: var(--color1);
+    border-right: 1px solid transparent;
+  }
+  .quick-view .product-card__aside {
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
+    width: 472px;
+  }
+  .quick-view .product-card__data {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1;
+            flex: 1 1;
+    width: auto;
+    max-width: none;
+  }
+  .quick-view .product-card__image {
+    margin-bottom: 28px;
+    position: relative;
+  }
+  .quick-view .product-card__image--half:nth-child(4) ~ * {
+    display: block;
+  }
+  .quick-view .product-card__image--half:after {
+    content: '';
+    display: inline-block;
+    padding-top: 87%;
+  }
+  .quick-view .product-card__image--half img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .quick-view .product-tabs__title {
+    font-size: 21px;
+    margin-bottom: 40px;
+  }
+  .quick-view .product-tabs__title:after {
+    height: 5px;
+    margin-top: 5px;
+  }
+  .quick-view .product-raring__total {
+    margin-right: 20px;
+  }
+  .quick-view .product-raring__total .i-rating__star {
+    width: 30px;
+    height: 30px;
+  }
+  .quick-view .product-raring__detatil-item .i-rating__star {
+    width: 20px;
+    height: 20px;
+  }
+  .quick-view .product-raring__aside {
+    padding-right: 0;
+    padding-left: 20px;
+  }
+  .quick-view .product-reviews__menu-item {
+    margin-left: 20px;
+  }
+  .quick-view .product-reviews__menu-item:first-child {
+    margin-left: 0;
+  }
+  .quick-view .product-reviews__menu-filter {
+    padding-right: 0;
+  }
+  .site-popup.type-2 .site-popup__container .quick-view__title.h2 {
+    margin-bottom: 28px;
+  }
+}
+@media (min-width: 1200px) {
+  .quick-view .product-card {
+    margin-bottom: 40px;
+  }
+  .quick-view .product-card__aside {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1;
+            flex: 1 1;
+  }
+  .quick-view .product-card__data {
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
+    width: 406px;
+  }
+  .quick-view .product-card__image:after {
+    padding-top: 50.7%;
+  }
+  .quick-view .product-tabs__title {
+    font-size: 25px;
+    margin-left: 30px;
+  }
+  .quick-view .product-price__header {
+    margin-bottom: 0;
+  }
+  .quick-view .shop-box__container-footer .show-more {
+    width: 30%;
+  }
+}

@@ -1,0 +1,88 @@
+.banner {
+  display: none;
+}
+@media (min-width: 992px) {
+  .banner {
+    margin-left: -40px;
+    display: block;
+    background: #e0fb52;
+    min-height: 487px;
+    color: #fff;
+    position: relative;
+    padding-bottom: 15px;
+    z-index: 1;
+    margin-top: auto;
+  }
+  .banner:after {
+    content: '';
+    position: absolute;
+    width: 188px;
+    height: 188px;
+    top: -58px;
+    right: -51px;
+    background: url("../img/scotch-tape.png") center center no-repeat;
+    pointer-events: none;
+  }
+  .banner:before {
+    content: '';
+    position: absolute;
+    left: -1000px;
+    top: -23px;
+    right: 44px;
+    bottom: 0;
+    background: url("../img/banner-bg.svg") right center no-repeat;
+    background-size: 590px 703px;
+  }
+  .banner__title {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 81px;
+    text-align: right;
+    position: absolute;
+    right: 0;
+    bottom: -14px;
+    line-height: 1;
+  }
+  .banner__bg {
+    position: absolute;
+    left: -10000px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: #e0fb52;
+    z-index: -1;
+  }
+}
+@media (min-width: 1200px) {
+  .banner {
+    margin-bottom: 136px;
+  }
+}
+@media (min-width: 1280px) {
+  .banner__title {
+    font-size: 100px;
+    bottom: -18px;
+  }
+}
+@media (min-width: 1366px) {
+  .banner__title {
+    font-size: 81px;
+  }
+}
+@media (min-width: 1440px) {
+  .banner__title {
+    font-size: 92px;
+  }
+}
+@media (min-width: 1600px) {
+  .banner__title {
+    font-size: 110px;
+    bottom: -21px;
+  }
+}
+@media (min-width: 1920px) {
+  .banner__title {
+    font-size: 150px;
+    bottom: -28px;
+  }
+}

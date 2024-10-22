@@ -1,0 +1,29 @@
+.info-blocks .info-block {
+  width: 100%;
+  max-width: none;
+}
+@media (min-width: 575px) {
+  .info-blocks {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-left: -20px;
+  }
+  .info-blocks .info-block {
+    margin-left: 20px;
+    width: calc(50% - 20px);
+  }
+}
+@media (min-width: 992px) {
+  .info-blocks {
+    margin-left: -30px;
+    margin-bottom: -30px;
+  }
+  .info-blocks .info-block {
+    margin-left: 30px;
+    width: calc(50% - 30px);
+    margin-bottom: 88px;
+  }
+}

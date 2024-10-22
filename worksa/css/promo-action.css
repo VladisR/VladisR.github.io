@@ -1,0 +1,200 @@
+.promo-action {
+  display: none;
+  background-color: #e0fb52;
+}
+.promo-action__container {
+  padding-top: 23px;
+  padding-bottom: 17px;
+}
+.promo-action__in {
+  display: flex;
+  align-items: center;
+  color: #333946;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  width: 640px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.promo-action__title {
+  margin-right: 37px;
+  text-transform: uppercase;
+}
+.promo-action__time {
+  display: flex;
+}
+.promo-action__time-title {
+  margin-right: 36px;
+}
+.promo-action__time-counter {
+  display: flex;
+}
+.promo-action__time-sep {
+  margin-left: 14px;
+  margin-right: 4px;
+}
+.promo-action__time-item-value {
+  display: block;
+  text-align: center;
+  min-width: 20px;
+}
+.promo-action__button {
+  margin-left: auto;
+}
+.promo-action__button .site-button {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  padding: 10px 23px 11px;
+  border-radius: 5px;
+}
+@media (min-width: 768px) {
+  .promo-action {
+    display: block;
+  }
+  .promo-action--type-2 {
+    position: relative;
+    margin-bottom: 81px;
+  }
+  .promo-action--type-2:after {
+    content: '';
+    position: absolute;
+    width: 183px;
+    height: 168px;
+    background: url("../img/promo-pic.png") 30px center no-repeat;
+    background-size: contain;
+    top: -28px;
+    right: 0;
+  }
+  .promo-action--type-2:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 8px;
+    right: 0;
+    bottom: 8px;
+    background: url("../img/www-line3.svg") 1814px center repeat-x;
+    background-size: auto 100%;
+  }
+  .promo-action--type-2 .promo-action__title {
+    margin-right: 26px;
+  }
+  .promo-action--type-2 .promo-action__container {
+    padding-bottom: 57px;
+    padding-top: 66px;
+    position: relative;
+    z-index: 1;
+  }
+  .promo-action--type-2 .promo-action__in {
+    padding-left: 20px;
+    padding-right: 40px;
+  }
+  .promo-action--type-2 .promo-action__time-title {
+    margin-right: 23px;
+  }
+}
+@media (min-width: 992px) {
+  .promo-action__container {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+  .promo-action__in {
+    width: 900px;
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .promo-action__title {
+    margin-right: 0;
+  }
+  .promo-action__time {
+    margin-left: auto;
+  }
+  .promo-action__time-sep {
+    margin-left: 4px;
+    margin-right: 4px;
+  }
+  .promo-action__time-item-value {
+    min-width: 28px;
+  }
+  .promo-action__button {
+    margin-left: 62px;
+  }
+  .promo-action__button .site-button {
+    font-size: 15px;
+    line-height: 16px;
+    padding: 16px 38px;
+  }
+}
+@media (min-width: 1200px) {
+  .promo-action--type-2 {
+    margin-bottom: 180px;
+  }
+  .promo-action--type-2:before {
+    background-position: 48% center;
+  }
+  .promo-action--type-2:after {
+    width: 232px;
+    height: 213px;
+    background-position: center center;
+    top: -42px;
+  }
+  .promo-action--type-2 .promo-action__container {
+    padding-top: 77px;
+    padding-bottom: 77px;
+  }
+  .promo-action--type-2 .promo-action__in {
+    width: 973px;
+    padding-left: 0;
+    padding-right: 85px;
+  }
+}
+@media (min-width: 1366px) {
+  .promo-action--type-2:after {
+    right: 50%;
+    margin-right: -671px;
+  }
+}
+@media (min-width: 1440px) {
+  .promo-action__container {
+    padding-top: 34px;
+    padding-bottom: 29px;
+  }
+  .promo-action__in {
+    width: 717px;
+    font-size: 20px;
+    line-height: 32px;
+    transform: translateX(-15px);
+  }
+  .promo-action__button {
+    margin-left: 70px;
+  }
+  .promo-action__button .site-button {
+    font-size: 14px;
+    line-height: 16px;
+    padding: 10px 23px 11px;
+  }
+}
+@media (min-width: 1600px) {
+  .promo-action__container {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+  .promo-action__in {
+    width: 900px;
+    font-size: 24px;
+    line-height: 32px;
+    transform: none;
+  }
+  .promo-action__time-title {
+    margin-right: 39px;
+  }
+  .promo-action__button {
+    margin-left: 61px;
+  }
+  .promo-action__button .site-button {
+    font-size: 15px;
+    line-height: 16px;
+    padding: 16px 38px;
+  }
+}

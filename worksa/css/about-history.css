@@ -1,0 +1,198 @@
+.about-history {
+  margin-bottom: 46px;
+  position: relative;
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+.about-history__header {
+  font-size: 32px;
+  line-height: 32px;
+  font-weight: 350;
+  margin-top: 0;
+  margin-bottom: 39px;
+}
+.about-history__col:last-child {
+  display: none;
+}
+.about-history__title {
+  display: flex;
+  font-size: 24px;
+  line-height: 48px;
+  font-weight: 350;
+  margin-bottom: 8px;
+  align-items: flex-start;
+}
+.about-history__title-text {
+  letter-spacing: -2px;
+}
+.about-history__title-link {
+  margin-left: auto;
+  margin-top: 13px;
+  color: #592ea9;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 350;
+}
+.about-history__title-link:hover {
+  color: #592ea9;
+  text-decoration: underline;
+}
+.about-history__item {
+  display: block;
+  padding: 22px 0 21px;
+  position: relative;
+  color: #333946;
+  text-decoration: none;
+}
+.about-history__item:hover {
+  color: #333946;
+  text-decoration: none;
+}
+.about-history__item:hover:before {
+  background-color: #e0fb52;
+}
+.about-history__item:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 10000px;
+  pointer-events: none;
+  transition: background 0.3s;
+}
+.about-history__item-in {
+  display: block;
+  position: relative;
+}
+.about-history__item-meta {
+  display: flex;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+.about-history__item-meta span {
+  font-weight: 400;
+  margin-left: 5px;
+}
+.about-history__item-meta i {
+  font-style: normal;
+  margin: 4px 12px 0;
+  height: 10px;
+  width: 2px;
+  background-color: #333946;
+}
+.about-history__item-title {
+  display: block;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  letter-spacing: -1px;
+}
+@media (min-width: 768px) {
+  .about-history {
+    margin-bottom: 67px;
+  }
+  .about-history__header {
+    margin-bottom: 27px;
+  }
+  .about-history__row {
+    display: flex;
+  }
+  .about-history__col:first-child {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: calc(50% + 32px);
+    max-width: calc(50% + 32px);
+    width: calc(50% + 32px);
+  }
+  .about-history__col:last-child {
+    display: block;
+    flex: 1 1;
+    padding-left: 30px;
+  }
+  .about-history__title {
+    margin-bottom: 15px;
+  }
+}
+@media (min-width: 1200px) {
+  .about-history {
+    margin-bottom: 173px;
+  }
+  .about-history__header {
+    font-size: 48px;
+    line-height: 48px;
+    margin-bottom: 95px;
+  }
+  .about-history__col:first-child {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: calc(50% + 10px);
+    max-width: calc(50% + 10px);
+    width: calc(50% + 10px);
+  }
+  .about-history__col:last-child {
+    padding-left: 90px;
+  }
+  .about-history__col:last-child .about-history__title {
+    padding-left: 32px;
+  }
+  .about-history__title {
+    font-size: 36px;
+    line-height: 48px;
+    margin-bottom: 7px;
+  }
+  .about-history__item {
+    padding: 37px 0 36px 64px;
+  }
+  .about-history__item-meta {
+    margin-bottom: 8px;
+  }
+  .about-history__item-title {
+    font-size: 24px;
+    line-height: 40px;
+  }
+}
+@media (min-width: 1600px) {
+  .about-history {
+    margin-bottom: 203px;
+  }
+  .about-history__header {
+    font-size: 64px;
+    line-height: 48px;
+    margin-bottom: 64px;
+  }
+  .about-history__col:first-child {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: calc(50% + 96px);
+    max-width: calc(50% + 96px);
+    width: calc(50% + 96px);
+  }
+  .about-history__col:last-child {
+    padding-left: 47px;
+  }
+  .about-history__col:last-child .about-history__title {
+    padding-left: 0;
+  }
+  .about-history__title {
+    margin-bottom: 32px;
+  }
+  .about-history__item {
+    padding-right: 20px;
+    padding-bottom: 39px;
+    padding-left: 32px;
+  }
+  .about-history__item:before {
+    width: 100%;
+  }
+  .about-history__item-meta {
+    margin-bottom: 5px;
+  }
+  .about-history__item-title {
+    font-size: 26px;
+    line-height: 40px;
+  }
+}

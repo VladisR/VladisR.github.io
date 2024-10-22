@@ -1,0 +1,110 @@
+.advantages {
+  padding-left: 37px;
+  padding-right: 37px;
+}
+.advantages__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #fff;
+  border-radius: 7px;
+  padding: 14px 15px 14px 21px;
+  margin-bottom: 13px;
+  min-height: 62px;
+}
+.advantages__item-icon {
+  width: 28px;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  margin-right: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.advantages__item-icon:last-child {
+  margin-bottom: 0;
+}
+.advantages__item-icon img {
+  display: block;
+}
+.advantages__item-title {
+  font-weight: 500;
+  font-size: 14px;
+  margin-bottom: 3px;
+}
+.advantages__item-text {
+  font-size: 12px;
+  line-height: 10px;
+}
+.hero-in .advantages {
+  margin-top: -36px;
+  position: relative;
+  z-index: 1;
+}
+@media (min-width: 575px) {
+  .advantages {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-left: -20px;
+  }
+  .advantages__item {
+    width: calc(50% - 20px);
+    margin-left: 20px;
+  }
+}
+@media (min-width: 768px) {
+  .advantages__item {
+    min-height: 84px;
+    border-radius: 10px;
+  }
+  .advantages__item-icon {
+    width: 50px;
+    margin-right: 25px;
+  }
+  .advantages__item-title {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+  .advantages__item-text {
+    font-size: 16px;
+  }
+}
+@media (min-width: 1200px) {
+  .advantages {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+  }
+  .advantages__container {
+    min-height: 434px;
+  }
+  .advantages__item {
+    width: calc(25% - 20px);
+  }
+  .hero-in .advantages {
+    margin-top: 0;
+  }
+}
+@media (min-width: 1440px) {
+  .advantages {
+    margin-left: -52px;
+  }
+  .advantages__item {
+    width: calc(25% - 52px);
+    margin-left: 52px;
+    margin-bottom: 56px;
+  }
+}

@@ -1,0 +1,109 @@
+.verification-form__header {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 350;
+  margin-bottom: 8px;
+}
+.verification-form__items {
+  display: flex;
+}
+.verification-form__items .site-button {
+  flex: 1 1;
+  padding: 0;
+  height: 48px;
+  border-radius: 12px;
+  font-size: 14px;
+}
+.verification-form__item {
+  position: relative;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: calc(50% + 3px);
+  max-width: calc(50% + 3px);
+  width: calc(50% + 3px);
+  margin-right: 10px;
+}
+.verification-form__item input {
+  padding-left: 35px;
+  height: 48px;
+  font-size: 13px;
+  line-height: 13px;
+  font-weight: 350;
+  width: 100%;
+}
+.verification-form__asterisk {
+  position: absolute;
+  left: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 3px;
+  width: 3px;
+  border-radius: 3px;
+  background-color: #ced5e9;
+}
+.verification-form__note {
+  font-size: 10px;
+  line-height: 13px;
+  margin-top: 12px;
+  font-weight: 350;
+  color: rgba(51,57,70,0.7);
+}
+@media (min-width: 768px) {
+  .verification-form {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: calc(50% + 107px);
+    max-width: calc(50% + 107px);
+    width: calc(50% + 107px);
+    padding-right: 11px;
+    margin-top: -98px;
+  }
+  .verification-form__header {
+    font-size: 15px;
+    line-height: 17px;
+  }
+  .verification-form__items .site-button {
+    font-size: 16px;
+  }
+  .verification-form__item {
+    flex: 0 0 50%;
+    max-width: 50%;
+    width: 50%;
+    padding-right: 3px;
+    margin-right: 7px;
+  }
+  .verification-form__item input {
+    font-size: 16px;
+    padding-left: 40px;
+  }
+  .verification-form__note {
+    font-size: 13px;
+    line-height: 1.1;
+  }
+}
+@media (min-width: 1200px) {
+  .verification-form {
+    flex: 0 0 50%;
+    max-width: 50%;
+    width: 50%;
+    padding-right: 12px;
+  }
+}
+@media (min-width: 1440px) {
+  .verification-form {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: calc(50% - 9px);
+    max-width: calc(50% - 9px);
+    width: calc(50% - 9px);
+    padding-right: 36px;
+  }
+}
+@media (min-width: 1600px) {
+  .verification-form {
+    flex: 0 0 50%;
+    max-width: 50%;
+    width: 50%;
+    padding-right: 36px;
+  }
+}

@@ -1,0 +1,300 @@
+.spot {
+  position: absolute;
+  left: 6%;
+  top: 61.3%;
+}
+.spot__marker {
+  cursor: pointer;
+  width: 27px;
+  height: 27px;
+  border-radius: 27px;
+  border: 7px solid rgba(255,255,255,0.5);
+  background-color: var(--colorAccent);
+  background-clip: content-box;
+  -webkit-transition: 0.3s ease transform, 0.3s ease border;
+  transition: 0.3s ease transform, 0.3s ease border;
+}
+.spot__marker:hover {
+  border-color: rgba(255,255,255,0.8);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.spot__popup {
+  display: none;
+  position: absolute;
+  right: 0;
+  left: auto;
+  width: auto;
+  max-width: none;
+  bottom: 100%;
+  z-index: 11;
+  background-color: var(--color15);
+  border-radius: 5px;
+  margin-bottom: 15px;
+  margin-right: -5px;
+  padding: 15px 0 11px;
+  -webkit-box-shadow: 0px 9.625px 20.125px rgba(188,188,188,0.25);
+          box-shadow: 0px 9.625px 20.125px rgba(188,188,188,0.25);
+}
+.spot__popup:before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  right: 9px;
+  border: 10px solid transparent;
+  border-top-color: var(--colorAccent);
+}
+.spot__popup--inline {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  min-width: 190px;
+  padding: 7px 12px 10px;
+}
+.spot__popup--inline .spot__image {
+  padding: 5px 0 0;
+  margin-bottom: 0;
+  margin-right: 10px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 56px;
+          flex: 0 0 56px;
+  max-width: 56px;
+  width: 56px;
+}
+.spot__popup--inline .spot__image img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+.spot__popup--inline .spot__body {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1;
+          flex: 1 1;
+  padding: 0;
+}
+.spot__popup--left {
+  margin-right: 0;
+  right: auto;
+  left: 0;
+  margin-left: -5px;
+}
+.spot__popup--left:before {
+  right: auto;
+  left: 9px;
+}
+.spot__popup--center {
+  left: 50%;
+  right: auto;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  margin-left: 0;
+  margin-right: 0;
+}
+.spot__popup--center:before {
+  right: auto;
+  left: 50%;
+  margin: 0;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+.spot__popup--bottom {
+  bottom: auto;
+  top: 100%;
+  margin-bottom: 0;
+  margin-top: 15px;
+}
+.spot__popup--bottom:before {
+  top: auto;
+  bottom: 100%;
+  border-bottom-color: var(--colorAccent);
+  border-top-color: transparent;
+}
+.spot__image {
+  margin-bottom: 7px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.spot__image img {
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+  max-width: 140px;
+}
+.spot__body {
+  padding: 0 15px;
+}
+.spot__title {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  white-space: nowrap;
+}
+.spot__size {
+  white-space: nowrap;
+  font-size: 11px;
+  line-height: 15px;
+}
+.spot__price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: 400;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-top: -1px;
+  white-space: nowrap;
+}
+.spot__price-current {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  display: block;
+  font-size: 12px;
+  line-height: 16px;
+}
+.spot__price-old {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  font-size: 7px;
+  line-height: 9px;
+  margin-left: 4px;
+  color: var(--color16);
+  margin-top: 6px;
+  text-decoration: line-through;
+}
+.spot__discount {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  display: block;
+  min-width: 16px;
+  text-align: center;
+  border-radius: 2px;
+  font-size: 6px;
+  line-height: 8px;
+  margin-left: 2px;
+  margin-top: 5px;
+  color: var(--color16);
+  background-color: var(--color17);
+  text-decoration: none;
+}
+.spot.is-visible .spot__popup {
+  display: block;
+  -webkit-animation: fadeInDown 0.3s ease forwards;
+          animation: fadeInDown 0.3s ease forwards;
+}
+.spot.is-visible .spot__popup--inline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.spot.is-visible .spot__popup--bottom {
+  -webkit-animation: fadeInUp 0.3s ease forwards;
+          animation: fadeInUp 0.3s ease forwards;
+}
+@media (min-width: 768px) {
+  .spot__marker {
+    width: 46px;
+    height: 46px;
+    border-radius: 46px;
+    border: 13px solid rgba(255,255,255,0.5);
+  }
+  .spot__popup {
+    padding: 26px 0 21px;
+    margin-right: -25px;
+    margin-bottom: 24px;
+  }
+  .spot__popup:before {
+    right: 35px;
+    border-width: 13px;
+  }
+  .spot__popup--inline {
+    padding: 7px 12px 10px;
+    min-width: 264px;
+  }
+  .spot__popup--inline .spot__image {
+    margin-right: 17px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 76px;
+            flex: 0 0 76px;
+    max-width: 76px;
+    width: 76px;
+  }
+  .spot__popup--inline .spot__title {
+    font-size: 15px;
+    line-height: 19px;
+  }
+  .spot__popup--left {
+    margin-left: -25px;
+  }
+  .spot__popup--left:before {
+    right: auto;
+    left: 35px;
+  }
+  .spot__popup--center {
+    left: 50%;
+    right: auto;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .spot__popup--center:before {
+    right: auto;
+    left: 50%;
+  }
+  .spot__popup--bottom {
+    margin-bottom: 0;
+    margin-top: 24px;
+  }
+  .spot__image {
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 20px;
+  }
+  .spot__image img {
+    max-width: 187px;
+  }
+  .spot__body {
+    padding: 0 27px;
+  }
+  .spot__title {
+    font-size: 16px;
+    line-height: 21px;
+  }
+  .spot__size {
+    margin-bottom: -2px;
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .spot__price {
+    margin-top: 0;
+  }
+  .spot__price-current {
+    font-size: 24px;
+    line-height: 31px;
+  }
+  .spot__price-old {
+    font-size: 16px;
+    line-height: 21px;
+    margin-left: 10px;
+    margin-top: 7px;
+  }
+  .spot__discount {
+    font-size: 14px;
+    line-height: 18px;
+    min-width: 35px;
+    border-radius: 3px;
+    margin-left: 5px;
+    margin-top: 9px;
+  }
+}

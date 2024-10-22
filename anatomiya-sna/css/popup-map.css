@@ -1,0 +1,51 @@
+.popup-map {
+  position: relative;
+  width: 1000px;
+  max-width: 100%;
+  margin: auto;
+  padding-bottom: 56.25%;
+  -webkit-box-flex: 0 !important;
+      -ms-flex: none !important;
+          flex: none !important;
+}
+.popup-map__holder {
+  background-color: #bfbfbf;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.popup-map__holder:before,
+.popup-map__holder:after {
+  content: '';
+  width: 63px;
+  height: 63px;
+  max-width: 50%;
+  max-height: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -31.5px;
+  margin-top: -31.5px;
+  border-radius: 50%;
+  -webkit-transform-origin: 50%;
+          transform-origin: 50%;
+}
+.popup-map__holder:before {
+  border: 7px solid #d5e9f2;
+  z-index: 1;
+}
+.popup-map__holder:after {
+  z-index: 2;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 7px solid #25bede;
+  border-top-color: transparent;
+  -webkit-animation: spinner 1s infinite linear;
+          animation: spinner 1s infinite linear;
+}
+.popup-map__holder ymaps {
+  z-index: 3;
+}

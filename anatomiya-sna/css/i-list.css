@@ -1,0 +1,105 @@
+.i-list {
+  background: #eaf4ff;
+  border-radius: 5px;
+  position: relative;
+  -webkit-box-shadow: 0px 8px 19px rgba(215,215,215,0.25);
+          box-shadow: 0px 8px 19px rgba(215,215,215,0.25);
+  z-index: 1;
+}
+.i-list.is-opened {
+  display: block;
+}
+.i-list__close {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  width: 12px;
+  height: 12px;
+  cursor: pointer;
+  background: var(--close) center center no-repeat;
+  background-size: contain;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transition: 0.3s -webkit-transform;
+  transition: 0.3s -webkit-transform;
+  transition: 0.3s transform;
+  transition: 0.3s transform, 0.3s -webkit-transform;
+}
+.i-list__close:hover {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.i-list__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 12px 12px 0;
+  max-height: 359px;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.i-list__body::-webkit-scrollbar {
+  width: 3px;
+}
+.i-list__body::-webkit-scrollbar-track {
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+.i-list__body::-webkit-scrollbar-thumb {
+  background: var(--color1);
+  border-right: 1px solid transparent;
+}
+.i-list__body .checkbox {
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  margin-left: -3px;
+}
+.i-list__body .checkbox:last-child {
+  margin-bottom: 0;
+}
+.i-list__body .checkbox__icon {
+  margin-right: 7px;
+}
+.i-list__body .site-button {
+  margin-top: 10px;
+  width: 100%;
+  line-height: 1;
+  min-height: 30px;
+}
+.i-list__button {
+  padding: 12px;
+}
+.i-list__button .site-button {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .i-list__close {
+    right: 14px;
+    top: 14px;
+    width: 16px;
+    height: 16px;
+  }
+  .i-list__body {
+    padding: 19px 21px 0;
+  }
+  .i-list__body .checkbox {
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 1px;
+  }
+  .i-list__body .checkbox__icon {
+    width: 15px;
+    height: 15px;
+  }
+  .i-list__button {
+    padding: 19px 21px;
+  }
+}

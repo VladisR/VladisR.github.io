@@ -1,0 +1,35 @@
+.footer-brands {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: -4px;
+  margin-right: -4px;
+  margin-bottom: 30px;
+}
+.footer-brands__item {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+.footer-brands__item img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  opacity: 0.45;
+}
+@media (min-width: 768px) {
+  .footer-brands {
+    width: 356px;
+    margin-left: -10px;
+    margin-bottom: 26px;
+  }
+  .footer-brands__item {
+    padding-left: 10px;
+    padding-right: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .footer-brands {
+    margin-bottom: 0;
+    width: 437px;
+    flex: none;
+  }
+}

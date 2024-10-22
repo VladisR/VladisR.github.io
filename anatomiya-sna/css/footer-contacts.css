@@ -1,0 +1,125 @@
+.footer-contacts {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+  margin-bottom: 18px;
+}
+.footer-contacts__header {
+  display: none;
+}
+.footer-contacts__phone {
+  margin-top: 3px;
+}
+.footer-contacts__phone a {
+  color: #000;
+  display: inline-block;
+  text-decoration: none;
+  -webkit-transition: 0.3s ease color;
+  transition: 0.3s ease color;
+}
+.footer-contacts__phone a:hover {
+  text-decoration: none;
+  color: #df5d78;
+}
+.footer-contacts__mail {
+  font-weight: 400;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  font-size: 20px;
+  line-height: 18px;
+  margin-top: 1px;
+  margin-top: 10px;
+}
+.footer-contacts__mail a {
+  color: #df5d78;
+  text-decoration: none;
+  -webkit-transition: 0.3s ease color;
+  transition: 0.3s ease color;
+}
+.footer-contacts__mail a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+}
+.footer-contacts__address {
+  font-weight: 400;
+  margin-bottom: 18px;
+  font-size: 16px;
+  line-height: 18px;
+}
+.footer-contacts__links {
+  margin-bottom: 15px;
+}
+.footer-contacts__links ul,
+.footer-contacts__links ul li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.footer-contacts__links ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  max-width: 50%;
+  width: 50%;
+  margin-bottom: 10px;
+}
+.footer-contacts__links ul li:last-child {
+  margin-bottom: 0;
+}
+.footer-contacts__links ul li a {
+  font-weight: 400;
+  color: #df5d78;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 18px;
+}
+.footer-contacts__links ul li a:hover {
+  text-decoration: underline;
+}
+@media (min-width: 768px) {
+  .footer-contacts {
+    margin-bottom: 0;
+    font-size: 24px;
+    line-height: 31px;
+    text-align: left;
+  }
+  .footer-contacts__header {
+    display: block;
+    font-size: 24px;
+    line-height: 31px;
+    margin-bottom: 11px;
+  }
+  .footer-contacts__mail {
+    font-size: 20px;
+    line-height: 26px;
+    margin-top: 8px;
+  }
+  .footer-contacts__address {
+    font-size: 20px;
+    line-height: 26px;
+    margin-bottom: 10px;
+  }
+  .footer-contacts__links {
+    margin-bottom: 43px;
+  }
+  .footer-contacts__links ul li {
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
+    max-width: none;
+    width: auto;
+    margin-bottom: 0;
+    margin-top: 7px;
+  }
+  .footer-contacts__links ul li a {
+    font-size: 18px;
+    line-height: 23px;
+  }
+}

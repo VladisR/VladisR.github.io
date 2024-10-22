@@ -1,0 +1,105 @@
+.selection-feedback {
+  position: relative;
+  margin-bottom: 35px;
+}
+.selection-feedback__aside {
+  margin-bottom: 26px;
+}
+.selection-feedback__arrow {
+  display: none;
+}
+.selection-feedback__text {
+  font-weight: 350;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 23px;
+}
+@media (min-width: 768px) {
+  .selection-feedback {
+    display: flex;
+    margin-bottom: 42px;
+  }
+  .selection-feedback__aside {
+    flex: 0 0 50%;
+    max-width: 50%;
+    width: 50%;
+    padding-right: 10px;
+    margin-bottom: 0;
+  }
+  .selection-feedback__body {
+    flex: 1 1;
+    padding-left: 10px;
+  }
+  .selection-feedback__text {
+    margin-bottom: 31px;
+    padding-right: 16px;
+  }
+}
+@media (min-width: 1200px) {
+  .selection-feedback {
+    margin-bottom: 80px;
+  }
+  .selection-feedback__aside {
+    padding-right: 4px;
+  }
+  .selection-feedback__body {
+    padding-left: 42px;
+  }
+  .selection-feedback__text {
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 60px;
+  }
+}
+@media (min-width: 1440px) {
+  .selection-feedback {
+    margin-bottom: 137px;
+  }
+  .selection-feedback .site-squares {
+    width: 515px;
+    max-width: 100%;
+  }
+  .selection-feedback__aside {
+    padding-right: 0;
+  }
+  .selection-feedback__arrow {
+    position: absolute;
+    left: 50%;
+    top: 213px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 97px;
+    height: 94px;
+    border-radius: 97px;
+    background-color: #e0fb52;
+    transform: translateX(-50%) rotate(-90deg);
+  }
+  .selection-feedback__arrow .svg-icon {
+    display: block;
+    width: 14px;
+    height: 16px;
+  }
+  .selection-feedback__body {
+    padding-left: 95px;
+    flex: 0 0 583px;
+    max-width: 100%;
+    width: 583px;
+  }
+}
+@media (min-width: 1440px) and (min-width: 1600px) {
+  .selection-feedback__arrow {
+    width: 70px;
+    height: 70px;
+    border-radius: 70px;
+    transform: translateX(6px) rotate(-90deg);
+  }
+}
+@media (min-width: 1600px) {
+  .selection-feedback__body {
+    padding-left: 142px;
+    flex: 0 0 630px;
+    max-width: 100%;
+    width: 630px;
+  }
+}

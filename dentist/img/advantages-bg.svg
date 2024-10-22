@@ -1,0 +1,20 @@
+<svg width="1081.000000" height="1205.000000" viewBox="0 0 1081 1205" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<filter id="filter_120_9827_dd" x="0.000000" y="0.000000" width="1080.260010" height="1204.834473" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+			<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+			<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+			<feGaussianBlur stdDeviation="100" result="effect_layerBlur_1"/>
+		</filter>
+		<linearGradient id="paint_linear_120_9827_0" x1="719.499878" y1="299.999939" x2="299.999847" y2="791.000000" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#0B95D1"/>
+			<stop offset="1.000000" stop-color="#A2D4EA"/>
+		</linearGradient>
+	</defs>
+	<g opacity="0.700000" filter="url(#filter_120_9827_dd)">
+		<path id="Vector" d="M542.67 304.87C621.77 288.44 717.65 313.54 763.33 380.18C806.7 443.46 754.03 524.6 745.56 600.85C738.74 662.33 753.6 725.98 719.24 777.42C677.35 840.14 618.01 901.3 542.67 904.67C465.61 908.12 397.33 854.52 349.55 793.96C306.92 739.92 293.24 668.99 302.99 600.85C311.48 541.46 360.12 502.67 397.87 456.05C443.52 399.68 471.64 319.61 542.67 304.87Z" fill="url(#paint_linear_120_9827_0)" fill-opacity="1.000000" fill-rule="evenodd"/>
+		<path id="Vector" d="M542.67 304.87C621.77 288.44 717.65 313.54 763.33 380.18C806.7 443.46 754.03 524.6 745.56 600.85C738.74 662.33 753.6 725.98 719.24 777.42C677.35 840.14 618.01 901.3 542.67 904.67C465.61 908.12 397.33 854.52 349.55 793.96C306.92 739.92 293.24 668.99 302.99 600.85C311.48 541.46 360.12 502.67 397.87 456.05C443.52 399.68 471.64 319.61 542.67 304.87Z" fill="#0B95D1" fill-opacity="0" fill-rule="evenodd"/>
+	</g>
+</svg>

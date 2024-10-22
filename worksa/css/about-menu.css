@@ -1,0 +1,212 @@
+.about-menu {
+  overflow: hidden;
+  background-color: #333946;
+  color: #fff;
+  border-top: 13px solid #e0fb52;
+  -webkit-overflow-scrolling: touch;
+}
+.about-menu__slider {
+  margin-left: -20px;
+  margin-right: -20px;
+  position: relative;
+}
+.about-menu__items {
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  -webkit-overflow-scrolling: touch;
+}
+.about-menu__item {
+  flex: 0 0 50%;
+  max-width: 50%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+  padding: 16px 0 15px 0;
+  position: relative;
+  font-size: 14px;
+  line-height: 16px;
+}
+.about-menu__item:first-child {
+  padding-left: 0;
+}
+.about-menu__item:first-child:after {
+  margin: -1px auto 0;
+  display: block;
+}
+.about-menu__item:nth-child(2) {
+  padding-right: 15px;
+}
+.about-menu__item:last-child {
+  margin-right: 0;
+  flex: 0 0 100%;
+  max-width: 100%;
+  width: 100%;
+  padding-left: 34px;
+}
+.about-menu__item:last-child:before {
+  display: block;
+  margin: -1px 17px 0 0;
+}
+.about-menu__item:before,
+.about-menu__item:after {
+  content: '';
+  display: none;
+  width: 12px;
+  height: 12px;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 350;
+  border-radius: 12px;
+  background-color: #e0fb52;
+  pointer-events: none;
+}
+.about-menu__item:hover {
+  text-decoration: none;
+  color: #e0fb52;
+}
+.about-menu__arrow-prev,
+.about-menu__arrow-next {
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+  transform: translateY(-50%);
+  width: 26px;
+  height: 26px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.3s;
+  cursor: pointer;
+}
+.about-menu__arrow-prev .svg-icon,
+.about-menu__arrow-next .svg-icon {
+  display: block;
+  width: 12px;
+  height: 10px;
+  stroke-width: 2px;
+  fill: #e0fb52;
+  stroke: #e0fb52;
+}
+.about-menu__arrow-prev.is-disabled,
+.about-menu__arrow-next.is-disabled {
+  opacity: 0;
+  pointer-events: none;
+}
+.about-menu__arrow-prev {
+  left: 12px;
+}
+.about-menu__arrow-next {
+  right: 12px;
+}
+@media (min-width: 768px) {
+  .about-menu {
+    padding-bottom: 5px;
+    background-clip: content-box;
+  }
+  .about-menu__slider {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .about-menu__items {
+    overflow: visible;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .about-menu__item {
+    flex: none;
+    max-width: none;
+    width: auto;
+    margin-left: 19px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .about-menu__item:first-child {
+    margin-left: 0;
+  }
+  .about-menu__item:first-child:after {
+    margin-left: 19px;
+  }
+  .about-menu__item:nth-child(2) {
+    padding-right: 0;
+    margin-left: 19px;
+  }
+  .about-menu__item:last-child {
+    padding-left: 0;
+    flex: none;
+    max-width: none;
+    width: auto;
+  }
+  .about-menu__item:last-child:before {
+    display: none;
+  }
+  .about-menu__item:last-child:after {
+    display: none;
+  }
+  .about-menu__item:before {
+    display: none;
+  }
+  .about-menu__item:after {
+    display: block;
+    margin-left: 19px;
+  }
+  .about-menu__item.is-active:before {
+    display: block !important;
+    border-radius: 0;
+    position: absolute;
+    bottom: -5px;
+    margin: 0;
+    z-index: 2;
+    left: auto;
+    right: 31px;
+    height: 10px;
+    width: 10000px;
+  }
+  .about-menu__item:last-child.is-active:before {
+    right: 0;
+  }
+  .about-menu__arrow-prev,
+  .about-menu__arrow-next {
+    display: none !important;
+  }
+}
+@media (min-width: 1200px) {
+  .about-menu {
+    padding-bottom: 0;
+  }
+  .about-menu__item {
+    padding-top: 36px;
+    padding-bottom: 36px;
+    font-size: 20px;
+    line-height: 23px;
+  }
+  .about-menu__item {
+    margin-left: 56px !important;
+  }
+  .about-menu__item:first-child {
+    margin-left: 0 !important;
+  }
+  .about-menu__item:last-child:after {
+    display: block;
+  }
+  .about-menu__item:after {
+    margin-left: 9px !important;
+    margin-top: 1px !important;
+  }
+  .about-menu__item.is-active:before {
+    right: 0;
+    bottom: 0;
+  }
+}
+@media (min-width: 1600px) {
+  .about-menu__items {
+    margin-left: -20px;
+  }
+}

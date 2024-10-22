@@ -1,0 +1,124 @@
+.c-info {
+  margin-bottom: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-left: -10px;
+}
+.c-info__item {
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.2;
+  margin-bottom: 9px;
+  background: var(--color3);
+  border-radius: 3px;
+  margin-left: 10px;
+  width: 100%;
+}
+.c-info__item-title {
+  font-size: 14px;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+.c-info__item-phone {
+  font-size: 14px;
+  font-weight: 400;
+}
+.c-info__item-phone a {
+  color: #000;
+  text-decoration: none;
+}
+.c-info__item--map {
+  padding: 0;
+  margin-bottom: 27px;
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+.c-info__item--phones {
+  width: calc(50% - 10px);
+}
+.c-info__item .c-map {
+  height: 173px;
+  margin: 0;
+}
+.c-info__item p {
+  margin: 8px 0;
+}
+@media (min-width: 575px) {
+  .c-info__item {
+    width: calc(50% - 10px);
+  }
+  .c-info__item--map {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .c-info {
+    margin-left: -20px;
+  }
+  .c-info__item {
+    font-size: 20px;
+    padding: 20px;
+    margin-left: 20px;
+    width: calc(50% - 20px);
+    margin-bottom: 20px;
+  }
+  .c-info__item-title {
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+  .c-info__item-phone {
+    font-size: 30px;
+  }
+  .c-info__item--map {
+    padding: 0;
+    width: 100%;
+  }
+  .c-info__item.type-2 {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .c-info .c-map {
+    height: 100%;
+    min-height: 449px;
+  }
+}
+@media (min-width: 992px) {
+  .c-info__item {
+    padding: 32px;
+  }
+  .c-info__item--map {
+    padding: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .c-info {
+    margin: 44px 0 43px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+  }
+  .c-info__item {
+    margin: 0;
+    width: 100%;
+  }
+  .c-info__item--map {
+    grid-column: span 3;
+    grid-row: span 2;
+    grid-row-start: 2;
+    grid-column-start: 2;
+    grid-row-end: 4;
+    grid-column-end: 5;
+  }
+  .c-info__item--map.large {
+    grid-column: span 3;
+    grid-row: span 2;
+    grid-row-start: 1;
+    grid-column-start: 2;
+    grid-row-end: 4;
+    grid-column-end: 5;
+  }
+}
