@@ -266,8 +266,7 @@ img {
 .sr-only {
   border: 0;
   clip: rect(1px, 1px, 1px, 1px);
-  -webkit-clip-path: inset(50%);
-          clip-path: inset(50%);
+  clip-path: inset(50%);
   height: 1px;
   margin: -1px;
   overflow: hidden;
@@ -285,8 +284,7 @@ img {
 .sr-only:focus {
   background-color: #eee;
   clip: auto !important;
-  -webkit-clip-path: none;
-          clip-path: none;
+  clip-path: none;
   color: #444;
   display: block;
   font-size: 1em;
@@ -1364,6 +1362,12 @@ form .wpcf7-response-output {
   z-index: 0;
   position: relative;
   background: #292d3a;
+}
+.fw-slider.swiper-initialized .fw-slider__item + .fw-slider__item .fw-slider__item-image img {
+  display: block;
+}
+.fw-slider__item + .fw-slider__item .fw-slider__item-image img {
+  display: none;
 }
 .fw-slider__item {
   position: relative;
