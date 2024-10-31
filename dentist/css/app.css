@@ -1666,15 +1666,6 @@ textarea {
 }
 .cfw-image {
   overflow: hidden;
-  -webkit-transform: translateY(150px);
-          transform: translateY(150px);
-  opacity: 0;
-  -webkit-transition: 1.9s opacity, 1s -webkit-transform;
-  transition: 1.9s opacity, 1s -webkit-transform;
-  transition: 1s transform, 1.9s opacity;
-  transition: 1s transform, 1.9s opacity, 1s -webkit-transform;
-  -webkit-transition-delay: 200ms;
-          transition-delay: 200ms;
   min-height: 542px;
   position: relative;
   -webkit-overflow-scrolling: touch;
@@ -1696,11 +1687,6 @@ textarea {
      object-fit: cover;
   -o-object-position: center center;
      object-position: center center;
-}
-.cfw-image.animated {
-  opacity: 1;
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
 }
 .contacts__title {
   margin-top: 0;
@@ -2169,32 +2155,6 @@ textarea {
   transition: 0.5s transform, 0.5s opacity;
   transition: 0.5s transform, 0.5s opacity, 0.5s -webkit-transform;
 }
-.sp-word {
-  overflow: hidden;
-  -webkit-transform: translateY(100%);
-          transform: translateY(100%);
-  -webkit-transition: 1.6s -webkit-transform;
-  transition: 1.6s -webkit-transform;
-  transition: 1.6s transform;
-  transition: 1.6s transform, 1.6s -webkit-transform;
-  -webkit-overflow-scrolling: touch;
-}
-.sp-word > span {
-  -webkit-transform: translateY(-100%);
-          transform: translateY(-100%);
-  -webkit-transition: 1.6s -webkit-transform;
-  transition: 1.6s -webkit-transform;
-  transition: 1.6s transform;
-  transition: 1.6s transform, 1.6s -webkit-transform;
-}
-.animated .sp-word {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
-}
-.animated .sp-word > span {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
-}
 .intro-main {
   padding-top: 115px;
   margin-bottom: 68px;
@@ -2248,20 +2208,6 @@ textarea {
 }
 .intro-main__button {
   width: 100%;
-}
-.intro-main__row {
-  -webkit-transform: translateY(150px);
-          transform: translateY(150px);
-  opacity: 0;
-  -webkit-transition: 1.2s opacity, 1.2s -webkit-transform;
-  transition: 1.2s opacity, 1.2s -webkit-transform;
-  transition: 1.2s transform, 1.2s opacity;
-  transition: 1.2s transform, 1.2s opacity, 1.2s -webkit-transform;
-}
-.intro-main.animated .intro-main__row {
-  opacity: 1;
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
 }
 .line {
   overflow: hidden;
@@ -4350,6 +4296,22 @@ body .swiper-button:hover svg path {
   .carousel {
     margin-bottom: 100px;
   }
+  .cfw-image {
+    -webkit-transform: translateY(150px);
+            transform: translateY(150px);
+    opacity: 0;
+    -webkit-transition: 1.9s opacity, 1s -webkit-transform;
+    transition: 1.9s opacity, 1s -webkit-transform;
+    transition: 1s transform, 1.9s opacity;
+    transition: 1s transform, 1.9s opacity, 1s -webkit-transform;
+    -webkit-transition-delay: 200ms;
+            transition-delay: 200ms;
+  }
+  .cfw-image.animated {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
   .contacts {
     margin-bottom: 100px;
   }
@@ -4663,6 +4625,46 @@ body .swiper-button:hover svg path {
   }
   .intro-in.md-title .intro-in__title {
     font-size: 58px;
+  }
+  .sp-word {
+    overflow: hidden;
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+    -webkit-transition: 1.6s -webkit-transform;
+    transition: 1.6s -webkit-transform;
+    transition: 1.6s transform;
+    transition: 1.6s transform, 1.6s -webkit-transform;
+    -webkit-overflow-scrolling: touch;
+  }
+  .sp-word > span {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+    -webkit-transition: 1.6s -webkit-transform;
+    transition: 1.6s -webkit-transform;
+    transition: 1.6s transform;
+    transition: 1.6s transform, 1.6s -webkit-transform;
+  }
+  .animated .sp-word {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  .animated .sp-word > span {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  .intro-main__row {
+    -webkit-transform: translateY(150px);
+            transform: translateY(150px);
+    opacity: 0;
+    -webkit-transition: 1.2s opacity, 1.2s -webkit-transform;
+    transition: 1.2s opacity, 1.2s -webkit-transform;
+    transition: 1.2s transform, 1.2s opacity;
+    transition: 1.2s transform, 1.2s opacity, 1.2s -webkit-transform;
+  }
+  .intro-main.animated .intro-main__row {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
   .intro-main {
     padding-top: 122px;
