@@ -456,10 +456,12 @@ $(function () {
     }
   }
   ;
-  setProperty();
-  if ($(window).width() >= 768) {
-    $(window).on('resize load', setProperty).trigger('resize');
-  }
+  setTimeout(function () {
+    setProperty();
+    if ($(window).width() >= 768) {
+      $(window).on('resize', setProperty);
+    }
+  }, 50);
   setTimeout(function () {
     $('.js-intro').addClass('loadet');
   }, 100);
