@@ -192,10 +192,13 @@
             
             <div class="hero__image js-scaleout">
                 
-                <img width="1920" height="1128" sizes="100vw" srcset="
-                    files/hero-img-s.jpg 575w,
-                    files/hero-img-s.jpg 992w,
-                    files/hero-img.jpg 1920w" src="files/hero-img.jpg" alt="">
+                
+                <picture class="hero__image">
+                    <source media="(min-width:992px)" srcset="files/hero-img.jpg">
+                    <source media="(min-width:575px)" srcset="files/hero-img-s.jpg">
+                    <img width="1920" height="1128" src="files/hero-img-s.jpg" alt="">
+                </picture>
+
                 <div class="decor-lines js-opacityout">
                     <div class="decor-lines__mask">
                         <div style="background-image: url(files/hero-img-s.jpeg);" class="decor-lines__image"></div>
