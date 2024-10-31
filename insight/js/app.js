@@ -458,7 +458,7 @@ $(function () {
   ;
   setProperty();
   if ($(window).width() >= 768) {
-    $(window).on('resize', setProperty);
+    $(window).on('resize load', setProperty).trigger('resize');
   }
   setTimeout(function () {
     $('.js-intro').addClass('loadet');
