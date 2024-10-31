@@ -6876,6 +6876,8 @@ body .swiper-scrollbar .swiper-scrollbar-drag:hover {
   }
   .hero__in {
     min-height: 700px;
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
   }
   .hero__item {
     padding-top: 40px;
