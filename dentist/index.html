@@ -187,11 +187,11 @@
 	<div class="cfw-image">
     
 
-    <amp-img alt="" src="files/main-image.jpeg" width="1400" height="542" layout="responsive" class="cfw-image__desktop">
-    </amp-img>
-
-    <amp-img alt="" src="files/main-mobile.jpeg" width="375" height="542" layout="responsive" class="cfw-image__mobile">
-    </amp-img>
+    <picture class="cfw-image__image">
+        <source media="(min-width:768px)" srcset="files/main-image.jpeg">
+        <source media="(min-width:300px)" srcset="files/main-mobile.jpeg">
+        <img width="1400" height="542" src="files/main-mobile.jpeg" alt="">
+    </picture>
 
 </div><!-- cfw-image -->
 
