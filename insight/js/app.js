@@ -456,12 +456,19 @@ $(function () {
     }
   }
   ;
-  setProperty();
-  setTimeout(function () {
-    if ($(window).width() >= 768) {
-      $(window).on('resize', setProperty).trigger('resize');
-    }
-  }, 50);
+
+  // setProperty();
+
+  // setTimeout(function(){
+
+  //     if($(window).width() >= 768) {
+
+  //         $(window).on('resize', setProperty).trigger('resize');
+
+  //     }
+
+  // }, 50)
+
   setTimeout(function () {
     $('.js-intro').addClass('loadet');
   }, 100);
