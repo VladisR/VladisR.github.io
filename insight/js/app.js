@@ -456,10 +456,10 @@ $(function () {
     }
   }
   ;
+  setProperty();
   setTimeout(function () {
-    setProperty();
     if ($(window).width() >= 768) {
-      $(window).on('resize', setProperty);
+      $(window).on('resize', setProperty).trigger('resize');
     }
   }, 50);
   setTimeout(function () {
