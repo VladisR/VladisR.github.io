@@ -319,8 +319,7 @@ img {
 .sr-only {
   border: 0;
   clip: rect(1px, 1px, 1px, 1px);
-  -webkit-clip-path: inset(50%);
-          clip-path: inset(50%);
+  clip-path: inset(50%);
   height: 1px;
   margin: -1px;
   overflow: hidden;
@@ -338,8 +337,7 @@ img {
 .sr-only:focus {
   background-color: #eee;
   clip: auto !important;
-  -webkit-clip-path: none;
-          clip-path: none;
+  clip-path: none;
   color: #444;
   display: block;
   font-size: 1em;
@@ -2535,12 +2533,6 @@ textarea {
      object-fit: cover;
   -o-object-position: center bottom;
      object-position: center bottom;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-transition: 0.5s opacity;
-  transition: 0.5s opacity;
-  -webkit-animation: scaleImg 7.8s infinite alternate linear, blurImg 0.6s linear;
-          animation: scaleImg 7.8s infinite alternate linear, blurImg 0.6s linear;
 }
 .hero__image .s-video {
   position: absolute;
@@ -2587,11 +2579,7 @@ textarea {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
   will-change: scale;
-  -webkit-animation: scaleImg 7.8s infinite alternate linear, blurImg 0.8s linear;
-          animation: scaleImg 7.8s infinite alternate linear, blurImg 0.8s linear;
 }
 .hero__media-action video {
   position: absolute;
@@ -2800,7 +2788,20 @@ textarea {
   line-height: 1.22;
   margin-bottom: 20px;
   text-shadow: 0 0 20px rgba(0,0,0,0.6);
-  display: none;
+}
+.hero__title.text-splitter.visible .line span {
+  -webkit-animation: fadeInTop 0s forwards;
+          animation: fadeInTop 0s forwards;
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+.hero__title.text-splitter .line span {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-animation: fadeInTop 0s forwards;
+          animation: fadeInTop 0s forwards;
 }
 .hero__text-content {
   margin-bottom: 10px;
@@ -2817,9 +2818,6 @@ textarea {
 }
 .hero.has-video .shadow {
   opacity: 0;
-}
-.hero.loadet .hero__title {
-  display: block;
 }
 .hero.loadet .hero__text-content {
   display: none;
@@ -5935,6 +5933,38 @@ body .swiper-scrollbar .swiper-scrollbar-drag:hover {
   }
   .form__row .form__item {
     width: 33.33%;
+  }
+  .hero__image img {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    -webkit-transition: 0.5s opacity;
+    transition: 0.5s opacity;
+    -webkit-animation: scaleImg 7.8s infinite alternate linear, blurImg 0.6s linear;
+            animation: scaleImg 7.8s infinite alternate linear, blurImg 0.6s linear;
+  }
+  .hero__media-action img {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    -webkit-animation: scaleImg 7.8s infinite alternate linear, blurImg 0.8s linear;
+            animation: scaleImg 7.8s infinite alternate linear, blurImg 0.8s linear;
+  }
+  .hero__title {
+    display: none;
+  }
+  .hero__title.text-splitter.visible .line span {
+    -webkit-animation: fadeInTop 1.3s forwards;
+            animation: fadeInTop 1.3s forwards;
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  .hero__title.text-splitter .line span {
+    opacity: 0;
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+  .hero.loadet .hero__title {
+    display: block;
   }
   .hero__items {
     -webkit-box-orient: horizontal;
