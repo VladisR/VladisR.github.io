@@ -2810,7 +2810,7 @@ textarea {
   position: absolute;
   left: -50%;
   top: -10%;
-  right: 10%;
+  right: 27%;
   bottom: -50%;
   background: radial-gradient(circle, rgba(0,0,0,0.5) -100%, rgba(255,255,255,0) 55%);
 }
