@@ -475,19 +475,22 @@ $(function () {
   if ($('.js-hero').length > 0) {
     $(document).on('scroll', function () {
       var docScrollTop = $(document).scrollTop();
-      if (docScrollTop > $('.js-hero').innerHeight() - 112) {
+      if (docScrollTop > $('.js-hero').innerHeight() - $('.header__container').height()) {
         $('.js-hero').addClass('hide-hero');
       }
-      if (docScrollTop < $('.js-hero').innerHeight() - 112) {
+      if (docScrollTop < $('.js-hero').innerHeight() - $('.header__container').height()) {
         $('.js-hero').removeClass('hide-hero');
-        if ($(window).width() >= 1200 && !isSafari) {
 
-          // $('.js-translate').css({
+        // if($(window).width() >= 1200 && !isSafari) {
 
-          //     'transform': 'translate3d(0px,' + docScrollTop+'px, 0)'
+        //     $('.js-translate').css({
 
-          // });
-        }
+        //         'transform': 'translate3d(0px,' + docScrollTop+'px, 0)'
+
+        //     });
+
+        // }
+
         var coeff1 = $(window).width() <= 768 ? 400 : 750;
         var coeff2 = $(window).width() <= 768 ? 200 : 400;
         var trts = -1 * ($('.js-hero').offset().top - docScrollTop);
