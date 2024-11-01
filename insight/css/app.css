@@ -2081,7 +2081,7 @@ h2.countries-list-wrapper__header .countries-list-wrapper__title,
   will-change: background-position;
 }
 .decor-title span {
-  background: linear-gradient(272.88deg, #96805e 8.02%, #e0ceb2 97.06%);
+  background: linear-gradient(272.88deg, #645235 8.02%, #b9a17c 97.06%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -3654,6 +3654,8 @@ textarea {
   height: 22px;
   margin-right: 29px;
   vertical-align: middle;
+}
+.loadet .scroll-btn .svg-icon {
   -webkit-animation: vertArrow 0.8s infinite alternate ease-in-out;
           animation: vertArrow 0.8s infinite alternate ease-in-out;
 }
@@ -3770,7 +3772,7 @@ textarea {
 .services__overtitle {
   line-height: 17px;
   letter-spacing: 0.42em;
-  color: #c7b8a3;
+  color: #9b7a4e;
   text-align: center;
   margin-bottom: 15px;
 }
@@ -3912,7 +3914,7 @@ textarea {
 }
 .services__item-text {
   margin-bottom: 17px;
-  font-size: 7px;
+  font-size: 9px;
   letter-spacing: 0.07em;
   text-transform: uppercase;
 }
@@ -5667,7 +5669,7 @@ body .swiper-scrollbar .swiper-scrollbar-drag:hover {
     padding-top: 170%;
   }
   .services__item-text {
-    font-size: 10px;
+    font-size: 15px;
   }
   .services__container-wrap {
     margin-top: -166px !important;
