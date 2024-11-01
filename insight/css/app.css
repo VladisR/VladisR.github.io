@@ -2751,6 +2751,7 @@ textarea {
   z-index: 1;
 }
 .hero .decor-lines {
+  display: none;
   top: 0;
   bottom: 0;
   right: -10%;
@@ -5597,6 +5598,9 @@ body .swiper-scrollbar .swiper-scrollbar-drag:hover {
   .hero__item:hover {
     -webkit-box-shadow: inset 0 0 0 4px #e8d4b5;
             box-shadow: inset 0 0 0 4px #e8d4b5;
+  }
+  .hero .decor-lines {
+    display: block;
   }
   .hotels-and-villas__item.swiper-slide {
     width: 320px;
