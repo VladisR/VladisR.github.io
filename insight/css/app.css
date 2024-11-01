@@ -703,7 +703,16 @@ strong {
   height: auto;
   margin-left: 17px;
   padding: 0;
-  width: 18px;
+  width: 15px;
+  position: relative;
+}
+.header .socials__item:before {
+  content: '';
+  position: absolute;
+  left: -10px;
+  top: -10px;
+  right: -10px;
+  bottom: -10px;
 }
 .header .socials__item:hover,
 .header .socials__item:active {
@@ -741,20 +750,29 @@ strong {
 .header__phone {
   width: 44px;
   height: 26px;
-  padding-left: 22px;
-  margin-right: 15px;
+  padding-left: 20px;
+  margin-right: 10px;
   margin-top: 2px;
   -webkit-box-flex: 0;
       -ms-flex: none;
           flex: none;
+  position: relative;
+}
+.header__phone:before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  bottom: -2px;
+  right: -3px;
 }
 .header__phone:hover .svg-icon {
   -webkit-transform: scale(1.3);
           transform: scale(1.3);
 }
 .header__phone .svg-icon {
-  width: 17px;
-  height: 17px;
+  width: 15px;
+  height: 15px;
   display: block;
   fill: #d8c5aa;
   -webkit-transition: 0.25s -webkit-transform;
