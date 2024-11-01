@@ -2817,6 +2817,7 @@ textarea {
 .hero__title {
   font-size: 47px;
   color: #e8d4b5;
+  font-family: "Arial";
   line-height: 1.22;
   margin-bottom: 20px;
   text-shadow: 0 0 20px rgba(0,0,0,0.6);
