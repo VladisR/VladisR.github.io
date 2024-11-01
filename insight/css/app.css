@@ -3852,7 +3852,7 @@ textarea {
 }
 .services__item:hover .services__item-image:after,
 .services__item:active .services__item-image:after {
-  background: rgba(0,0,0,0.7);
+  background: rgba(0,0,0,0.77);
 }
 .services__item:hover .services__item-image img,
 .services__item:active .services__item-image img {
@@ -3898,7 +3898,7 @@ textarea {
   top: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0,0,0,0.31);
+  background: rgba(0,0,0,0.61);
   -webkit-transition: 0.3s ease background;
   transition: 0.3s ease background;
 }
