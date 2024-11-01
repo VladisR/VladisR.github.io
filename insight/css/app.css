@@ -3972,6 +3972,15 @@ textarea {
   position: relative;
   padding: 55% 24px 55%;
 }
+.services__container:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.4);
+}
 .services__container.container {
   padding-left: 24px;
   padding-right: 24px;
@@ -4016,7 +4025,7 @@ textarea {
   background: linear-gradient(0deg, #0d1019 0%, rgba(255,255,255,0) 100%);
 }
 .services__text {
-  color: #e8e2d3;
+  color: #f1ede4;
   position: relative;
   font-size: 13px;
   letter-spacing: -0.02em;
