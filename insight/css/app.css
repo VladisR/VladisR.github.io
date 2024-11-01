@@ -710,9 +710,9 @@ strong {
   content: '';
   position: absolute;
   left: -10px;
-  top: -10px;
+  top: -12px;
   right: -10px;
-  bottom: -10px;
+  bottom: -12px;
 }
 .header .socials__item:hover,
 .header .socials__item:active {
@@ -748,9 +748,9 @@ strong {
   display: block;
 }
 .header__phone {
-  width: 44px;
+  width: 22px;
   height: 26px;
-  padding-left: 20px;
+  margin-left: 20px;
   margin-right: 10px;
   margin-top: 2px;
   -webkit-box-flex: 0;
@@ -762,7 +762,7 @@ strong {
   content: '';
   position: absolute;
   top: -10px;
-  left: 10px;
+  left: -10px;
   bottom: -2px;
   right: -3px;
 }
@@ -846,6 +846,8 @@ html {
 .advantages {
   margin-bottom: 66px;
   padding-bottom: 1px;
+  position: relative;
+  z-index: 1;
 }
 .advantages:last-child {
   margin-bottom: 0;
@@ -871,7 +873,7 @@ html {
   font-size: 14px;
   line-height: 100%;
   letter-spacing: -0.02em;
-  color: #948064;
+  color: #483d2d;
 }
 .advantages__items {
   margin-bottom: -37px;
@@ -913,7 +915,7 @@ html {
   letter-spacing: -0.04em;
 }
 .advantages__item-text {
-  color: rgba(0,0,0,0.4);
+  color: rgba(0,0,0,0.8);
 }
 .advantages .logo-icon {
   display: none;
@@ -2143,7 +2145,7 @@ h2.countries-list-wrapper__header .countries-list-wrapper__title,
 }
 .entertainment__text {
   width: 247px;
-  color: #e8e2d3;
+  color: #edeae3;
   letter-spacing: -0.02em;
 }
 .entertainment .logo-icon {
@@ -2910,6 +2912,7 @@ textarea {
 }
 .hero .hide-hero {
   opacity: 0;
+  visibility: hidden;
 }
 .hero + * {
   padding-top: 38px;
@@ -4726,7 +4729,7 @@ body .swiper-scrollbar .swiper-scrollbar-drag:hover {
   font-size: 14px;
   line-height: 110%;
   letter-spacing: -0.02em;
-  color: #aeaaa0;
+  color: #645c45;
 }
 .travel__items {
   margin-bottom: 46px;
@@ -6300,7 +6303,7 @@ body .swiper-scrollbar .swiper-scrollbar-drag:hover {
     margin-right: auto;
   }
   .advantages__item-text {
-    font-size: 15px;
+    font-size: 17px;
     font-weight: 300;
     line-height: 1.2;
     max-width: 260px;
@@ -6731,7 +6734,7 @@ body .swiper-scrollbar .swiper-scrollbar-drag:hover {
     max-width: 916px;
     margin-left: auto;
     margin-right: auto;
-    color: #797362;
+    color: #484335;
     letter-spacing: -0.02em;
   }
   .countries__footer {
