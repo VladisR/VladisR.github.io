@@ -2803,17 +2803,6 @@ textarea {
   margin-right: auto;
   position: relative;
 }
-.hero__text:before {
-  content: '';
-  background: #000;
-  border-radius: 100%;
-  position: absolute;
-  left: -50%;
-  top: -10%;
-  right: -27%;
-  bottom: -50%;
-  background: radial-gradient(circle, rgba(0,0,0,0.5) -100%, rgba(255,255,255,0) 55%);
-}
 .hero__title {
   font-size: 47px;
   color: #e8d4b5;
@@ -5139,6 +5128,16 @@ body .swiper-scrollbar .swiper-scrollbar-drag:hover {
   .countries-list.type-2 .countries-list__item.swiper-slide {
     width: 200px;
     padding-left: 27px;
+  }
+  .hero__text:before {
+    content: '';
+    border-radius: 100%;
+    position: absolute;
+    left: -50%;
+    top: -10%;
+    right: -27%;
+    bottom: -50%;
+    background: radial-gradient(circle, rgba(0,0,0,0.5) -100%, rgba(255,255,255,0) 55%);
   }
   .most-popular {
     margin-bottom: 60px;
