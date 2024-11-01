@@ -1918,6 +1918,10 @@ h2.countries-list-wrapper__header .countries-list-wrapper__title,
   position: relative;
   z-index: 1;
 }
+.countries__content.container {
+  padding-left: 0;
+  padding-right: 0;
+}
 .countries__in {
   position: relative;
   padding-bottom: 36px;
