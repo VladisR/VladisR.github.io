@@ -6892,6 +6892,9 @@ a.tags__item:hover .svg-icon {
   .fw-slider {
     margin-bottom: 170px;
   }
+  .fw-slider__item-content {
+    max-width: 1270px;
+  }
   .info-block {
     margin-bottom: 170px;
     padding: 129px 0 120px 105px;
