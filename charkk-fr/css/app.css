@@ -1362,6 +1362,9 @@ form .wpcf7-response-output {
   z-index: 0;
   position: relative;
   background: #292d3a;
+  height: 575px;
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch;
 }
 .fw-slider.swiper-initialized .fw-slider__item + .fw-slider__item,
 .fw-slider.swiper-initialized .fw-slider__item + .fw-slider__item .fw-slider__item-image img {
@@ -5835,6 +5838,11 @@ a.tags__item:hover .svg-icon {
   }
   .cols-lg-3 > * {
     width: 33.33%;
+  }
+  .fw-slider {
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+    min-height: 754px;
   }
   .fw-slider__item-content {
     min-height: 100vh;
