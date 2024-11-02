@@ -1363,8 +1363,12 @@ form .wpcf7-response-output {
   position: relative;
   background: #292d3a;
 }
+.fw-slider.swiper-initialized .fw-slider__item + .fw-slider__item,
 .fw-slider.swiper-initialized .fw-slider__item + .fw-slider__item .fw-slider__item-image img {
   display: block;
+}
+.fw-slider__item + .fw-slider__item {
+  display: none;
 }
 .fw-slider__item + .fw-slider__item .fw-slider__item-image img {
   display: none;
