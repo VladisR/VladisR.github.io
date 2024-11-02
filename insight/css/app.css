@@ -2826,7 +2826,6 @@ textarea {
 .hero__title {
   font-size: 47px;
   color: #e8d4b5;
-  font-family: "Arial";
   line-height: 1.22;
   margin-bottom: 20px;
 }
@@ -2885,10 +2884,6 @@ textarea {
   padding-top: 30px;
   will-change: transform;
 }
-.hero h1,
-.hero .h1 {
-  color: transparent;
-}
 .hero .line {
   display: block;
   overflow: hidden;
@@ -2909,6 +2904,10 @@ textarea {
 .hero.loadet .line span {
   -webkit-animation: fadeInTop 1.3s forwards;
           animation: fadeInTop 1.3s forwards;
+}
+.hero h1,
+.hero .h1 {
+  color: transparent;
 }
 .hero .hide-hero {
   opacity: 0;
@@ -4966,26 +4965,26 @@ body .swiper-scrollbar .swiper-scrollbar-drag:hover {
 }
 @-webkit-keyframes fadeInTop {
   from {
-    opacity: 0;
     -webkit-transform: translateY(130%);
             transform: translateY(130%);
+    opacity: 0;
   }
   to {
-    opacity: 1;
     -webkit-transform: translateY(0);
             transform: translateY(0);
+    opacity: 1;
   }
 }
 @keyframes fadeInTop {
   from {
-    opacity: 0;
     -webkit-transform: translateY(130%);
             transform: translateY(130%);
+    opacity: 0;
   }
   to {
-    opacity: 1;
     -webkit-transform: translateY(0);
             transform: translateY(0);
+    opacity: 1;
   }
 }
 @-webkit-keyframes vertArrow {
@@ -8233,5 +8232,19 @@ body .swiper-scrollbar .swiper-scrollbar-drag:hover {
   }
   .travel__item-title {
     font-size: 69px;
+  }
+}
+@media (max-width: 992px) {
+  .hero h1,
+  .hero .h1 {
+    color: #fff;
+  }
+  .hero h1 .line span,
+  .hero .h1 .line span {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    -webkit-animation: fadeInTop 0s forwards;
+            animation: fadeInTop 0s forwards;
+    opacity: 1;
   }
 }
