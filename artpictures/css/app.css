@@ -2537,6 +2537,18 @@ body .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-
 .product__gallery-thumb.swiper-slide-thumb-active {
   border-color: #7715a7;
 }
+.product__gallery-item + .product__gallery-item {
+  display: none;
+}
+.product__gallery-thumb + .product__gallery-thumb {
+  display: none;
+}
+.product .swiper-initialized .product__gallery-item + .product__gallery-item {
+  display: block;
+}
+.product .swiper-initialized .product__gallery-thumb + .product__gallery-thumb {
+  display: block;
+}
 .product__name {
   font-size: 16px;
   font-weight: 700;
