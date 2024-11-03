@@ -8235,6 +8235,24 @@ body .swiper-scrollbar .swiper-scrollbar-drag:hover {
   }
 }
 @media (max-width: 992px) {
+  .hero-in__container h1,
+  .hero-in__container .h1 {
+    color: #fff;
+  }
+  .hero-in__container h1.text-splitter,
+  .hero-in__container .h1.text-splitter {
+    opacity: 1;
+  }
+  .hero-in__container h1.text-splitter span.line span,
+  .hero-in__container .h1.text-splitter span.line span {
+    -webkit-animation: none;
+            animation: none;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  .hero-in__sm-text {
+    opacity: 1;
+  }
   .hero h1,
   .hero .h1 {
     color: #fff;
