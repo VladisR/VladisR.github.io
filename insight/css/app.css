@@ -6015,6 +6015,8 @@ body .swiper-scrollbar .swiper-scrollbar-drag:hover {
             transform: scale(1.1);
     -webkit-transition: 0.5s opacity;
     transition: 0.5s opacity;
+    -webkit-animation: scaleImg 7.8s infinite alternate linear, blurImg 0.6s linear;
+            animation: scaleImg 7.8s infinite alternate linear, blurImg 0.6s linear;
   }
   .hero__media-action img {
     -webkit-transform: scale(1.1);
