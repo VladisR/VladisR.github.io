@@ -164,14 +164,15 @@ $(function () {
       });
     }, 100);
   }
-  $(document).on('scroll', function () {
-    console.log();
-    if ($('.fixed-cart-icon-wrapper').offset().top - $(window).height() - $(document).scrollTop() + 150 <= 0) {
-      $('.fixed-cart-icon-wrapper').addClass('absolute');
-    } else {
-      $('.fixed-cart-icon-wrapper').removeClass('absolute');
-    }
-  });
+  if ($('.fixed-cart-icon-wrapper').length > 0) {
+    $(document).on('scroll', function () {
+      if ($('.fixed-cart-icon-wrapper').offset().top - $(window).height() - $(document).scrollTop() + 150 <= 0) {
+        $('.fixed-cart-icon-wrapper').addClass('absolute');
+      } else {
+        $('.fixed-cart-icon-wrapper').removeClass('absolute');
+      }
+    });
+  }
   $('.intro').addClass('loadet');
   $('.js-menu').on('click', function () {
     $('.mobile-sidebar').toggleClass('opened');
