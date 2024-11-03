@@ -173,7 +173,7 @@ template {
   src: url("../fonts/DexaProExpanded-Medium.woff2") format('woff2'), url("../fonts/DexaProExpanded-Medium.woff") format('woff');
   font-weight: 500;
   font-style: normal;
-  font-display: swap;
+  font-display: optional;
 }
 @font-face {
   font-family: 'Dexa Pro Ex';
