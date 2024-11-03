@@ -23,7 +23,7 @@
         <meta name="HandheldFriendly" content="True">
 
         <link rel="stylesheet" href="css/app.css">
-        <link rel="stylesheet" href="css/plugins.min.css">
+
 
         
     </head>
@@ -1170,13 +1170,15 @@
     <div class="popup-cart__in">
         <div class="popup-cart__header">
             <div class="popup-cart__title"><span class="mb-t">Добавлен в корзину</span><span class="dt-t">Корзина</span></div>
-            <button type="button" class="popup-cart__close">
+            <button type="button" aria-label="Закрыть" title="Закрыть" class="popup-cart__close">
+                
       <span class="svg-icon svg-icon--close2" aria-hidden="true">
         <svg class="svg-icon__link">
           <use xlink:href="#close2"></use>
         </svg>
       </span>
-    </button>
+    
+            </button>
         </div>
         <div class="popup-cart__items">
             <div class="popup-cart__items-title">2 товара</div>
@@ -1261,7 +1263,7 @@
 				smoothscroll: 'js/vendors/smoothscroll.polyfill-0.4.4.js',
 			}
 		</script>
-
+        <link rel="stylesheet" href="css/plugins.min.css">
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <script src="js/vendors/jquery-3.6.0.min.js"></script>
 
