@@ -423,7 +423,7 @@ p:last-child {
   -webkit-box-flex: 0;
       -ms-flex: none;
           flex: none;
-  background: #2d2d2d;
+  background: #262626;
 }
 .footer__content {
   color: #fbfbfb;
@@ -457,7 +457,7 @@ p:last-child {
 .footer__menu {
   padding-bottom: 40px;
   margin-bottom: 40px;
-  border-bottom: 1px solid #7d7d80;
+  border-bottom: 1px solid #c1c1c1;
 }
 .footer .site-contacts:last-child,
 .footer__menu:last-child {
@@ -501,14 +501,14 @@ p:last-child {
   margin-bottom: 30px;
 }
 .footer .site-contacts__item-title {
-  color: #7d7d80;
+  color: #c1c1c1;
   font-style: italic;
 }
 .footer .site-contacts__item--work {
   margin-bottom: 13px;
 }
 .footer .site-contacts__item--work:last-child {
-  color: #7d7d80;
+  color: #c1c1c1;
   margin-bottom: 0;
   font-style: italic;
 }
@@ -570,7 +570,7 @@ p:last-child {
 }
 .footer__copyright {
   width: 100%;
-  color: #525252;
+  color: #c1c1c1;
   text-transform: uppercase;
 }
 .footer__copyright >* {
@@ -580,7 +580,7 @@ p:last-child {
   margin-bottom: 0;
 }
 .footer__copyright a {
-  color: #525252;
+  color: #c1c1c1;
   text-decoration: none;
 }
 .footer__copyright a:hover {
@@ -602,8 +602,7 @@ p:last-child {
 }
 .header.fixed .header__box {
   position: fixed;
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
   background: rgba(255,255,255,0.8);
 }
 .header.fixed .header__burger > span:before,
@@ -1602,8 +1601,7 @@ textarea {
   padding: 10px 20px;
   font-size: 18px;
   color: #7d7d80;
-  -webkit-backdrop-filter: blur(20px);
-          backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
   background: rgba(255,255,255,0.7);
   min-height: 98px;
   display: -webkit-box;
@@ -1940,7 +1938,7 @@ textarea {
 }
 .gallery__item-text {
   font-size: 16px;
-  color: #7d7d80;
+  color: #343436;
   margin-right: -3px;
 }
 .gallery__item:nth-child(2) {
@@ -1998,8 +1996,7 @@ textarea {
   position: relative;
 }
 .intro-in.animated .intro-in__background:after {
-  -webkit-backdrop-filter: blur(0);
-          backdrop-filter: blur(0);
+  backdrop-filter: blur(0);
 }
 .intro-in.animated .intro-in__img {
   opacity: 1;
@@ -2045,12 +2042,9 @@ textarea {
   right: 0;
   bottom: 0;
   background: rgba(45,45,45,0.8);
-  -webkit-backdrop-filter: blur(25px);
-          backdrop-filter: blur(25px);
-  -webkit-transition: 1.2s -webkit-backdrop-filter;
-  transition: 1.2s -webkit-backdrop-filter;
+  backdrop-filter: blur(25px);
+  -webkit-transition: 1.2s backdrop-filter;
   transition: 1.2s backdrop-filter;
-  transition: 1.2s backdrop-filter, 1.2s -webkit-backdrop-filter;
 }
 .intro-in__background img {
   position: absolute;
@@ -2815,8 +2809,7 @@ textarea {
   width: 60px;
   height: 60px;
   background-color: rgba(255,255,255,0.6);
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
   cursor: pointer;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
@@ -3096,10 +3089,10 @@ textarea {
   align-items: center;
   text-decoration: none;
   text-transform: uppercase;
-  background: #49b1d0;
+  background: #137e9f;
   color: #fff;
   font-weight: 500;
-  border: 1px solid #49b1d0;
+  border: 1px solid #137e9f;
   -webkit-transition: 0.3s color, 0.3s border-color, 0.3s background;
   transition: 0.3s color, 0.3s border-color, 0.3s background;
   cursor: pointer;
@@ -3458,22 +3451,18 @@ body .swiper-button:hover svg path {
 }
 @-webkit-keyframes backDropOpacity {
   0% {
-    -webkit-backdrop-filter: blur(30px);
-            backdrop-filter: blur(30px);
+    backdrop-filter: blur(30px);
   }
   100% {
-    -webkit-backdrop-filter: blur(22px);
-            backdrop-filter: blur(22px);
+    backdrop-filter: blur(22px);
   }
 }
 @keyframes backDropOpacity {
   0% {
-    -webkit-backdrop-filter: blur(30px);
-            backdrop-filter: blur(30px);
+    backdrop-filter: blur(30px);
   }
   100% {
-    -webkit-backdrop-filter: blur(22px);
-            backdrop-filter: blur(22px);
+    backdrop-filter: blur(22px);
   }
 }
 @-webkit-keyframes fromRightItems {
@@ -3672,7 +3661,7 @@ body .swiper-button:hover svg path {
   }
   .footer__menu {
     padding-top: 40px;
-    border-top: 1px solid #7d7d80;
+    border-top: 1px solid #c1c1c1;
   }
   .footer__menu nav {
     margin-left: -30px;
