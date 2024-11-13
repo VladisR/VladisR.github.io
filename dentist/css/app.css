@@ -1816,7 +1816,7 @@ textarea {
 .feedback__title .thin {
   font-style: italic;
   font-weight: 200;
-  color: #93c0d5;
+  color: #7d7d80;
   margin-right: 26px;
 }
 .feedback__title .sp {
@@ -1847,7 +1847,7 @@ textarea {
   color: #f3fbff;
 }
 .feedback.colored .feedback__title .thin {
-  color: #6291a6;
+  color: #93c0d5;
 }
 .feedback.colored .site-button {
   background: #f3fbff;
