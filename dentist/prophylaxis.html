@@ -134,7 +134,11 @@
 			<main class="app__main">
 				<div class="intro-in">
 					<div class="intro-in__background">
-						<img class="intro-in__bg" src="files/hero-in-bg.jpeg" alt width="1400" height="600">
+						<picture class="intro-in__bg">
+							<source media="(min-width:768px)" srcset="files/hero-in-bg-xl.jpeg">
+							<source media="(min-width:300px)" srcset="files/hero-in-bg-s.jpeg">
+							<img src="files/hero-in-bg-s.jpeg" alt width="1400" height="600">
+						</picture>
 					</div>
 					<div class="intro-in__container container">
 						<div class="intro-in__row row-1">
