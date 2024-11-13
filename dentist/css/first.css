@@ -1201,7 +1201,7 @@ html {
   h2,
   .h2 {
     font-size: 60px;
-    line-height: 72px;
+    line-height: 72px !important;
     margin-bottom: 50px;
   }
   h3,
