@@ -3325,81 +3325,6 @@ body .swiper-button:hover svg path {
   color: #2d2d2d;
   font-weight: 400;
 }
-.values__item {
-  -webkit-transition: 1.6s opacity, 1.6s -webkit-transform;
-  transition: 1.6s opacity, 1.6s -webkit-transform;
-  transition: 1.6s opacity, 1.6s transform;
-  transition: 1.6s opacity, 1.6s transform, 1.6s -webkit-transform;
-  opacity: 0;
-  -webkit-transform: translateX(-150px);
-          transform: translateX(-150px);
-}
-.values__item:nth-child(2n) {
-  -webkit-transform: translateX(150px);
-          transform: translateX(150px);
-}
-.values__item:nth-child(2) {
-  -webkit-transition-delay: 300ms;
-          transition-delay: 300ms;
-}
-.values__item:nth-child(3) {
-  opacity: 1;
-  visibility: visible;
-  -webkit-transition: 0;
-  transition: 0;
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
-}
-.values__item:nth-child(3) .sep,
-.values__item:nth-child(3) .sep2 {
-  opacity: 0;
-  -webkit-transition: 1.6s opacity, 1.6s -webkit-transform;
-  transition: 1.6s opacity, 1.6s -webkit-transform;
-  transition: 1.6s opacity, 1.6s transform;
-  transition: 1.6s opacity, 1.6s transform, 1.6s -webkit-transform;
-  display: block;
-}
-.values__item:nth-child(3) .sep {
-  -webkit-transform: translateX(-150px);
-          transform: translateX(-150px);
-  -webkit-transition-delay: 600ms;
-          transition-delay: 600ms;
-}
-.values__item:nth-child(3) .sep2,
-.values__item:nth-child(3) .sep3 {
-  -webkit-transform: translateX(150px);
-          transform: translateX(150px);
-  -webkit-transition-delay: 900ms;
-          transition-delay: 900ms;
-}
-.values__item:nth-child(3) .sep3 {
-  opacity: 0;
-  display: inline-block;
-  -webkit-transition: 1.6s opacity, 1.6s -webkit-transform;
-  transition: 1.6s opacity, 1.6s -webkit-transform;
-  transition: 1.6s opacity, 1.6s transform;
-  transition: 1.6s opacity, 1.6s transform, 1.6s -webkit-transform;
-  -webkit-transition-delay: 900ms;
-          transition-delay: 900ms;
-}
-.values__item:nth-child(4) {
-  -webkit-transform: translateX(-150px);
-          transform: translateX(-150px);
-  -webkit-transition-delay: 1200ms;
-          transition-delay: 1200ms;
-}
-.values.animated .values__item {
-  opacity: 1;
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
-}
-.values.animated .values__item:nth-child(3) .sep,
-.values.animated .values__item:nth-child(3) .sep2,
-.values.animated .values__item:nth-child(3) .sep3 {
-  opacity: 1;
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
-}
 @-webkit-keyframes spinner {
   from {
     -webkit-transform: rotate(0deg);
@@ -3806,6 +3731,81 @@ body .swiper-button:hover svg path {
   .values {
     padding-left: 30px;
     padding-right: 30px;
+  }
+  .values__item {
+    -webkit-transition: 1.6s opacity, 1.6s -webkit-transform;
+    transition: 1.6s opacity, 1.6s -webkit-transform;
+    transition: 1.6s opacity, 1.6s transform;
+    transition: 1.6s opacity, 1.6s transform, 1.6s -webkit-transform;
+    opacity: 0;
+    -webkit-transform: translateX(-150px);
+            transform: translateX(-150px);
+  }
+  .values__item:nth-child(2n) {
+    -webkit-transform: translateX(150px);
+            transform: translateX(150px);
+  }
+  .values__item:nth-child(2) {
+    -webkit-transition-delay: 300ms;
+            transition-delay: 300ms;
+  }
+  .values__item:nth-child(3) {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: 0;
+    transition: 0;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  .values__item:nth-child(3) .sep,
+  .values__item:nth-child(3) .sep2 {
+    opacity: 0;
+    -webkit-transition: 1.6s opacity, 1.6s -webkit-transform;
+    transition: 1.6s opacity, 1.6s -webkit-transform;
+    transition: 1.6s opacity, 1.6s transform;
+    transition: 1.6s opacity, 1.6s transform, 1.6s -webkit-transform;
+    display: block;
+  }
+  .values__item:nth-child(3) .sep {
+    -webkit-transform: translateX(-150px);
+            transform: translateX(-150px);
+    -webkit-transition-delay: 600ms;
+            transition-delay: 600ms;
+  }
+  .values__item:nth-child(3) .sep2,
+  .values__item:nth-child(3) .sep3 {
+    -webkit-transform: translateX(150px);
+            transform: translateX(150px);
+    -webkit-transition-delay: 900ms;
+            transition-delay: 900ms;
+  }
+  .values__item:nth-child(3) .sep3 {
+    opacity: 0;
+    display: inline-block;
+    -webkit-transition: 1.6s opacity, 1.6s -webkit-transform;
+    transition: 1.6s opacity, 1.6s -webkit-transform;
+    transition: 1.6s opacity, 1.6s transform;
+    transition: 1.6s opacity, 1.6s transform, 1.6s -webkit-transform;
+    -webkit-transition-delay: 900ms;
+            transition-delay: 900ms;
+  }
+  .values__item:nth-child(4) {
+    -webkit-transform: translateX(-150px);
+            transform: translateX(-150px);
+    -webkit-transition-delay: 1200ms;
+            transition-delay: 1200ms;
+  }
+  .values.animated .values__item {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  .values.animated .values__item:nth-child(3) .sep,
+  .values.animated .values__item:nth-child(3) .sep2,
+  .values.animated .values__item:nth-child(3) .sep3 {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
 }
 @media (min-width: 992px) {
