@@ -47,7 +47,7 @@ $(window).on('resize', function () {
   //   headerMenuWidth();
   // }
 });
-$(document).on('scroll', function () {
+document.addEventListener('scroll', function () {
   // headerAddClass();
   imagesZoomingOnScroll();
   toothRotate();
@@ -133,7 +133,8 @@ setTimeout(function () {
       $(this).addClass('animated');
     }
   }).trigger('scroll');
-}); /////////////////////////
+}); // selectorsAddClass();
+/////////////////////////
 // var scrollBarWidth = $(window).outerWidth() - $(document).outerWidth();
 // $('.js-menu').on('click', function(){
 //     scrollBarWidth = $(window).outerWidth() - $(document).outerWidth();
@@ -366,10 +367,10 @@ $('.js-m-item').each(function (i) {
   var viewY = 500;
   var inMemory = false;
   /**
-     * Native scrollTo with callback
-     * @param offset - offset to scroll to
-     * @param callback - callback function
-     */
+   * Native scrollTo with callback
+   * @param offset - offset to scroll to
+   * @param callback - callback function
+   */
 
   function scrollTo(offset, callback) {
     var fixedOffset = offset.toFixed();
