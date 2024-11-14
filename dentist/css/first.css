@@ -955,6 +955,38 @@ html {
 .header.menu-opened .header__lang.is-active {
   color: #2d2d2d;
 }
+.animated-title {
+  display: block;
+  overflow: hidden;
+  -webkit-transform: translateY(90%);
+          transform: translateY(90%);
+  -webkit-transition: 1.5s -webkit-transform;
+  transition: 1.5s -webkit-transform;
+  transition: 1.5s transform;
+  transition: 1.5s transform, 1.5s -webkit-transform;
+  -webkit-overflow-scrolling: touch;
+}
+.animated-title > div,
+.animated-title > span {
+  -webkit-transform: translateY(-90%);
+          transform: translateY(-90%);
+  -webkit-transition: 1.5s -webkit-transform;
+  transition: 1.5s -webkit-transform;
+  transition: 1.5s transform;
+  transition: 1.5s transform, 1.5s -webkit-transform;
+}
+.animated-title > span {
+  display: block;
+}
+.animated .animated-title {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+.animated .animated-title > div,
+.animated .animated-title > span {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
 .intro-main {
   padding-top: 115px;
   margin-bottom: 68px;
