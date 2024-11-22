@@ -857,7 +857,7 @@ html {
 .cart-product__name {
   font-size: 12px;
   font-weight: 700;
-  margin-bottom: 6px;
+  margin-bottom: 3px;
 }
 .cart-product__name a {
   text-decoration: none;
@@ -866,8 +866,8 @@ html {
   color: #7715a7;
 }
 .cart-product__param {
-  font-size: 10px;
-  margin-bottom: 10px;
+  font-size: 12px;
+  margin-bottom: 7px;
 }
 .cart-product__row {
   margin-top: auto;
@@ -2173,7 +2173,7 @@ html {
   margin-right: 7px;
 }
 .product-item__price-old {
-  font-size: 10px;
+  font-size: 13px;
   color: #8f8f8f;
   text-decoration: line-through;
 }
