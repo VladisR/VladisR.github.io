@@ -359,6 +359,7 @@ $(function () {
     $('.popup-cart').removeClass('is-opened');
   }
 
+  $('.popup-cart').removeClass('hidden-cart');
   $('.js-accordion-title').on('click', function () {
     $(this).toggleClass('is-active').next('.js-accordion-body').stop().slideToggle(250);
   });

@@ -1824,6 +1824,9 @@ html {
   -webkit-transform: translate(0, 0);
           transform: translate(0, 0);
 }
+.popup-cart.hidden-cart {
+  display: none;
+}
 .popup-cart__in {
   padding: 0 15px 0;
   display: -webkit-box;

@@ -23,7 +23,8 @@
 
         <meta name="MobileOptimized" content="320">
         <meta name="HandheldFriendly" content="True">
-        <!-- <link rel="stylesheet" href="css/first.css"> -->
+        
+
         <style>
             @font-face {
   font-family: 'Montserrat';
@@ -1561,6 +1562,10 @@ a.product-item__more:last-child {
         </style>
 
         
+
+
+
+        
     </head>
 
     <body class="app home">
@@ -2701,7 +2706,7 @@ a.product-item__more:last-child {
 
             
 
-            <div class="popup-cart">
+            <div class="popup-cart hidden-cart">
     <div class="popup-cart__in">
         <div class="popup-cart__header">
             <div class="popup-cart__title"><span class="mb-t">Добавлен в корзину</span><span class="dt-t">Корзина</span></div>
@@ -2797,8 +2802,16 @@ a.product-item__more:last-child {
 			var site_defers = {
 				smoothscroll: 'js/vendors/smoothscroll.polyfill-0.4.4.js',
 			}
+
+            if(window.matchMedia("(max-width: 991px)").matches) {
+              var aosA = document.querySelectorAll('[data-aos]');
+
+              aosA.forEach(function(item){
+                item.removeAttribute('data-aos')
+              })
+            }
 		</script>
-        <link rel="stylesheet" href="css/app.css">
+        
         <link rel="stylesheet" href="css/plugins.min.css">
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <script src="js/vendors/jquery-3.6.0.min.js" defer=""></script>
