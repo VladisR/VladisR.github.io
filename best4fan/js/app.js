@@ -217,7 +217,8 @@ $(function () {
         0: {
           speed: 300,
           slidesPerView: 1,
-          spaceBetween: 16
+          spaceBetween: 16,
+          slidesPerGroup: 1
         },
         575: {
           slidesPerView: 2,
@@ -239,12 +240,14 @@ $(function () {
       }
     });
   });
-  $('[data-img]').each(function () {
-    var url = $(this).data('img');
-    $(this).css({
-      'background-image': 'url(' + url + ')'
+  setTimeout(function () {
+    $('[data-img]').each(function () {
+      var url = $(this).data('img');
+      $(this).css({
+        'background-image': 'url(' + url + ')'
+      });
     });
-  });
+  }, 2200);
   $('.intro').addClass('animation-start loadet');
 
   function intro() {
