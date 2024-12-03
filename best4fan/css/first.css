@@ -1,34 +1,34 @@
 @font-face {
   font-family: 'Wix Madefor Display';
-  src: url("fonts/WixMadeforDisplay-Bold.woff2") format('woff2'), url("fonts/WixMadeforDisplay-Bold.woff") format('woff');
+  src: url("../fonts/WixMadeforDisplay-Bold.woff2") format('woff2'), url("../fonts/WixMadeforDisplay-Bold.woff") format('woff');
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Wix Madefor Display';
-  src: url("fonts/WixMadeforDisplay-Regular.woff2") format('woff2'), url("fonts/WixMadeforDisplay-Regular.woff") format('woff');
+  src: url("../fonts/WixMadeforDisplay-Regular.woff2") format('woff2'), url("../fonts/WixMadeforDisplay-Regular.woff") format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Inter';
-  src: url("fonts/Inter-Regular.woff2") format('woff2'), url("fonts/Inter-Regular.woff") format('woff');
+  src: url("../fonts/Inter-Regular.woff2") format('woff2'), url("../fonts/Inter-Regular.woff") format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Rubik';
-  src: url("fonts/Rubik-Bold.woff2") format('woff2'), url("fonts/Rubik-Bold.woff") format('woff');
+  src: url("../fonts/Rubik-Bold.woff2") format('woff2'), url("../fonts/Rubik-Bold.woff") format('woff');
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Inter';
-  src: url("fonts/Inter-Italic.woff2") format('woff2'), url("fonts/Inter-Italic.woff") format('woff');
+  src: url("../fonts/Inter-Italic.woff2") format('woff2'), url("../fonts/Inter-Italic.woff") format('woff');
   font-weight: normal;
   font-style: italic;
   font-display: swap;
@@ -652,7 +652,7 @@ html {
   border-color: #2a2e84;
 }
 .site-button.type-2 {
-  background: #e8195a;
+  background: #af1444;
   color: #fff;
 }
 .site-button.type-2:hover {
