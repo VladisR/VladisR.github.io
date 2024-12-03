@@ -239,6 +239,12 @@ $(function () {
       }
     });
   });
+  $('[data-img]').each(function () {
+    var url = $(this).data('img');
+    $(this).css({
+      'background-image': 'url(' + url + ')'
+    });
+  });
   $('.intro').addClass('animation-start loadet');
 
   function intro() {
