@@ -5,10 +5,8 @@
 * @link https://www.npmjs.com/package/postcss-viewport-height-correction
 * ========================================================================== */
 
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
 function setViewportProperty() {
-  var vh = window.innerHeight * 0.01;
+  let vh = window.innerHeight * 0.01;
   document.documentElement.style.setProperty('--vh', vh + 'px');
 }
 
@@ -30,9 +28,7 @@ if (window.NodeList && !NodeList.prototype.forEach) {
 
 
 $(function () {
-  $.exists = function (selector) {
-    return $(selector).length > 0;
-  };
+  $.exists = selector => $(selector).length > 0;
 
   var isApple = /iPod|iPad|iPhone/i.test(navigator.userAgent) || navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1,
       isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Mobile|Opera Mini/i.test(navigator.userAgent) || navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1;
@@ -132,10 +128,10 @@ $(function () {
   }
 
   advantageSlider();
-  var $app = $('body');
-  var $appHeader = $('.app-header__in, .nav-panel.cloned, .page-scroller');
-  var remodalOverlay = $('.remodal-overlay');
-  var bodyGutter = 0;
+  let $app = $('body');
+  let $appHeader = $('.app-header__in, .nav-panel.cloned, .page-scroller');
+  let remodalOverlay = $('.remodal-overlay');
+  let bodyGutter = 0;
 
   function setUpBodyGutter() {
     bodyGutter = window.innerWidth - $app.outerWidth();
@@ -280,7 +276,7 @@ $(function () {
   });
   var googleMaps = $('.c-map');
 
-  var waitGoogleMaps = function waitGoogleMaps() {
+  var waitGoogleMaps = function () {
     if (typeof google !== "undefined") {
       googleMaps.ready(initMap);
     } else {
@@ -298,11 +294,11 @@ $(function () {
 
   function scrollMapController() {
     if (isElementInViewport(googleMaps[0])) {
-      var mapScript = document.createElement('script');
+      const mapScript = document.createElement('script');
       mapScript.setAttribute('src', defers.gmaps);
       mapScript.setAttribute('async', true);
 
-      mapScript.onload = function () {
+      mapScript.onload = () => {
         waitGoogleMaps();
       };
 
@@ -599,7 +595,7 @@ $(function () {
       window.removeEventListener('scroll', enableScrollBehaviorPolyfill);
 
       if (!'scrollBehavior' in document.documentElement.style) {
-        var script = document.createElement('script');
+        let script = document.createElement('script');
         script.setAttribute('async', true);
         script.setAttribute('src', site_defers.smoothscroll);
         document.body.appendChild(script);
@@ -607,14 +603,14 @@ $(function () {
     }
 
     window.addEventListener('scroll', enableScrollBehaviorPolyfill);
-    var btn = document.getElementById('back_to');
-    var classes = {
+    let btn = document.getElementById('back_to');
+    let classes = {
       visible: 'page-scroller--visible',
       inMemory: 'page-scroller--in-memory'
     };
-    var tmpY = 0;
-    var viewY = 100;
-    var inMemory = false;
+    let tmpY = 0;
+    let viewY = 100;
+    let inMemory = false;
     /**
      * Native scrollTo with callback
      * @param offset - offset to scroll to
@@ -622,9 +618,9 @@ $(function () {
      */
 
     function scrollTo(offset, callback) {
-      var fixedOffset = offset.toFixed();
+      const fixedOffset = offset.toFixed();
 
-      var onScroll = function onScroll() {
+      const onScroll = function () {
         if (window.pageYOffset.toFixed() === fixedOffset) {
           window.removeEventListener('scroll', onScroll);
           callback();
@@ -640,7 +636,7 @@ $(function () {
     }
 
     function resetScroll() {
-      setTimeout(function () {
+      setTimeout(() => {
         if (window.pageYOffset > viewY) {
           btn.classList.add(classes.visible);
         } else if (!btn.classList.contains(classes.inMemory)) {
@@ -666,19 +662,19 @@ $(function () {
 
     addResetScroll();
 
-    var onClick = function onClick() {
+    let onClick = function () {
       removeResetScroll();
 
       if (window.pageYOffset > 0 && tmpY === 0) {
         inMemory = true;
         tmpY = window.pageYOffset;
         btn.classList.add(classes.inMemory);
-        scrollTo(0, function () {
+        scrollTo(0, () => {
           addResetScroll();
         });
       } else {
         btn.classList.remove(classes.inMemory);
-        scrollTo(tmpY, function () {
+        scrollTo(tmpY, () => {
           tmpY = 0;
           addResetScroll();
         });
@@ -797,13 +793,14 @@ $(function () {
                   el: ".swiper-pagination",
                   clickable: true
                 },
-                breakpoints: _defineProperty({
+                breakpoints: {
                   1200: {
                     slidesPerView: 4
+                  },
+                  1200: {
+                    slidesPerView: 5
                   }
-                }, "1200", {
-                  slidesPerView: 5
-                })
+                }
               });
               prodDstrArray.push(prodSlider);
             }
