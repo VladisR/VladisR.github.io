@@ -437,10 +437,10 @@ $(function () {
     var viewY = 100;
     var inMemory = false;
     /**
-       * Native scrollTo with callback
-       * @param offset - offset to scroll to
-       * @param callback - callback function
-       */
+     * Native scrollTo with callback
+     * @param offset - offset to scroll to
+     * @param callback - callback function
+     */
 
     function scrollTo(offset, callback) {
       var fixedOffset = offset.toFixed();
@@ -697,46 +697,10 @@ $(function () {
 
   ;
   reviews2('.js-reviews2');
-  $('.scroll-block__header, .scroll-block__container').wrapAll('<div class="scroll-block__content-wrapper"></div>');
-  gsap.registerPlugin(ScrollTrigger);
-  var horizontalSections = gsap.utils.toArray(".scroll-block__content-wrapper");
-  horizontalSections.forEach(function (container) {
-    var sections = container.querySelectorAll(".slide-item");
-    var prc;
-    var Xprc;
-
-    if ($(window).width() >= 992 && $(window).width() <= 1199) {
-      prc = 'center 34%';
-      Xprc = -63;
-    } else if ($(window).width() >= 1200 && $(window).width() <= 1366) {
-      prc = 'center 34%';
-      Xprc = -63;
-    } else if ($(window).width() >= 1440 && $(window).width() <= 1600) {
-      prc = 'center 46%';
-      Xprc = -60;
-    } else if ($(window).width() >= 1900) {
-      prc = 'center 49%';
-      Xprc = -58;
-    }
-
-    console.log(prc);
-    gsap.to(sections, {
-      xPercent: Xprc * (sections.length - 1),
-      ease: "none",
-      duration: 2,
-      scrollTrigger: {
-        trigger: container,
-        start: prc,
-        overwrite: true,
-        end: function end() {
-          return '+=1300';
-        },
-        markers: false,
-        pin: true,
-        pinSpacing: true,
-        scrub: true
-      }
-    });
+  var carousel = new Swiper('.scroll-block .swiper', {
+    spaceBetween: 0,
+    slidesPerView: "auto",
+    freeMode: true
   });
   var scrollBarWidth = $(window).outerWidth() - $(document).outerWidth();
   $('.js-menu').on('click', function () {
