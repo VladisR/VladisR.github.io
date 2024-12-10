@@ -5985,6 +5985,10 @@ body .swiper-button:hover .svg-icon {
     padding-top: 100px;
     padding-bottom: 20px;
   }
+  .scroll-block__content-wrapper {
+    padding-left: 0;
+    padding-right: 0;
+  }
   .scroll-block.decor-bg {
     padding-top: 335px;
   }
