@@ -710,7 +710,7 @@ $(function () {
       function resizeVal() {
         if ($(window).width() >= 992 && $(window).width() <= 1199) {
           prc = 'center 34%';
-          Xprc = -63;
+          Xprc = -67;
         } else if ($(window).width() >= 1200 && $(window).width() <= 1366) {
           prc = 'center 34%';
           Xprc = -63;
@@ -731,7 +731,7 @@ $(function () {
         duration: 2,
         scrollTrigger: {
           trigger: container,
-          start: prc,
+          start: 'bottom bottom',
           overwrite: true,
           end: function end() {
             return '+=1300';

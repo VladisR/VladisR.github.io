@@ -3164,7 +3164,6 @@ html.remodal-is-locked {
 .scroll-block {
   position: relative;
   padding-top: 80px;
-  padding-bottom: 80px;
   background: #cec7b5;
 }
 .scroll-block.decor-bg {
@@ -3175,6 +3174,7 @@ html.remodal-is-locked {
 }
 .scroll-block__content-wrapper {
   max-width: none;
+  padding-bottom: 80px;
 }
 .scroll-block__header {
   position: relative;
@@ -5983,14 +5983,15 @@ body .swiper-button:hover .svg-icon {
   }
   .scroll-block {
     padding-top: 100px;
-    padding-bottom: 20px;
   }
   .scroll-block__content-wrapper {
     padding-left: 0;
     padding-right: 0;
+    padding-bottom: 20px;
   }
   .scroll-block.decor-bg {
     padding-top: 335px;
+    padding-bottom: 0;
   }
   .scroll-block__header {
     margin-bottom: -40px;
