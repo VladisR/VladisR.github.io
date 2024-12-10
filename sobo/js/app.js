@@ -437,10 +437,10 @@ $(function () {
     var viewY = 100;
     var inMemory = false;
     /**
-     * Native scrollTo with callback
-     * @param offset - offset to scroll to
-     * @param callback - callback function
-     */
+       * Native scrollTo with callback
+       * @param offset - offset to scroll to
+       * @param callback - callback function
+       */
 
     function scrollTo(offset, callback) {
       var fixedOffset = offset.toFixed();

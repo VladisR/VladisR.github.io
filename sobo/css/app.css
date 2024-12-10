@@ -249,8 +249,7 @@ img {
 .sr-only {
   border: 0;
   clip: rect(1px, 1px, 1px, 1px);
-  -webkit-clip-path: inset(50%);
-          clip-path: inset(50%);
+  clip-path: inset(50%);
   height: 1px;
   margin: -1px;
   overflow: hidden;
@@ -268,8 +267,7 @@ img {
 .sr-only:focus {
   background-color: #eee;
   clip: auto !important;
-  -webkit-clip-path: none;
-          clip-path: none;
+  clip-path: none;
   color: #444;
   display: block;
   font-size: 1em;
@@ -685,8 +683,7 @@ strong {
 }
 .header.fixed .header__content {
   border-radius: 10px;
-  -webkit-backdrop-filter: blur(4px);
-          backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
   background: rgba(255,253,250,0.9);
 }
 .header.hide .header__in {
@@ -1915,8 +1912,7 @@ textarea,
           justify-content: space-evenly;
   border: 0.5px solid #cecece;
   border-radius: 12px;
-  -webkit-backdrop-filter: blur(15px);
-          backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
   background: rgba(255,255,255,0.4);
   text-transform: uppercase;
   font-weight: 500;
