@@ -217,8 +217,7 @@
   }
   .header.is-fixed .header__content {
     background: none;
-    -webkit-backdrop-filter: blur(0);
-            backdrop-filter: blur(0);
+    backdrop-filter: blur(0);
     -webkit-box-shadow: none;
             box-shadow: none;
   }
