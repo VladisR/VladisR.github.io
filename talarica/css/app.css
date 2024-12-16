@@ -1633,6 +1633,7 @@ textarea {
   right: 0;
   bottom: 0;
   overflow: hidden;
+  pointer-events: none;
   -webkit-overflow-scrolling: touch;
 }
 .intro__in {
@@ -1674,30 +1675,9 @@ textarea {
 .intro__image img {
   vertical-align: bottom;
 }
-.intro.decor-visible .intro__decor-figure.img-1 {
-  -webkit-transition-delay: 0.3s;
-          transition-delay: 0.3s;
-  opacity: 1;
-}
-.intro.decor-visible .intro__decor-figure.img-2 {
-  -webkit-transition-delay: 0.88s;
-          transition-delay: 0.88s;
-  opacity: 1;
-}
-.intro.decor-visible .intro__decor-figure.img-3 {
-  opacity: 0.1;
-  -webkit-transition-delay: 0.7s;
-          transition-delay: 0.7s;
-}
-.intro.decor-visible .intro__decor-figure.img-4 {
-  opacity: 1;
-  -webkit-transition-delay: 0.5s;
-          transition-delay: 0.5s;
-}
 .intro__decor-figure {
   position: absolute;
   left: 50%;
-  opacity: 0;
   -webkit-transition: 0.5s opacity;
   transition: 0.5s opacity;
 }
@@ -1743,6 +1723,7 @@ textarea {
   margin-left: -67px;
   width: 60%;
   max-width: 400px;
+  opacity: 0.9;
 }
 .intro__decor-figure.img-5 svg {
   -webkit-animation: rotatedelement 10s linear infinite;
@@ -2980,6 +2961,34 @@ textarea {
   }
   .intro__in {
     padding-top: 240px;
+  }
+  .intro.decor-visible .intro__decor-figure.img-1 {
+    -webkit-transition-delay: 0.3s;
+            transition-delay: 0.3s;
+    opacity: 1;
+  }
+  .intro.decor-visible .intro__decor-figure.img-2 {
+    -webkit-transition-delay: 0.88s;
+            transition-delay: 0.88s;
+    opacity: 1;
+  }
+  .intro.decor-visible .intro__decor-figure.img-3 {
+    opacity: 0.1;
+    -webkit-transition-delay: 0.7s;
+            transition-delay: 0.7s;
+  }
+  .intro.decor-visible .intro__decor-figure.img-4 {
+    opacity: 1;
+    -webkit-transition-delay: 0.5s;
+            transition-delay: 0.5s;
+  }
+  .intro.decor-visible .intro__decor-figure.img-5 {
+    opacity: 1;
+    -webkit-transition-delay: 0.4s;
+            transition-delay: 0.4s;
+  }
+  .intro__decor-figure {
+    opacity: 0;
   }
   .intro__in {
     padding-bottom: 149px;
