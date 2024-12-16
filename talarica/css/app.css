@@ -190,6 +190,13 @@ template {
 }
 @font-face {
   font-family: 'Graphik';
+  src: url("../fonts/GraphikLCG-Semibold.woff2") format('woff2'), url("../fonts/GraphikLCG-Semibold.woff") format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Graphik';
   src: url("../fonts/GraphikLCG-SemiboldItalic.woff2") format('woff2'), url("../fonts/GraphikLCG-SemiboldItalic.woff") format('woff');
   font-weight: 600;
   font-style: italic;
@@ -207,13 +214,6 @@ template {
   src: url("../fonts/GraphikLCG-RegularItalic.woff2") format('woff2'), url("../fonts/GraphikLCG-RegularItalic.woff") format('woff');
   font-weight: normal;
   font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Graphik';
-  src: url("../fonts/GraphikLCG-Semibold.woff2") format('woff2'), url("../fonts/GraphikLCG-Semibold.woff") format('woff');
-  font-weight: 600;
-  font-style: normal;
   font-display: swap;
 }
 @font-face {
