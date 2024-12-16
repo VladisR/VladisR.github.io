@@ -1625,6 +1625,7 @@ textarea {
   background: var(--blue);
   margin-bottom: 70px;
   padding-bottom: 1px;
+  position: relative;
 }
 .intro__decors {
   position: absolute;
@@ -1638,7 +1639,7 @@ textarea {
 }
 .intro__in {
   padding-top: 120px;
-  padding-bottom: 40px;
+  padding-bottom: 60px;
   color: #fff;
   position: relative;
   z-index: 1;
@@ -1671,7 +1672,7 @@ textarea {
 .intro__image {
   margin: -10px 0 -8px;
   padding: 0 16px;
-  display: block;
+  display: none;
 }
 .intro__image img {
   vertical-align: bottom;
@@ -2417,6 +2418,9 @@ textarea {
   }
   .intro__in {
     padding-top: 120px;
+  }
+  .intro__image {
+    display: block;
   }
   .intro__decor-figure.img-5 {
     width: 38%;
