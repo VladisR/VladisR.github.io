@@ -1671,6 +1671,7 @@ textarea {
 .intro__image {
   margin: -10px 0 -8px;
   padding: 0 16px;
+  display: block;
 }
 .intro__image img {
   vertical-align: bottom;
