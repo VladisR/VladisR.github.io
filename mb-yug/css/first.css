@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'Oranienbaum';
+  src: url("../fonts/Oranienbaum-Regular.woff2") format('woff2'), url("../fonts/Oranienbaum-Regular.woff") format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 /* normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 html {
   line-height: 1.15; /* 1 */
@@ -164,13 +171,6 @@ template {
   fill: inherit;
   width: inherit;
   height: inherit;
-}
-@font-face {
-  font-family: 'Oranienbaum';
-  src: url("../fonts/Oranienbaum-Regular.woff2") format('woff2'), url("../fonts/Oranienbaum-Regular.woff") format('woff');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
 }
 * {
   min-width: 0;
