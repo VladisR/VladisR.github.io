@@ -1670,7 +1670,7 @@ body .swiper-horizontal .swiper-pagination .swiper-pagination-bullet.swiper-pagi
   .intro__item .site-button {
     margin-top: 26px;
   }
-  .intro .swiper-button-next {
+  .intro.swiper-initialized .swiper-button-next {
     display: flex;
     right: 41px;
   }
@@ -1787,7 +1787,7 @@ body .swiper-horizontal .swiper-pagination .swiper-pagination-bullet.swiper-pagi
   }
   .intro__item-title {
     font-size: 60px;
-    max-width: 687px;
+    max-width: 780px;
   }
   .most-popular .swiper-horizontal>.swiper-scrollbar {
     left: 0;
