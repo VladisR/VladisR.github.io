@@ -124,6 +124,7 @@ $(function () {
       addGutter();
     }
   });
+  $('.b-modal').addClass('is-loadet');
   $('.b-modal').on('click tap', function (event) {
     if ($(event.target).closest('.b-modal__container').length) return;
     $(this).removeClass('opened');
