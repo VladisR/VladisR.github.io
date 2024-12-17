@@ -3828,6 +3828,7 @@ body .swiper-horizontal .swiper-pagination .swiper-pagination-bullet.swiper-pagi
 .site-name {
   display: inline-flex;
   align-items: center;
+  text-decoration: none;
 }
 .site-name__logo {
   width: 30px;
