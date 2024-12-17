@@ -2102,6 +2102,8 @@ body .swiper-horizontal .swiper-pagination .swiper-pagination-bullet.swiper-pagi
 .intro {
   background: #000;
   position: relative;
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch;
 }
 .intro.swiper-initialized .intro__item + .intro__item {
   display: block;
