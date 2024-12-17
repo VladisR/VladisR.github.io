@@ -5,20 +5,8 @@
 * @link https://www.npmjs.com/package/postcss-viewport-height-correction
 * ========================================================================== */
 
-function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
-
-function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-
-function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
-
-function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
-
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-
 function setViewportProperty() {
-  var vh = window.innerHeight * 0.01;
+  let vh = window.innerHeight * 0.01;
   document.documentElement.style.setProperty('--vh', vh + 'px');
 }
 
@@ -40,9 +28,7 @@ if (window.NodeList && !NodeList.prototype.forEach) {
 
 
 $(function () {
-  $.exists = function (selector) {
-    return $(selector).length > 0;
-  };
+  $.exists = selector => $(selector).length > 0;
 
   var isApple = /iPod|iPad|iPhone/i.test(navigator.userAgent) || navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1,
       isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Mobile|Opera Mini/i.test(navigator.userAgent) || navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1;
@@ -259,14 +245,14 @@ $(function () {
     window.addEventListener('resize', ttlAdd);
     calcCols.forEach(function (col) {
       col.addEventListener('mouseleave', function () {
-        var index = _toConsumableArray(col.parentNode.children).indexOf(col) - 1;
+        var index = [...col.parentNode.children].indexOf(col) - 1;
         calcRows.forEach(function (items) {
           var item = items.querySelectorAll('.calculator-table__item-col');
           item[index].classList.remove('hover');
         });
       });
       col.addEventListener('mouseover', function () {
-        var index = _toConsumableArray(col.parentNode.children).indexOf(col) - 1;
+        var index = [...col.parentNode.children].indexOf(col) - 1;
         calcCols.forEach(function (active) {
           active.classList.remove('hover');
         });
@@ -276,7 +262,7 @@ $(function () {
         });
       });
       col.addEventListener('click', function () {
-        var index = _toConsumableArray(col.parentNode.children).indexOf(col) - 1;
+        var index = [...col.parentNode.children].indexOf(col) - 1;
         calcCols.forEach(function (active) {
           active.classList.remove('checked');
         });
@@ -332,7 +318,7 @@ $(function () {
   }
 
   var servicesItems = document.querySelectorAll('.js-service-item');
-  servicesItems.forEach(function (service) {
+  servicesItems.forEach(service => {
     service.addEventListener('click', function () {
       this.closest('.choice-services__item').classList.toggle('selected');
     });
@@ -359,7 +345,7 @@ $(function () {
     var poster = '//img.youtube.com/vi/' + videoId + '/sddefault.jpg';
 
     if (!$this.find('img').length) {
-      $this.append('<img width="541" height="432" src="' + poster + '" alt="">');
+      $this.append('<img loading="lazy" width="541" height="432" src="' + poster + '" alt="">');
     } else if ($this.find('img').attr('src') == '') {
       $this.find('img').attr('src', poster);
     }
@@ -371,7 +357,31 @@ $(function () {
         videoId = youtube_parser(videoId);
 
     if (!$('.video-popup').length) {
-      var vidoePopup = " <div class=\"video-popup is-visible\">\n\n                                  <div class=\"video-popup__close\">\n\n                                    <span class=\"svg-icon svg-icon--close-croos\" aria-hidden=\"true\">\n\n                                      <svg class=\"svg-icon__link\">\n\n                                        <use xlink:href=\"#close-croos\"></use>\n\n                                      </svg>\n\n                                    </span>\n\n                                  </div>\n\n                                  <div class=\"video-popup__container\">\n\n                                      <div class=\"video-popup__content\">\n\n                                      </div>\n\n                                  </div>\n\n                              </div>";
+      var vidoePopup = ` <div class="video-popup is-visible">
+
+                                  <div class="video-popup__close">
+
+                                    <span class="svg-icon svg-icon--close-croos" aria-hidden="true">
+
+                                      <svg class="svg-icon__link">
+
+                                        <use xlink:href="#close-croos"></use>
+
+                                      </svg>
+
+                                    </span>
+
+                                  </div>
+
+                                  <div class="video-popup__container">
+
+                                      <div class="video-popup__content">
+
+                                      </div>
+
+                                  </div>
+
+                              </div>`;
       $('body').append(vidoePopup);
     }
 
@@ -517,7 +527,7 @@ $(function () {
       window.removeEventListener('scroll', enableScrollBehaviorPolyfill);
 
       if (!'scrollBehavior' in document.documentElement.style) {
-        var script = document.createElement('script');
+        let script = document.createElement('script');
         script.setAttribute('async', true);
         script.setAttribute('src', site_defers.smoothscroll);
         document.body.appendChild(script);
@@ -525,14 +535,14 @@ $(function () {
     }
 
     window.addEventListener('scroll', enableScrollBehaviorPolyfill);
-    var btn = document.getElementById('back_to');
-    var classes = {
+    let btn = document.getElementById('back_to');
+    let classes = {
       visible: 'page-scroller--visible',
       inMemory: 'page-scroller--in-memory'
     };
-    var tmpY = 0;
-    var viewY = 100;
-    var inMemory = false;
+    let tmpY = 0;
+    let viewY = 100;
+    let inMemory = false;
     /**
        * Native scrollTo with callback
        * @param offset - offset to scroll to
@@ -540,9 +550,9 @@ $(function () {
        */
 
     function scrollTo(offset, callback) {
-      var fixedOffset = offset.toFixed();
+      const fixedOffset = offset.toFixed();
 
-      var onScroll = function onScroll() {
+      const onScroll = function () {
         if (window.pageYOffset.toFixed() === fixedOffset) {
           window.removeEventListener('scroll', onScroll);
           callback();
@@ -558,7 +568,7 @@ $(function () {
     }
 
     function resetScroll() {
-      setTimeout(function () {
+      setTimeout(() => {
         if (window.pageYOffset > viewY) {
           btn.classList.add(classes.visible);
         } else if (!btn.classList.contains(classes.inMemory)) {
@@ -584,19 +594,19 @@ $(function () {
 
     addResetScroll();
 
-    var onClick = function onClick() {
+    let onClick = function () {
       removeResetScroll();
 
       if (window.pageYOffset > 0 && tmpY === 0) {
         inMemory = true;
         tmpY = window.pageYOffset;
         btn.classList.add(classes.inMemory);
-        scrollTo(0, function () {
+        scrollTo(0, () => {
           addResetScroll();
         });
       } else {
         btn.classList.remove(classes.inMemory);
-        scrollTo(tmpY, function () {
+        scrollTo(tmpY, () => {
           tmpY = 0;
           addResetScroll();
         });
@@ -608,7 +618,7 @@ $(function () {
 
   var yaMaps = $('.c-map');
 
-  var waitYmaps = function waitYmaps() {
+  var waitYmaps = function () {
     if (typeof ymaps !== "undefined") {
       ymaps.ready(initMap);
     } else {
@@ -623,11 +633,11 @@ $(function () {
 
   function scrollMapController() {
     if (isElementInViewport(yaMaps[0])) {
-      var mapScript = document.createElement('script');
+      const mapScript = document.createElement('script');
       mapScript.setAttribute('src', site_defers.ymaps);
       mapScript.setAttribute('async', true);
 
-      mapScript.onload = function () {
+      mapScript.onload = () => {
         waitYmaps();
       };
 
@@ -641,11 +651,9 @@ $(function () {
     scrollMapController();
   }
 
-  var initMap = function initMap() {
+  var initMap = function () {
     yaMaps.each(function (i, el) {
-      var coords = $(el).data('coords').split(',').map(function (point) {
-        return Number.parseFloat(point.trim());
-      });
+      var coords = $(el).data('coords').split(',').map(point => Number.parseFloat(point.trim()));
       var zoom = $(el).data('zoom');
 
       if (!zoom) {
@@ -668,25 +676,25 @@ $(function () {
         controls: []
       }),
           ZoomLayout = ymaps.templateLayoutFactory.createClass("<div class='map-zoom-buttons'>" + "<div id='zoom-in' class='btn pluse'></div>" + "<div id='zoom-out' class='btn minus'></div>" + "</div>", {
-        build: function build() {
+        build: function () {
           ZoomLayout.superclass.build.call(this);
           this.zoomInCallback = ymaps.util.bind(this.zoomIn, this);
           this.zoomOutCallback = ymaps.util.bind(this.zoomOut, this);
           $('#zoom-in').bind('click', this.zoomInCallback);
           $('#zoom-out').bind('click', this.zoomOutCallback);
         },
-        clear: function clear() {
+        clear: function () {
           $('#zoom-in').unbind('click', this.zoomInCallback);
           $('#zoom-out').unbind('click', this.zoomOutCallback);
           ZoomLayout.superclass.clear.call(this);
         },
-        zoomIn: function zoomIn() {
+        zoomIn: function () {
           var map = this.getData().control.getMap();
           map.setZoom(map.getZoom() + 1, {
             checkZoomRange: true
           });
         },
-        zoomOut: function zoomOut() {
+        zoomOut: function () {
           var map = this.getData().control.getMap();
           map.setZoom(map.getZoom() - 1, {
             checkZoomRange: true
