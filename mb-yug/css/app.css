@@ -2656,6 +2656,12 @@ body .swiper-horizontal .swiper-pagination .swiper-pagination-bullet.swiper-pagi
   padding-top: 28px;
   padding-bottom: 26px;
 }
+.most-popular .swiper-slide + .swiper-slide {
+  display: none;
+}
+.most-popular .swiper-initialized .swiper-slide + .swiper-slide {
+  display: flex;
+}
 .most-popular .swiper-horizontal>.swiper-scrollbar {
   height: 7px;
   border-radius: 0;
