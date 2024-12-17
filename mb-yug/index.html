@@ -1285,7 +1285,7 @@
 
 		<script>
 
-            var theme_uri = location.hostname === 'localhost' ? 'http://localhost:8967' : 'https://dev.solvers.group/mb-yug';
+            var theme_uri = location.hostname === 'localhost' ? 'http://localhost:8967' : window.location.href;
 
 			var site_defers = {
 				smoothscroll: 'js/vendors/smoothscroll.polyfill-0.4.4.js',
