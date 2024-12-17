@@ -165,6 +165,34 @@ template {
   width: inherit;
   height: inherit;
 }
+@font-face {
+  font-family: 'SF Pro Text';
+  src: url("../fonts/SFProText-Regular.woff2") format('woff2'), url("../fonts/SFProText-Regular.woff") format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Oranienbaum';
+  src: url("../fonts/Oranienbaum-Regular.woff2") format('woff2'), url("../fonts/Oranienbaum-Regular.woff") format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'SF Pro Text';
+  src: url("../fonts/SFProText-Semibold.woff2") format('woff2'), url("../fonts/SFProText-Semibold.woff") format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'SF Pro Text';
+  src: url("../fonts/SFProText-Medium.woff2") format('woff2'), url("../fonts/SFProText-Medium.woff") format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
 * {
   min-width: 0;
   min-height: 0;
@@ -670,7 +698,7 @@ html {
   animation: fadeIn 0.25s forwards;
 }
 .main-menu {
-  background: url("../img/menu-pattern.png") 0 0 repeat-x;
+  background: #393a41 url("../img/menu-pattern.png") 0 0 repeat-x;
   background-size: auto 100%;
 }
 .main-menu > ul {
