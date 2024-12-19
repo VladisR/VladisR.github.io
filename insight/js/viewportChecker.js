@@ -15,7 +15,6 @@
     The above copyright notice and this permission notice shall be included in all
     copies or substantial portions of the Software.
 */
-
 (function ($) {
   $.fn.viewportChecker = function (useroptions) {
     // Define options and extend with user
@@ -31,37 +30,34 @@
       scrollHorizontal: false,
       scrollBox: window
     };
-    $.extend(options, useroptions);
+    $.extend(options, useroptions); // Cache the given element and height of the browser
 
-    // Cache the given element and height of the browser
     var $elem = this,
-      boxSize = {
-        height: $(options.scrollBox).height(),
-        width: $(options.scrollBox).width()
-      };
-
+        boxSize = {
+      height: $(options.scrollBox).height(),
+      width: $(options.scrollBox).width()
+    };
     /*
      * Main method that checks the elements and adds or removes the class(es)
      */
-    this.checkElements = function () {
-      var viewportStart, viewportEnd;
 
-      // Set some vars to check with
+    this.checkElements = function () {
+      var viewportStart, viewportEnd; // Set some vars to check with
+
       if (!options.scrollHorizontal) {
         viewportStart = Math.max($('html').scrollTop(), $('body').scrollTop(), $(window).scrollTop());
         viewportEnd = viewportStart + boxSize.height;
       } else {
         viewportStart = Math.max($('html').scrollLeft(), $('body').scrollLeft(), $(window).scrollLeft());
         viewportEnd = viewportStart + boxSize.width;
-      }
+      } // Loop through all given dom elements
 
-      // Loop through all given dom elements
+
       $elem.each(function () {
         var $obj = $(this),
-          objOptions = {},
-          attrOptions = {};
+            objOptions = {},
+            attrOptions = {}; //  Get any individual attribution data
 
-        //  Get any individual attribution data
         if ($obj.data('vp-add-class')) attrOptions.classToAdd = $obj.data('vp-add-class');
         if ($obj.data('vp-remove-class')) attrOptions.classToRemove = $obj.data('vp-remove-class');
         if ($obj.data('vp-add-class-full-view')) attrOptions.classToAddForFullView = $obj.data('vp-add-class-full-view');
@@ -69,62 +65,51 @@
         if ($obj.data('vp-offset')) attrOptions.offset = $obj.data('vp-offset');
         if ($obj.data('vp-repeat')) attrOptions.repeat = $obj.data('vp-repeat');
         if ($obj.data('vp-scrollHorizontal')) attrOptions.scrollHorizontal = $obj.data('vp-scrollHorizontal');
-        if ($obj.data('vp-invertBottomOffset')) attrOptions.scrollHorizontal = $obj.data('vp-invertBottomOffset');
+        if ($obj.data('vp-invertBottomOffset')) attrOptions.scrollHorizontal = $obj.data('vp-invertBottomOffset'); // Extend objOptions with data attributes and default options
 
-        // Extend objOptions with data attributes and default options
         $.extend(objOptions, options);
-        $.extend(objOptions, attrOptions);
+        $.extend(objOptions, attrOptions); // If class already exists; quit
 
-        // If class already exists; quit
         if ($obj.data('vp-animated') && !objOptions.repeat) {
           return;
-        }
+        } // Check if the offset is percentage based
 
-        // Check if the offset is percentage based
-        if (String(objOptions.offset).indexOf("%") > 0) objOptions.offset = parseInt(objOptions.offset) / 100 * boxSize.height;
 
-        // Get the raw start and end positions
+        if (String(objOptions.offset).indexOf("%") > 0) objOptions.offset = parseInt(objOptions.offset) / 100 * boxSize.height; // Get the raw start and end positions
+
         var rawStart = !objOptions.scrollHorizontal ? $obj.offset().top : $obj.offset().left,
-          rawEnd = !objOptions.scrollHorizontal ? rawStart + $obj.height() : rawStart + $obj.width();
+            rawEnd = !objOptions.scrollHorizontal ? rawStart + $obj.height() : rawStart + $obj.width(); // Add the defined offset
 
-        // Add the defined offset
         var elemStart = Math.round(rawStart) + objOptions.offset,
-          elemEnd = !objOptions.scrollHorizontal ? elemStart + $obj.height() : elemStart + $obj.width();
-        if (objOptions.invertBottomOffset) elemEnd -= objOptions.offset * 2;
+            elemEnd = !objOptions.scrollHorizontal ? elemStart + $obj.height() : elemStart + $obj.width();
+        if (objOptions.invertBottomOffset) elemEnd -= objOptions.offset * 2; // Add class if in viewport
 
-        // Add class if in viewport
         if (elemStart < viewportEnd && elemEnd > viewportStart) {
           // Remove class
           $obj.removeClass(objOptions.classToRemove);
-          $obj.addClass(objOptions.classToAdd);
+          $obj.addClass(objOptions.classToAdd); // Do the callback function. Callback wil send the jQuery object as parameter
 
-          // Do the callback function. Callback wil send the jQuery object as parameter
-          objOptions.callbackFunction($obj, "add");
+          objOptions.callbackFunction($obj, "add"); // Check if full element is in view
 
-          // Check if full element is in view
-          if (rawEnd <= viewportEnd && rawStart >= viewportStart) $obj.addClass(objOptions.classToAddForFullView);else $obj.removeClass(objOptions.classToAddForFullView);
+          if (rawEnd <= viewportEnd && rawStart >= viewportStart) $obj.addClass(objOptions.classToAddForFullView);else $obj.removeClass(objOptions.classToAddForFullView); // Set element as already animated
 
-          // Set element as already animated
           $obj.data('vp-animated', true);
+
           if (objOptions.removeClassAfterAnimation) {
             $obj.one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function () {
               $obj.removeClass(objOptions.classToAdd);
             });
-          }
+          } // Remove class if not in viewport and repeat is true
 
-          // Remove class if not in viewport and repeat is true
         } else if ($obj.hasClass(objOptions.classToAdd) && objOptions.repeat) {
-          $obj.removeClass(objOptions.classToAdd + " " + objOptions.classToAddForFullView);
+          $obj.removeClass(objOptions.classToAdd + " " + objOptions.classToAddForFullView); // Do the callback function.
 
-          // Do the callback function.
-          objOptions.callbackFunction($obj, "remove");
+          objOptions.callbackFunction($obj, "remove"); // Remove already-animated-flag
 
-          // Remove already-animated-flag
           $obj.data('vp-animated', false);
         }
       });
     };
-
     /**
      * Binding the correct event listener is still a tricky thing.
      * People have expierenced sloppy scrolling when both scroll and touch
@@ -134,29 +119,27 @@
      * @see  https://github.com/dirkgroenen/jQuery-viewport-checker/issues/25
      * @see  https://github.com/dirkgroenen/jQuery-viewport-checker/issues/27
      */
-
     // Select the correct events
+
+
     if ('ontouchstart' in window || 'onmsgesturechange' in window) {
       // Device with touchscreen
       $(document).bind("touchmove MSPointerMove pointermove", this.checkElements);
-    }
+    } // Always load on window load
 
-    // Always load on window load
-    $(options.scrollBox).bind("load scroll", this.checkElements);
 
-    // On resize change the height var
+    $(options.scrollBox).bind("load scroll", this.checkElements); // On resize change the height var
+
     $(window).resize(function (e) {
       boxSize = {
         height: $(options.scrollBox).height(),
         width: $(options.scrollBox).width()
       };
       $elem.checkElements();
-    });
+    }); // trigger inital check if elements already visible
 
-    // trigger inital check if elements already visible
-    this.checkElements();
+    this.checkElements(); // Default jquery plugin behaviour
 
-    // Default jquery plugin behaviour
     return this;
   };
 })(jQuery);
