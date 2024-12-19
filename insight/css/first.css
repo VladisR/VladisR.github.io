@@ -1541,7 +1541,7 @@ html {
 .hero-in + * {
   padding-top: 38px;
   background: #fff;
-  z-index: 1;
+  z-index: 3;
   position: relative;
 }
 .contacts {
