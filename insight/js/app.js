@@ -109,6 +109,7 @@ $(function () {
         }, 500);
       }
     });
+    $('.b-modal').addClass('loadet');
     $('.b-modal').on('click tap', function (event) {
       if ($(event.target).closest('.b-modal__container').length) return;
       $(this).removeClass('opened');

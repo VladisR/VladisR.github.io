@@ -725,7 +725,11 @@ html {
   overflow-y: auto;
   padding: 27px;
   z-index: 100501;
+  display: none;
   -webkit-overflow-scrolling: touch;
+}
+.b-modal.loadet {
+  display: block;
 }
 .b-modal.opened {
   opacity: 1;
