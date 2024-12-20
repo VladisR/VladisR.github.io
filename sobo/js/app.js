@@ -697,28 +697,38 @@ $(function () {
 
   ;
   reviews2('.js-reviews2');
-  $('.scroll-block__header, .scroll-block__container').wrapAll('<div class="scroll-block__content-wrapper container"></div>');
+  $('.scroll-block').each(function () {
+    $(this).find('.scroll-block__header, .scroll-block__container').wrapAll('<div class="scroll-block__content-wrapper container"></div>');
+    $(this).find('.scroll-block__items').prepend('<div class="scroll-block__hlp slide-item"></div>');
+    $(this).find('.scroll-block__item').addClass('slide-item');
+    $(this).find('.scroll-block__helper').remove();
+    $(this).find('.swiper').removeClass('swiper');
+    $(this).find('.scroll-block__container-in').removeClass('container');
+    $(this).find('.swiper-wrapper').removeClass('swiper-wrapper');
+    $(this).find('.swiper-slide').removeClass('swiper-slide');
+  });
 
   if ($(window).width() >= 992) {
     gsap.registerPlugin(ScrollTrigger);
     var horizontalSections = gsap.utils.toArray(".scroll-block__content-wrapper");
     horizontalSections.forEach(function (container) {
       var sections = container.querySelectorAll(".slide-item");
-      var prc;
       var Xprc;
 
       function resizeVal() {
-        if ($(window).width() >= 992 && $(window).width() <= 1199) {
-          prc = 'center 34%';
+        if ($(window).width() >= 992) {
           Xprc = -67;
-        } else if ($(window).width() >= 1200 && $(window).width() <= 1366) {
-          prc = 'center 34%';
+        }
+
+        if ($(window).width() >= 1200) {
           Xprc = -63;
-        } else if ($(window).width() >= 1440 && $(window).width() <= 1600) {
-          prc = 'center 46%';
+        }
+
+        if ($(window).width() >= 1440) {
           Xprc = -60;
-        } else if ($(window).width() >= 1900) {
-          prc = 'center 49%';
+        }
+
+        if ($(window).width() >= 1600) {
           Xprc = -58;
         }
       }
@@ -728,7 +738,7 @@ $(function () {
       gsap.to(sections, {
         xPercent: Xprc * (sections.length - 1),
         ease: "none",
-        duration: 2,
+        duration: 1,
         scrollTrigger: {
           trigger: container,
           start: 'bottom bottom',

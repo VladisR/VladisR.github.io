@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>Главная - Marmelad v7.18.24 / </title>
-
+        <meta name="description" content="Главная">
         <meta name="theme-color" content="">
 
         <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
@@ -38,7 +38,7 @@
         <div class="site-sidebar__in-1 container">
             <div class="site-sidebar__container">
                 <div class="site-sidebar__header">
-                    <button type="button" class="site-sidebar__close js-menu">
+                    <button type="button" class="site-sidebar__close js-menu" title="Закрыть" aria-label="Закрыть">
       <span class="svg-icon svg-icon--close" aria-hidden="true">
         <svg class="svg-icon__link">
           <use xlink:href="#close"></use>
@@ -156,9 +156,9 @@
                     <a href="#" class="header__lang is-active">RU</a>
                 </div>
             </div>
-            <div class="header__logo"><a href="index.html"><img width="179" height="85" src="img/logo.svg" alt=""></a></div>
+            <div class="header__logo"><a href="index.html" title="На главную" aria-label="На главную"><img width="179" height="85" src="img/logo.svg" alt=""></a></div>
             <div class="header__link">
-                <a href="https://www.instagram.com/soboconsultant/" target="_blank">
+                <a href="https://www.instagram.com/soboconsultant/" target="_blank" title="Instagram" aria-label="Instagram">
                     
                     <svg width="18.000000" height="18.000000" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 	<path d="M13 0C14.32 0 15.59 0.52 16.53 1.46C17.47 2.4 18 3.67 18 5L18 13C18 14.32 17.47 15.59 16.53 16.53C15.59 17.47 14.32 18 13 18L5 18C3.67 18 2.4 17.47 1.46 16.53C0.52 15.59 0 14.32 0 13L0 5C0 3.67 0.52 2.4 1.46 1.46C2.4 0.52 3.67 0 5 0L13 0ZM9 5C7.93 5 6.92 5.42 6.17 6.17C5.42 6.92 5 7.93 5 9C5 10.06 5.42 11.07 6.17 11.82C6.92 12.57 7.93 13 9 13C10.06 13 11.07 12.57 11.82 11.82C12.57 11.07 13 10.06 13 9C13 7.93 12.57 6.92 11.82 6.17C11.07 5.42 10.06 5 9 5ZM9 7C9.53 7 10.03 7.21 10.41 7.58C10.78 7.96 11 8.46 11 9C11 9.53 10.78 10.03 10.41 10.41C10.03 10.78 9.53 11 9 11C8.46 11 7.96 10.78 7.58 10.41C7.21 10.03 7 9.53 7 9C7 8.46 7.21 7.96 7.58 7.58C7.96 7.21 8.46 7 9 7ZM13.5 3.5C13.23 3.5 12.98 3.6 12.79 3.79C12.6 3.98 12.5 4.23 12.5 4.5C12.5 4.76 12.6 5.01 12.79 5.2C12.98 5.39 13.23 5.5 13.5 5.5C13.76 5.5 14.01 5.39 14.2 5.2C14.39 5.01 14.5 4.76 14.5 4.5C14.5 4.23 14.39 3.98 14.2 3.79C14.01 3.6 13.76 3.5 13.5 3.5Z" fill="#B8B09B" fill-opacity="1.000000" fill-rule="nonzero"></path>
@@ -166,7 +166,7 @@
 
                 </a>
             </div>
-            <div class="header__burger js-menu"><span><span></span></span></div>
+            <button type="button" aria-label="Меню" title="Меню" class="header__burger js-menu"><span><span></span></span></button>
         </div>
     </div>
 </header><!-- header -->
@@ -501,10 +501,9 @@
             <div class="scroll-block__container-in">
                 <div class="scroll-block__slider">
                     <div class="scroll-block__slider">
-
                         <div class="scroll-block__items">
-                            <div class="scroll-block__hlp slide-item"></div>
-                            <div class="scroll-block__item slide-item">
+                            <!-- <div elem="hlp"></div> -->
+                            <div class="scroll-block__item">
                                 <div class="scroll-block__item-image">
                                     <img loading="lazy" width="560" height="690" src="files/sc-img-1.jpeg" alt="">
                                     <div class="scroll-block__item-image-footer">
@@ -528,7 +527,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="scroll-block__item slide-item">
+                            <div class="scroll-block__item">
                                 <div class="scroll-block__item-image">
                                     <img class="sm-img" loading="lazy" width="560" height="690" src="files/sc-img-1.jpeg" alt="">
                                     <img class="md-img" loading="lazy" width="490" height="600" src="files/sc-img-2.jpeg" alt="">
@@ -551,9 +550,8 @@
     </a>
                                 </div>
                             </div>
-                            <!-- <div elem="item" class="slide-item"></div> -->
                         </div>
-                        <!-- <div elem="helper" class="panel"></div> -->
+                        <div class="scroll-block__helper"></div>
                     </div>
                 </div>
 
@@ -819,42 +817,42 @@
         </div>
         <div class="useful-posts__items js-sc-container">
             
-            <a href="#" class="useful-posts__item">
+            <a href="#" title="Статья" aria-label="Статья" class="useful-posts__item">
                 <span class="useful-posts__item-image"></span>
                 <span class="useful-posts__item-footer"></span>
             </a>
             
-            <a href="#" class="useful-posts__item">
+            <a href="#" title="Статья" aria-label="Статья" class="useful-posts__item">
                 <span class="useful-posts__item-image"></span>
                 <span class="useful-posts__item-footer"></span>
             </a>
             
-            <a href="#" class="useful-posts__item">
+            <a href="#" title="Статья" aria-label="Статья" class="useful-posts__item">
                 <span class="useful-posts__item-image"></span>
                 <span class="useful-posts__item-footer"></span>
             </a>
             
-            <a href="#" class="useful-posts__item">
+            <a href="#" title="Статья" aria-label="Статья" class="useful-posts__item">
                 <span class="useful-posts__item-image"></span>
                 <span class="useful-posts__item-footer"></span>
             </a>
             
-            <a href="#" class="useful-posts__item">
+            <a href="#" title="Статья" aria-label="Статья" class="useful-posts__item">
                 <span class="useful-posts__item-image"></span>
                 <span class="useful-posts__item-footer"></span>
             </a>
             
-            <a href="#" class="useful-posts__item">
+            <a href="#" title="Статья" aria-label="Статья" class="useful-posts__item">
                 <span class="useful-posts__item-image"></span>
                 <span class="useful-posts__item-footer"></span>
             </a>
             
-            <a href="#" class="useful-posts__item">
+            <a href="#" title="Статья" aria-label="Статья" class="useful-posts__item">
                 <span class="useful-posts__item-image"></span>
                 <span class="useful-posts__item-footer"></span>
             </a>
             
-            <a href="#" class="useful-posts__item">
+            <a href="#" title="Статья" aria-label="Статья" class="useful-posts__item">
                 <span class="useful-posts__item-image"></span>
                 <span class="useful-posts__item-footer"></span>
             </a>
@@ -929,7 +927,7 @@
     
                             </a>
                         </div>
-                        <a href="#" class="blog-posts__item-image">
+                        <a href="#" title="Lorem ipsum dolor sit" aria-label="Lorem ipsum dolor sit" class="blog-posts__item-image">
                             <img loading="lazy" width="280" height="296" src="files/blog-stub.jpeg" alt="">
                         </a>
                         <div class="blog-posts__item-title"><a href="#">Lorem ipsum dolor sit</a></div>
@@ -955,7 +953,7 @@
     
                             </a>
                         </div>
-                        <a href="#" class="blog-posts__item-image">
+                        <a href="#" title="Lorem ipsum dolor sit" aria-label="Lorem ipsum dolor sit" class="blog-posts__item-image">
                             <img loading="lazy" width="280" height="296" src="files/blog-stub.jpeg" alt="">
                         </a>
                         <div class="blog-posts__item-title"><a href="#">Lorem ipsum dolor sit</a></div>
@@ -981,7 +979,7 @@
     
                             </a>
                         </div>
-                        <a href="#" class="blog-posts__item-image">
+                        <a href="#" title="Lorem ipsum dolor sit" aria-label="Lorem ipsum dolor sit" class="blog-posts__item-image">
                             <img loading="lazy" width="280" height="296" src="files/blog-stub.jpeg" alt="">
                         </a>
                         <div class="blog-posts__item-title"><a href="#">Lorem ipsum dolor sit</a></div>
@@ -1026,7 +1024,7 @@
     <div class="footer__in container">
         <div class="footer__content">
             <div class="footer__logo">
-                <a href="index.html">
+                <a href="index.html" title="На главную" aria-label="На главную">
                     <img loading="lazy" width="179" height="85" src="img/logo.svg" alt="">
                 </a>
             </div>
@@ -1086,7 +1084,7 @@
 
         </div><!-- app:wrapper -->
 
-        <button id="back_to" type="button" aria-hidden="true" title="В начало страницы" class="page-scroller">
+        <button id="back_to" type="button" aria-label="В начало страницы" title="В начало страницы" class="page-scroller">
 	<svg width="10" height="41" viewBox="0 0 10 41" fill="none" xmlns="http://www.w3.org/2000/svg" class="page-scroller__icon">
 		<line x1="5" y1="40.5" x2="5" y2="0.5" stroke="#373631"></line>
 		<path fill-rule="evenodd" clip-rule="evenodd" d="M0.5 14.5C3.30325 13.857 5.5 7.86004 5.5 0.557073H4.5C4.5 4.33028 3.89738 7.70063 2.95834 10.0909C2.48762 11.2891 1.95191 12.1909 1.40814 12.7763C1.07967 13.13 0.775338 13.3416 0.5 13.4535L0.5 14.5Z" fill="#373631"></path>
@@ -1107,8 +1105,6 @@
 			}
 		</script>
 
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.12/dist/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
         <script src="js/vendors/jquery-3.6.0.min.js"></script>
         <script src="js/plugins.min.js"></script>
         <script src="js/app.js"></script>

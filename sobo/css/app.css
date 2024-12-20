@@ -209,7 +209,7 @@ template {
           box-sizing: border-box;
 }
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: auto;
   font-family: sans-serif;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
@@ -1808,7 +1808,7 @@ textarea,
   width: 100%;
 }
 .hero__title {
-  color: #f9f5eb;
+  color: #fffefb;
   font-size: 56px;
   position: relative;
   padding-bottom: 17px;
@@ -1818,7 +1818,7 @@ textarea,
 .hero__title .sp-bg {
   line-height: 1;
   font-size: 38px;
-  color: rgba(249,245,235,0.15);
+  color: rgba(255,254,251,0.15);
   position: absolute;
   left: -10px;
   text-align: center;
