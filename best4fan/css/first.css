@@ -377,6 +377,9 @@ body .lg-actions .lg-next:before {
 .swiper-button {
   visibility: hidden;
 }
+.init .swiper-button {
+  visibility: visible;
+}
 html,
 body {
   margin: 0;
