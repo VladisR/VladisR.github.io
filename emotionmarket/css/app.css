@@ -1591,8 +1591,17 @@ a.b-tag:hover .svg-icon {
   top: 0;
   right: 0;
   bottom: 0;
-  background-size: cover;
-  background-position: right center;
+}
+.info-block__image img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: right-center;
+     object-position: right-center;
 }
 .info-block .site-button {
   margin-top: 24px;
@@ -5421,9 +5430,9 @@ body .swiper .swiper-pagination-bullet.swiper-pagination-bullet-active {
   .info-block__images:after {
     background-size: 100% auto;
   }
-  .info-block__image {
-    background-position: 130% 70%;
-    background-size: cover;
+  .info-block__image img {
+    -o-object-position: 130% 70%;
+       object-position: 130% 70%;
   }
   .info-block .site-button {
     width: auto;
@@ -6667,9 +6676,9 @@ body .swiper .swiper-pagination-bullet.swiper-pagination-bullet-active {
     right: auto;
     left: -64px;
   }
-  .info-block__image {
-    background-position: 100% 50%;
-    background-size: cover;
+  .info-block__image img {
+    -o-object-position: 100% 50%;
+       object-position: 100% 50%;
   }
   .info-block__container {
     width: 50%;
@@ -6692,8 +6701,9 @@ body .swiper .swiper-pagination-bullet.swiper-pagination-bullet-active {
     -webkit-transform: rotateX(180deg) rotateZ(60deg);
             transform: rotateX(180deg) rotateZ(60deg);
   }
-  .info-block.type-2 .info-block__image {
-    background-position: 26% 50%;
+  .info-block.type-2 .info-block__image img {
+    -o-object-position: 26% 50%;
+       object-position: 26% 50%;
   }
   h1 + .info-block,
   .h1 + .info-block {
