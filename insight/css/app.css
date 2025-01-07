@@ -3105,7 +3105,6 @@ textarea {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  text-fill-color: transparent;
 }
 .page-scroller {
   pointer-events: none;
@@ -4276,7 +4275,7 @@ body .swiper-scrollbar .swiper-scrollbar-drag:hover {
 .travel__title {
   margin-top: 0;
   margin-bottom: 22px;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 28px;
   line-height: 105%;
   letter-spacing: -0.04em;
@@ -6909,6 +6908,7 @@ body .swiper-scrollbar .swiper-scrollbar-drag:hover {
   .travel__title {
     font-size: 79px;
     letter-spacing: -0.05em;
+    max-width: 1366px;
   }
   .travel__text {
     font-size: 21px;
