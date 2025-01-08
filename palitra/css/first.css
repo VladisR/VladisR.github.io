@@ -1,27 +1,27 @@
 @font-face {
   font-family: 'Styrene A Web';
-  src: url("fonts/StyreneAWeb-Bold.woff2") format('woff2'), url("fonts/StyreneAWeb-Bold.woff") format('woff');
+  src: url("../fonts/StyreneAWeb-Bold.woff2") format('woff2'), url("../fonts/StyreneAWeb-Bold.woff") format('woff');
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Styrene A Web';
-  src: url("fonts/StyreneAWeb-Medium.woff2") format('woff2'), url("fonts/StyreneAWeb-Medium.woff") format('woff');
+  src: url("../fonts/StyreneAWeb-Medium.woff2") format('woff2'), url("../fonts/StyreneAWeb-Medium.woff") format('woff');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Styrene A Web';
-  src: url("fonts/StyreneAWeb-Light.woff2") format('woff2'), url("fonts/StyreneAWeb-Light.woff") format('woff');
+  src: url("../fonts/StyreneAWeb-Light.woff2") format('woff2'), url("../fonts/StyreneAWeb-Light.woff") format('woff');
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Styrene A Web';
-  src: url("fonts/StyreneAWeb-Regular.woff2") format('woff2'), url("fonts/StyreneAWeb-Regular.woff") format('woff');
+  src: url("../fonts/StyreneAWeb-Regular.woff2") format('woff2'), url("../fonts/StyreneAWeb-Regular.woff") format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -695,6 +695,9 @@ textarea {
 .banner__arrows {
   display: none;
 }
+body .swiper-pagination {
+  text-align: center;
+}
 body .swiper-button {
   width: 48px;
   height: 48px;
@@ -730,6 +733,9 @@ body button.swiper-pagination-bullet {
   opacity: 1;
   background: rgba(0,0,0,0.3);
   position: relative;
+  border-radius: 100%;
+  display: inline-block;
+  border: 0;
 }
 body button.swiper-pagination-bullet:after {
   content: '';
@@ -815,7 +821,7 @@ body button.swiper-pagination-bullet.is-active {
 .s-logo .lg-bg {
   margin-right: 3px;
   padding: 0 6px 2px;
-  background: url("img/logo-bg.svg") center center no-repeat;
+  background: url("../img/logo-bg.svg") center center no-repeat;
   background-size: cover;
   border-radius: 7px;
 }

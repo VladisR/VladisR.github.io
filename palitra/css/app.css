@@ -1857,10 +1857,10 @@ html {
 .reviews span.swiper-pagination-bullet:before {
   content: '';
   position: absolute;
-  left: -7px;
-  top: -7px;
-  right: -7px;
-  bottom: -7px;
+  left: -10px;
+  top: -10px;
+  right: -10px;
+  bottom: -10px;
 }
 .reviews span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   background: #fff;
@@ -2074,6 +2074,9 @@ html {
 .social-links__item:last-child {
   margin-right: 0;
 }
+body .swiper-pagination {
+  text-align: center;
+}
 body .swiper-button {
   width: 48px;
   height: 48px;
@@ -2109,6 +2112,9 @@ body button.swiper-pagination-bullet {
   opacity: 1;
   background: rgba(0,0,0,0.3);
   position: relative;
+  border-radius: 100%;
+  display: inline-block;
+  border: 0;
 }
 body button.swiper-pagination-bullet:after {
   content: '';
