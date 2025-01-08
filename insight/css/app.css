@@ -964,6 +964,9 @@ html {
       -ms-flex-pack: center;
           justify-content: center;
 }
+.contacts-content {
+  z-index: 4 !important;
+}
 .contacts-content__container {
   background: #f3f2f0;
   border-radius: 26.5238px;
