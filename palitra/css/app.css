@@ -2103,7 +2103,7 @@ html {
 .reviews span.swiper-pagination-bullet {
   opacity: 0.2;
   background: #fff;
-  margin: 0 6px !important;
+  margin: 0 10px !important;
   position: relative;
 }
 .reviews span.swiper-pagination-bullet:before {
