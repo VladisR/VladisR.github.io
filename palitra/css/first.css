@@ -318,6 +318,7 @@ h3,
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  text-fill-color: transparent;
 }
 h1,
 .h1 {
@@ -728,6 +729,15 @@ body button.swiper-pagination-bullet {
   margin-right: 4px;
   opacity: 1;
   background: rgba(0,0,0,0.3);
+  position: relative;
+}
+body button.swiper-pagination-bullet:after {
+  content: '';
+  position: absolute;
+  left: -8px;
+  top: -10px;
+  right: -8px;
+  bottom: -10px;
 }
 body button.swiper-pagination-bullet.is-active {
   background: #ffe600;
@@ -744,6 +754,8 @@ body button.swiper-pagination-bullet.is-active {
   flex-flow: row;
   overflow-x: auto;
   flex-wrap: nowrap;
+  scrollbar-height: none;
+  scrollbar-width: none;
   -ms-overflow-style: none;
   margin-left: -20px;
   margin-right: -20px;
