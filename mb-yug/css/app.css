@@ -2349,8 +2349,8 @@ body .swiper-horizontal .swiper-pagination .swiper-pagination-bullet.swiper-pagi
   flex-flow: row;
   overflow-y: visible;
   overflow-x: auto;
-  scrollbar-height: none;
-  scrollbar-width: none;
+  scrollbar-height: 0;
+  scrollbar-width: 0;
   -ms-overflow-style: none;
   -webkit-overflow-scrolling: touch;
 }
