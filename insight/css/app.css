@@ -682,7 +682,7 @@ html {
 .articles__item-text {
   display: block;
   letter-spacing: -0.02em;
-  color: #aeaaa0;
+  color: #5a4932;
   font-size: 12px;
   line-height: 1;
 }
@@ -4448,7 +4448,7 @@ body .swiper-scrollbar .swiper-scrollbar-drag:hover {
 }
 .widgets__item-comparison {
   margin-top: 14px;
-  color: #afa79a;
+  color: #5a4932;
   font-size: 10px;
 }
 .widgets__col--weather .widgets__items {
@@ -6090,10 +6090,8 @@ body .swiper-scrollbar .swiper-scrollbar-drag:hover {
     line-height: 1;
   }
   .entertainment .decor-lines__image {
-    background-position-y: 200%;
-  }
-  .entertainment .decor-lines__image {
-    background-position-y: 300%;
+    background-position-y: 471%;
+    background-size: 342% 170%;
   }
   input {
     height: 56px;
@@ -6265,11 +6263,11 @@ body .swiper-scrollbar .swiper-scrollbar-drag:hover {
     background-size: 150%;
   }
   .hero__image .decor-lines {
-    opacity: 0.5;
+    opacity: 0.7;
   }
   .hero__image .decor-lines__image {
     background-position-y: -43%;
-    background-size: auto;
+    background-size: 100%;
   }
   .hero__text {
     width: 100%;
@@ -6630,6 +6628,11 @@ body .swiper-scrollbar .swiper-scrollbar-drag:hover {
   .services__item-icon .svg-icon {
     width: 17px;
     height: 8px;
+  }
+  .services .decor-lines__image {
+    background-size: 950% 429%;
+    background-position-y: 80%;
+    left: -22%;
   }
   .services2 {
     margin-bottom: 103px;

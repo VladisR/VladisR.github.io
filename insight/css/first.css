@@ -2381,11 +2381,11 @@ html {
     background-size: 150%;
   }
   .hero__image .decor-lines {
-    opacity: 0.5;
+    opacity: 0.7;
   }
   .hero__image .decor-lines__image {
     background-position-y: -43%;
-    background-size: auto;
+    background-size: 100%;
   }
   .hero__text {
     width: 100%;
