@@ -1,0 +1,180 @@
+@font-face {
+    font-family: 'Gogh';
+    src: url('../fonts/Gogh-BlackItalic.woff2') format('woff2'),
+        url('../fonts/Gogh-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gogh';
+    src: url('../fonts/Gogh-Bold.woff2') format('woff2'),
+        url('../fonts/Gogh-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gogh';
+    src: url('../fonts/Gogh-BookItalic.woff2') format('woff2'),
+        url('../fonts/Gogh-BookItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gogh';
+    src: url('../fonts/Gogh-BoldItalic.woff2') format('woff2'),
+        url('../fonts/Gogh-BoldItalic.woff') format('woff');
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gogh';
+    src: url('../fonts/Gogh-Black.woff2') format('woff2'),
+        url('../fonts/Gogh-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gogh';
+    src: url('../fonts/Gogh-Book.woff2') format('woff2'),
+        url('../fonts/Gogh-Book.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gogh';
+    src: url('../fonts/Gogh-HairlineItalic.woff2') format('woff2'),
+        url('../fonts/Gogh-HairlineItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gogh';
+    src: url('../fonts/Gogh-Regular.woff2') format('woff2'),
+        url('../fonts/Gogh-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gogh';
+    src: url('../fonts/Gogh-LightItalic.woff2') format('woff2'),
+        url('../fonts/Gogh-LightItalic.woff') format('woff');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gogh';
+    src: url('../fonts/Gogh-Heavy.woff2') format('woff2'),
+        url('../fonts/Gogh-Heavy.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gogh';
+    src: url('../fonts/Gogh-Medium.woff2') format('woff2'),
+        url('../fonts/Gogh-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gogh';
+    src: url('../fonts/Gogh-ExtraBold.woff2') format('woff2'),
+        url('../fonts/Gogh-ExtraBold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gogh';
+    src: url('../fonts/Gogh-Hairline.woff2') format('woff2'),
+        url('../fonts/Gogh-Hairline.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gogh';
+    src: url('../fonts/Gogh-HeavyItalic.woff2') format('woff2'),
+        url('../fonts/Gogh-HeavyItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gogh';
+    src: url('../fonts/Gogh-ExtraBoldItalic.woff2') format('woff2'),
+        url('../fonts/Gogh-ExtraBoldItalic.woff') format('woff');
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gogh';
+    src: url('../fonts/Gogh-Light.woff2') format('woff2'),
+        url('../fonts/Gogh-Light.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gogh';
+    src: url('../fonts/Gogh-MediumItalic.woff2') format('woff2'),
+        url('../fonts/Gogh-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gogh';
+    src: url('../fonts/Gogh-RegularItalic.woff2') format('woff2'),
+        url('../fonts/Gogh-RegularItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gogh';
+    src: url('../fonts/Gogh-Thin.woff2') format('woff2'),
+        url('../fonts/Gogh-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gogh';
+    src: url('../fonts/Gogh-ThinItalic.woff2') format('woff2'),
+        url('../fonts/Gogh-ThinItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
