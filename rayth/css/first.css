@@ -754,8 +754,6 @@ html {
           flex-flow: row;
   overflow: hidden;
   overflow-x: auto;
-  scrollbar-height: none;
-  scrollbar-width: none;
   -ms-overflow-style: none;
   -webkit-overflow-scrolling: touch;
 }
