@@ -699,10 +699,10 @@ p:last-child {
   display: none;
 }
 .header__search:hover {
-  border-color: #e33f30;
+  border-color: #f36053;
 }
 .header__search:hover .svg-icon {
-  fill: #e33f30;
+  fill: #f36053;
 }
 .header__search .svg-icon {
   display: block;
@@ -846,10 +846,10 @@ html {
   flex: 1 1;
 }
 .agreement__text a {
-  color: #e33f30;
+  color: #f36053;
 }
 .agreement__text a:hover {
-  color: #e33f30;
+  color: #f36053;
   text-decoration: none;
 }
 .arrow-link {
@@ -871,7 +871,7 @@ html {
   border-bottom-color: currentColor;
 }
 .arrow-link:hover .svg-icon {
-  fill: #e33f30;
+  fill: #f36053;
 }
 .arrow-link__text {
   display: inline-block;
@@ -1116,7 +1116,7 @@ html {
   text-align: center;
   font-size: 24px;
   border-radius: 100%;
-  color: #e33f30;
+  color: #f36053;
   text-decoration: none;
 }
 .brands__item:last-child:hover {
@@ -1284,7 +1284,7 @@ html {
   margin-top: 0;
 }
 .counter-title .quantity {
-  color: #e33f30;
+  color: #f36053;
   font-size: 24px;
   font-family: 'Inter';
   margin-top: -16px;
@@ -1335,14 +1335,14 @@ html {
   transform: rotate(-90deg);
 }
 .faq__item-header:hover .faq__item-arrow {
-  background-color: #e33f30;
+  background-color: #f36053;
   color: #fff;
 }
 .faq__item-counter {
   flex: 0 0 43px;
   max-width: 43px;
   width: 43px;
-  color: #e33f30;
+  color: #f36053;
   font-size: 24px;
   font-weight: 400;
   line-height: 48px;
@@ -1366,7 +1366,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid #e33f30;
+  border: 1px solid #f36053;
   transform: rotate(90deg);
   padding-bottom: 2px;
   font-size: 20px;
@@ -1374,7 +1374,7 @@ html {
   font-weight: 300;
   line-height: 1;
   letter-spacing: 0.195px;
-  color: #e33f30;
+  color: #f36053;
   transition: 0.3s;
 }
 .faq__item-body {
@@ -1401,7 +1401,7 @@ html {
   padding: 0 24px;
   border-radius: 60px;
   background: #fff;
-  border: 1px solid #e33f30;
+  border: 1px solid #f36053;
   color: #2e2e41;
   font-size: 18px;
 }
@@ -1419,7 +1419,7 @@ html {
 }
 .feedback-form__item textarea {
   border-radius: 25px;
-  border: 1px solid #e33f30;
+  border: 1px solid #f36053;
   color: #2e2e41;
   font-size: 18px;
   line-height: 24px;
@@ -1570,7 +1570,7 @@ html {
   width: 100%;
 }
 .for-whom__item:nth-child(2n):hover {
-  color: #e33f30;
+  color: #f36053;
 }
 .for-whom__item:hover {
   color: #7d5bc5;
@@ -1727,8 +1727,8 @@ html {
   padding-right: 10px;
 }
 .hero a.site-button.ghost:hover {
-  background: #e33f30;
-  border-color: #e33f30;
+  background: #f36053;
+  border-color: #f36053;
 }
 .hero__buttons {
   display: flex;
@@ -1778,7 +1778,7 @@ html {
   display: block;
   width: 100%;
   padding: 23px 26px 22px;
-  border: 1px solid #e33f30;
+  border: 1px solid #f36053;
   border-radius: 40px;
 }
 .letters__item a img {
@@ -2109,10 +2109,10 @@ html {
   transform: scale(1.03);
 }
 .mosaic__item:hover .arrow-link {
-  color: #e33f30;
+  color: #f36053;
 }
 .mosaic__item:hover .arrow-link .svg-icon {
-  fill: #e33f30;
+  fill: #f36053;
 }
 .mosaic__item .b-plate {
   margin-top: auto;
@@ -2423,7 +2423,7 @@ html {
   margin-right: 1px;
 }
 .pagination__item:hover {
-  color: #e33f30;
+  color: #f36053;
 }
 .pagination__item-button {
   font-size: 0;
@@ -2432,7 +2432,7 @@ html {
   align-items: center;
 }
 .pagination__item-button:hover {
-  color: #e33f30;
+  color: #f36053;
 }
 .pagination__item-button span {
   display: block;
@@ -2534,7 +2534,7 @@ span.pagination__item:hover {
   padding: 0 24px;
   border-radius: 60px;
   background: #fff;
-  border: 1px solid #e33f30;
+  border: 1px solid #f36053;
   color: #2e2e41;
   font-size: 18px;
 }
@@ -2779,8 +2779,8 @@ html.remodal-is-locked {
   position: relative;
   padding: 17px 40px 16px 20px;
   border-radius: 30px;
-  border: 1px solid #e33f30;
-  color: #e33f30;
+  border: 1px solid #f36053;
+  color: #f36053;
   background: none;
   cursor: pointer;
 }
@@ -2793,7 +2793,7 @@ html.remodal-is-locked {
 .s-list__button .svg-icon {
   width: 9px;
   height: 5px;
-  fill: #e33f30;
+  fill: #f36053;
   position: absolute;
   top: 51%;
   transform: translateY(-50%);
@@ -2805,7 +2805,7 @@ html.remodal-is-locked {
   top: 100%;
   right: 0;
   background: #fff;
-  border: 1px solid #e33f30;
+  border: 1px solid #f36053;
   border-top: 0;
   padding: 0 20px 13px;
   border-radius: 0 0 30px 30px;
@@ -2820,7 +2820,7 @@ html.remodal-is-locked {
   margin-bottom: 12px;
   line-height: 16px;
   text-decoration: none;
-  color: #e33f30;
+  color: #f36053;
 }
 .s-list__item.is-active {
   color: #7d5bc5;
@@ -2843,13 +2843,13 @@ html.remodal-is-locked {
 }
 .hero-in .s-list.is-opened .s-list__button {
   background: #fff;
-  color: #e33f30;
+  color: #f36053;
 }
 .hero-in .s-list.is-opened .s-list__button .svg-icon {
-  fill: #e33f30;
+  fill: #f36053;
 }
 .hero-in .s-list.is-opened .s-list__item {
-  color: #e33f30;
+  color: #f36053;
 }
 .hero-in .s-list__button {
   color: #fff;
@@ -3079,8 +3079,8 @@ html.remodal-is-locked {
   width: 100%;
 }
 .services.type-2 .site-button:hover {
-  background: #e33f30;
-  border-color: #e33f30;
+  background: #f36053;
+  border-color: #f36053;
 }
 .services__item-table-col {
   margin-bottom: 40px;
@@ -3116,7 +3116,7 @@ html.remodal-is-locked {
   margin-top: 24px;
 }
 .site-button {
-  background: #e33f30;
+  background: #f36053;
   min-height: 61px;
   padding-left: 20px;
   padding-right: 20px;
@@ -3182,8 +3182,8 @@ html.remodal-is-locked {
   width: 100%;
   background: none;
   min-height: 82px;
-  border: 1px solid #e33f30;
-  color: #e33f30;
+  border: 1px solid #f36053;
+  color: #f36053;
 }
 .site-button.large:hover {
   background: #ff674d;
@@ -3213,7 +3213,7 @@ html.remodal-is-locked {
   height: 20px;
   padding-top: 1px;
   border-radius: 5px;
-  background-color: #e33f30;
+  background-color: #f36053;
 }
 .site-checkbox__square:before {
   content: '';
@@ -3241,7 +3241,7 @@ html.remodal-is-locked {
 }
 .site-file__label {
   border-radius: 60px;
-  border: 1px solid #e33f30;
+  border: 1px solid #f36053;
   background: #fff;
   padding: 19px 24px;
   display: flex;
@@ -3269,8 +3269,8 @@ html.remodal-is-locked {
   height: 24px;
 }
 .site-file__icon .svg-icon--close2 {
-  fill: #e33f30;
-  stroke: #e33f30;
+  fill: #f36053;
+  stroke: #f36053;
 }
 .site-file__icon--delete {
   display: none;
@@ -3307,7 +3307,7 @@ html.remodal-is-locked {
   opacity: 0;
 }
 .site-radio input:checked ~ .site-radio__square {
-  background-color: #e33f30;
+  background-color: #f36053;
 }
 .site-radio input:checked ~ .site-radio__square:before {
   opacity: 1;
@@ -3323,7 +3323,7 @@ html.remodal-is-locked {
   height: 24px;
   padding-top: 1px;
   border-radius: 24px;
-  border: 1px solid #e33f30;
+  border: 1px solid #f36053;
   background-color: #ffeeed;
   transition: background 0.3s;
 }
@@ -3434,7 +3434,7 @@ body .swipper-button {
   position: static;
   width: 82px;
   height: 82px;
-  border: 2px solid #e33f30;
+  border: 2px solid #f36053;
   border-radius: 100%;
   background: none;
   transition: 0.3s background, 0.3s border-color;
@@ -3444,13 +3444,13 @@ body .swipper-button {
 body .swipper-button:after {
   content: '→';
   font-family: "Inter";
-  color: #e33f30;
+  color: #f36053;
   font-size: 37px;
   line-height: 1;
   transition: 0.3s color;
 }
 body .swipper-button:hover {
-  background: #e33f30;
+  background: #f36053;
 }
 body .swipper-button:hover:after {
   color: #fff;
@@ -4569,7 +4569,7 @@ body .swiper-button-prev:after {
     display: block;
   }
   .header .main-menu >ul >li:hover > a {
-    color: #e33f30;
+    color: #f36053;
   }
   .header .main-menu >ul >li a {
     font-size: 16px;
@@ -4603,7 +4603,7 @@ body .swiper-button-prev:after {
     font-size: 14px;
   }
   .header .main-menu >ul >li ul li a:hover {
-    color: #e33f30;
+    color: #f36053;
   }
   .advantages {
     margin-bottom: 100px;
@@ -5321,9 +5321,9 @@ body .swiper-button-prev:after {
     border-color: #ff674d;
   }
   .s-list__item.is-active {
-    background: #e33f30;
+    background: #f36053;
     color: #fff;
-    border-color: #e33f30;
+    border-color: #f36053;
   }
   .s-list__item .db-text {
     display: none;
@@ -5746,7 +5746,7 @@ body .swiper-button-prev:after {
     color: #9d9d9d;
   }
   .header__search:hover {
-    color: #e33f30;
+    color: #f36053;
   }
   .header__search-input {
     width: 100%;
