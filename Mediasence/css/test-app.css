@@ -49,10 +49,10 @@
   display: none;
 }
 .header__search:hover {
-  border-color: #f36053;
+  border-color: #e33f30;
 }
 .header__search:hover .svg-icon {
-  fill: #f36053;
+  fill: #e33f30;
 }
 .header__search .svg-icon {
   display: block;
@@ -111,7 +111,7 @@
     display: block;
   }
   .header .main-menu >ul >li:hover > a {
-    color: #f36053;
+    color: #e33f30;
   }
   .header .main-menu >ul >li a {
     font-size: 16px;
@@ -145,7 +145,7 @@
     font-size: 14px;
   }
   .header .main-menu >ul >li ul li a:hover {
-    color: #f36053;
+    color: #e33f30;
   }
 }
 @media (min-width: 1200px) {
@@ -173,7 +173,7 @@
     color: #9d9d9d;
   }
   .header__search:hover {
-    color: #f36053;
+    color: #e33f30;
   }
   .header__search-input {
     width: 100%;
