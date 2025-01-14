@@ -221,8 +221,7 @@ img {
 .sr-only {
   border: 0;
   clip: rect(1px, 1px, 1px, 1px);
-  -webkit-clip-path: inset(50%);
-          clip-path: inset(50%);
+  clip-path: inset(50%);
   height: 1px;
   margin: -1px;
   overflow: hidden;
@@ -240,8 +239,7 @@ img {
 .sr-only:focus {
   background-color: #eee;
   clip: auto !important;
-  -webkit-clip-path: none;
-          clip-path: none;
+  clip-path: none;
   color: #444;
   display: block;
   font-size: 1em;
@@ -314,7 +312,7 @@ h6,
   font-size: 18px;
 }
 a {
-  color: #ed1c24;
+  color: #c9161d;
   -webkit-transition: 0.25s color, 0.25s background, 0.25s border-color;
   transition: 0.25s color, 0.25s background, 0.25s border-color;
 }
@@ -382,7 +380,7 @@ input[type="tel"] {
   text-decoration: none;
 }
 .footer__menu ul li a:hover {
-  color: #ed1c24;
+  color: #c9161d;
 }
 .footer__bot {
   padding-top: 40px;
@@ -390,11 +388,11 @@ input[type="tel"] {
 }
 .footer__col {
   font-size: 15px;
-  color: #c1c1c1;
+  color: #626262;
   margin-bottom: 20px;
 }
 .footer__col a {
-  color: #c1c1c1;
+  color: #626262;
 }
 .footer__col:last-child {
   margin-bottom: 0;
@@ -472,8 +470,7 @@ input[type="tel"] {
 }
 .header.is-fixed .header__in {
   background: rgba(212,212,212,0.5);
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
   -webkit-transition: 0.3s -webkit-transform;
   transition: 0.3s -webkit-transform;
   transition: 0.3s transform;
@@ -787,7 +784,7 @@ html {
   margin-bottom: 8px;
 }
 .b-popup__submit {
-  background: #ed1c24;
+  background: #c9161d;
   color: #fff;
   font-weight: 500;
   cursor: pointer;
@@ -796,7 +793,7 @@ html {
   padding-top: 2px;
 }
 .b-popup__submit:hover {
-  background: #f04349;
+  background: #e72830;
 }
 .block-404 {
   padding-top: 75px;
@@ -883,8 +880,8 @@ html {
   transition: 0.3s fill;
 }
 .c-video:hover .c-video__icon {
-  background: #ed1c24;
-  border-color: #ed1c24;
+  background: #c9161d;
+  border-color: #c9161d;
 }
 .c-video iframe {
   position: absolute;
@@ -945,8 +942,8 @@ html {
   bottom: 0;
   background: url("../img/clock-face2.png") center center no-repeat;
   background-size: contain;
-  -webkit-box-shadow: inset 0 0 0 0.5px #ed1c24;
-          box-shadow: inset 0 0 0 0.5px #ed1c24;
+  -webkit-box-shadow: inset 0 0 0 0.5px #c9161d;
+          box-shadow: inset 0 0 0 0.5px #c9161d;
   border-radius: 100%;
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
@@ -1030,7 +1027,7 @@ html {
   margin-left: 25px;
   width: 15px;
   height: 17px;
-  fill: #ed1c24;
+  fill: #c9161d;
   cursor: pointer;
 }
 .contacts__item-body.show-tooltip .contacts__item-tooltip {
@@ -1222,7 +1219,7 @@ html {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   border-radius: 3px;
-  background: #ed1c24;
+  background: #c9161d;
 }
 .faq__item-title .icn:before {
   height: 1px;
@@ -1454,23 +1451,23 @@ textarea::placeholder {
 }
 .error input,
 .error textarea {
-  border-color: #ed1c24;
+  border-color: #c9161d;
 }
 .error input::-webkit-input-placeholder, .error textarea::-webkit-input-placeholder {
-  color: #ed1c24;
+  color: #c9161d;
 }
 .error input::-moz-placeholder, .error textarea::-moz-placeholder {
-  color: #ed1c24;
+  color: #c9161d;
 }
 .error input:-ms-input-placeholder, .error textarea:-ms-input-placeholder {
-  color: #ed1c24;
+  color: #c9161d;
 }
 .error input::-ms-input-placeholder, .error textarea::-ms-input-placeholder {
-  color: #ed1c24;
+  color: #c9161d;
 }
 .error input::placeholder,
 .error textarea::placeholder {
-  color: #ed1c24;
+  color: #c9161d;
 }
 input[type="tel"]:focus {
   padding-left: 10px;
@@ -1615,7 +1612,7 @@ input[type="tel"]:not(:placeholder-shown) + .i-plus {
   max-width: 325px;
 }
 .intro__title span {
-  color: #ed1c24;
+  color: #c9161d;
   font-style: italic;
 }
 .intro__container {
@@ -1976,7 +1973,7 @@ input[type="tel"]:not(:placeholder-shown) + .i-plus {
   border-top: 1px solid #aeaeae;
 }
 .mobile-sidebar .main-menu ul li.is-active > a {
-  color: #ed1c24;
+  color: #c9161d;
 }
 .mobile-sidebar .main-menu ul li a {
   display: block;
@@ -1996,7 +1993,7 @@ input[type="tel"]:not(:placeholder-shown) + .i-plus {
           justify-content: space-between;
 }
 .p-row .a-title {
-  color: #909090;
+  color: #626262;
   font-size: 18px;
   margin-bottom: 10px;
 }
@@ -2027,7 +2024,7 @@ input[type="tel"]:not(:placeholder-shown) + .i-plus {
 .radio__input:checked + .radio__icon {
   -webkit-box-shadow: inset 0 0 0 2px #fff;
           box-shadow: inset 0 0 0 2px #fff;
-  background: #ed1c24;
+  background: #c9161d;
 }
 .reviews {
   margin-bottom: 80px;
@@ -2113,8 +2110,7 @@ input[type="tel"]:not(:placeholder-shown) + .i-plus {
   background: rgba(255,255,255,0.1);
   -webkit-box-shadow: 5px 5px 40px 0px rgba(28,28,28,0.1);
           box-shadow: 5px 5px 40px 0px rgba(28,28,28,0.1);
-  -webkit-backdrop-filter: blur(7.5px);
-          backdrop-filter: blur(7.5px);
+  backdrop-filter: blur(7.5px);
   text-align: center;
   padding: 15px 20px;
 }
@@ -2149,7 +2145,7 @@ input[type="tel"]:not(:placeholder-shown) + .i-plus {
   width: 45%;
 }
 .route-build__item:hover {
-  color: #ed1c24;
+  color: #c9161d;
 }
 .route-build__item--apple-maps .route-build__item-icon {
   -webkit-box-shadow: none;
@@ -2197,7 +2193,7 @@ input[type="tel"]:not(:placeholder-shown) + .i-plus {
   padding: 12px;
   border: 0;
   border-radius: 100%;
-  background: #ed1c24;
+  background: #c9161d;
   font-weight: 500;
   font-size: 16px;
   color: #fff;
@@ -2233,7 +2229,7 @@ input[type="tel"]:not(:placeholder-shown) + .i-plus {
   text-transform: uppercase;
 }
 .site-langs__item:hover {
-  color: #ed1c24;
+  color: #c9161d;
 }
 .site-langs__item.is-active {
   color: #000;
@@ -2269,7 +2265,7 @@ input[type="tel"]:not(:placeholder-shown) + .i-plus {
           transform: scale(1.15);
 }
 .socials__item:hover svg path {
-  fill: #ed1c24;
+  fill: #c9161d;
 }
 .socials__item img {
   display: block;
@@ -2371,7 +2367,7 @@ input[type="tel"]:not(:placeholder-shown) + .i-plus {
   top: 0;
   width: 8px;
   height: 8px;
-  background: #ed1c24;
+  background: #c9161d;
   border-radius: 50px;
 }
 .steps__item:nth-child(2) {
@@ -2404,7 +2400,7 @@ input[type="tel"]:not(:placeholder-shown) + .i-plus {
   font-family: 'Manrope', sans-serif;
 }
 .swiper-counter-total {
-  color: #cfcfcf;
+  color: #8f8f8f;
 }
 .swiper-buttons {
   display: -webkit-box;
@@ -2513,7 +2509,7 @@ input[type="tel"]:not(:placeholder-shown) + .i-plus {
 }
 .team__item-text {
   margin-bottom: 5px;
-  color: #909090;
+  color: #626262;
 }
 .team__item-text:last-child {
   margin-bottom: 0;
@@ -3031,8 +3027,7 @@ input[type="tel"]:not(:placeholder-shown) + .i-plus {
     position: absolute;
     width: 1300px;
     height: 900px;
-    -webkit-backdrop-filter: blur(6px);
-            backdrop-filter: blur(6px);
+    backdrop-filter: blur(6px);
     z-index: 1;
     left: 50%;
     top: 50%;
@@ -3045,8 +3040,7 @@ input[type="tel"]:not(:placeholder-shown) + .i-plus {
     position: absolute;
     width: 1300px;
     height: 900px;
-    -webkit-backdrop-filter: blur(6px);
-            backdrop-filter: blur(6px);
+    backdrop-filter: blur(6px);
     z-index: 1;
     right: 50%;
     top: 50%;
@@ -3058,8 +3052,7 @@ input[type="tel"]:not(:placeholder-shown) + .i-plus {
     position: absolute;
     width: 500px;
     height: 500px;
-    -webkit-backdrop-filter: blur(6px);
-            backdrop-filter: blur(6px);
+    backdrop-filter: blur(6px);
     z-index: 1;
     right: 50%;
     bottom: 50%;
@@ -3217,7 +3210,7 @@ input[type="tel"]:not(:placeholder-shown) + .i-plus {
     margin-right: 7px;
   }
   .header .main-menu ul li.is-active > a {
-    color: #ed1c24;
+    color: #c9161d;
   }
   .header .main-menu ul li a {
     font-size: 16px;
@@ -3225,7 +3218,7 @@ input[type="tel"]:not(:placeholder-shown) + .i-plus {
     text-decoration: none;
   }
   .header .main-menu ul li a:hover {
-    color: #ed1c24;
+    color: #c9161d;
   }
   .header .site-langs {
     display: -webkit-box;
