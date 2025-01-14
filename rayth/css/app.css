@@ -2400,7 +2400,8 @@ input[type="tel"]:not(:placeholder-shown) + .i-plus {
   font-family: 'Manrope', sans-serif;
 }
 .swiper-counter-total {
-  color: #8f8f8f;
+  color: #626262;
+  font-size: 16px;
 }
 .swiper-buttons {
   display: -webkit-box;
@@ -2556,7 +2557,7 @@ input[type="tel"]:not(:placeholder-shown) + .i-plus {
 .widget__items {
   position: fixed;
   bottom: 10px;
-  width: 45px;
+  width: 28px;
   right: 10px;
 }
 .widget__item {
