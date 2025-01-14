@@ -604,83 +604,6 @@ html {
   content: '/' counter(ruler, decimal-leading-zero);
   font-family: 'Manrope', sans-serif;
 }
-.b-modal {
-  position: fixed;
-  left: 0;
-  top: 0;
-  right: 0;
-  height: 100vh;
-  height: calc(var(--vh, 1vh) * 100);
-  background: rgba(0,0,0,0.5);
-  text-align: center;
-  font-size: 0;
-  opacity: 0;
-  visibility: hidden;
-  -webkit-transition: 0.5s ease opacity, 0.5s ease visibility;
-  transition: 0.5s ease opacity, 0.5s ease visibility;
-  overflow-y: auto;
-  padding: 15px;
-  -webkit-overflow-scrolling: touch;
-}
-.b-modal.opened {
-  opacity: 1;
-  visibility: visible;
-}
-.b-modal.opened .b-modal__container {
-  opacity: 1;
-  -webkit-transform: scale(1);
-          transform: scale(1);
-}
-.b-modal:after {
-  content: "";
-  display: inline-block;
-  vertical-align: middle;
-  height: 100%;
-}
-.b-modal__container {
-  display: inline-block;
-  vertical-align: middle;
-  background: #fff;
-  -webkit-box-shadow: 0 0 30px rgba(0,0,0,0.2);
-          box-shadow: 0 0 30px rgba(0,0,0,0.2);
-  width: 100%;
-  max-width: 500px;
-  height: 500px;
-  text-align: left;
-  position: relative;
-  -webkit-transform: scale(0.95);
-          transform: scale(0.95);
-  opacity: 0;
-  -webkit-transition: 0.2s ease transform, 0.2s ease opacity;
-  transition: 0.2s ease transform, 0.2s ease opacity;
-  font-size: 15px;
-  padding: 70px 10px 40px;
-}
-.b-modal__close {
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 45px;
-  height: 45px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background: #f0f0f0;
-  border-radius: 0 0 0 10px;
-  cursor: pointer;
-}
-.b-modal__close .svg-icon {
-  width: 20px;
-  height: 20px;
-  pointer-events: none;
-  fill: #fff;
-}
 .b-popup {
   position: relative;
   display: -webkit-box;
@@ -2738,9 +2661,6 @@ input[type="tel"]:not(:placeholder-shown) + .i-plus {
   }
 }
 @media (min-width: 575px) {
-  .b-modal {
-    padding: 10px;
-  }
   .b-popup__in {
     width: auto;
   }
