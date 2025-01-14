@@ -49,10 +49,10 @@
   display: none;
 }
 .header__search:hover {
-  border-color: #ff9086;
+  border-color: #f36053;
 }
 .header__search:hover .svg-icon {
-  fill: #ff9086;
+  fill: #f36053;
 }
 .header__search .svg-icon {
   display: block;
@@ -111,7 +111,7 @@
     display: block;
   }
   .header .main-menu >ul >li:hover > a {
-    color: #ff9086;
+    color: #f36053;
   }
   .header .main-menu >ul >li a {
     font-size: 16px;
@@ -145,7 +145,7 @@
     font-size: 14px;
   }
   .header .main-menu >ul >li ul li a:hover {
-    color: #ff9086;
+    color: #f36053;
   }
 }
 @media (min-width: 1200px) {
@@ -166,14 +166,14 @@
     max-width: 258px;
     flex: 1 1;
     border-radius: 30px;
-    border: 1px solid #d0cfcf;
+    border: 1px solid #9d9d9d;
     display: flex;
     padding: 0 24px 0 24px;
     align-items: center;
-    color: rgba(0,0,0,0.3);
+    color: #9d9d9d;
   }
   .header__search:hover {
-    color: #ff9086;
+    color: #f36053;
   }
   .header__search-input {
     width: 100%;
@@ -186,7 +186,7 @@
     margin-left: 10px;
   }
   .header__search-button .svg-icon {
-    fill: #d0cfcf;
+    fill: #9d9d9d;
   }
 }
 @media (min-width: 1366px) {
