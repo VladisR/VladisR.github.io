@@ -1571,6 +1571,7 @@ html {
   overflow: hidden;
   background: #6130ca;
   color: #fff;
+  padding-top: 95px;
   -webkit-overflow-scrolling: touch;
 }
 .hero-in .quantity {
