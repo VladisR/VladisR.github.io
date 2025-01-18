@@ -54,58 +54,6 @@ $(function () {
     }
   }).trigger('scroll');
 
-  (function () {
-    $('.js-modal-trigger').on('click', function (evt) {
-      evt.preventDefault();
-      var $this = $(this);
-
-      if ($this.hasClass('js-close')) {
-        $this.closest('.b-modal').removeClass('opened');
-        closingForm();
-      } else {
-        var url = $this.attr('href').replace('#', '');
-        $('.b-modal').filter('[data-modal=' + url + ']').addClass('opened');
-        disableHtmlScroll();
-        addGutter();
-      }
-    });
-    $('.b-modal').on('click', function (event) {
-      if ($(event.target).closest('.b-modal__container').length) return;
-      $(this).removeClass('opened');
-      closingForm();
-    });
-    $(document).on('keydown', function (evt) {
-      if (evt.keyCode == 27) {
-        $('.b-modal').removeClass('opened');
-        closingForm();
-      }
-    });
-
-    function addGutter() {
-      if (!isMobile) {
-        $(document.documentElement).css({
-          'padding-right': 17
-        });
-      }
-    }
-
-    function removeGutter() {
-      if (!isMobile) {
-        $(document.documentElement).css({
-          'padding-right': 0
-        });
-      }
-    }
-
-    function closingForm() {
-      setTimeout(function () {
-        enableHtmlScroll();
-        removeGutter();
-      }, 500);
-    }
-  })(); // $('.b-plate__text').equalHeightResponsive()
-
-
   function youtube_parser(url) {
     var regExp = /^.*((youtu.be\/)|(v\/)|(\/u\/\w\/)|(embed\/)|(watch\?))\??v?=?([^#\&\?]*).*/;
     var match = url.match(regExp);
@@ -239,146 +187,25 @@ $(function () {
     if ($(event.target).closest('.mobile-sidebar__container').length) return;
     $('.mobile-sidebar').removeClass('opened');
     enableHtmlScroll();
-  }); // (function(window) {
-  //   'use strict';
-  //   function enableScrollBehaviorPolyfill() {
-  //     window.removeEventListener('scroll', enableScrollBehaviorPolyfill);
-  //     if (! 'scrollBehavior' in document.documentElement.style) {
-  //       let script = document.createElement('script');
-  //       script.setAttribute('async', true);
-  //       script.setAttribute('src', site_defers.smoothscroll);
-  //       document.body.appendChild(script);
-  //     }
-  //   }
-  //   window.addEventListener('scroll', enableScrollBehaviorPolyfill);
-  //   let btn = document.getElementById('back_to');
-  //   let classes = {
-  //     visible: 'page-scroller--visible',
-  //     inMemory: 'page-scroller--in-memory',
-  //   }
-  //   let tmpY = 0;
-  //   let viewY = 100;
-  //   let inMemory = false;
-  //   /**
-  //    * Native scrollTo with callback
-  //    * @param offset - offset to scroll to
-  //    * @param callback - callback function
-  //    */
-  //   function scrollTo(offset, callback) {
-  //     const fixedOffset = offset.toFixed();
-  //     const onScroll = function () {
-  //       if (window.pageYOffset.toFixed() === fixedOffset) {
-  //         window.removeEventListener('scroll', onScroll);
-  //         callback();
-  //       }
-  //     }
-  //     window.addEventListener('scroll', onScroll);
-  //     onScroll();
-  //     window.scrollTo({
-  //       top: offset,
-  //       behavior: 'smooth'
-  //     });
-  //   }
-  //   function resetScroll() {
-  //     setTimeout(() => {
-  //       if (window.pageYOffset > viewY) {
-  //         btn.classList.add(classes.visible);
-  //       } else if (!btn.classList.contains(classes.inMemory)) {
-  //         btn.classList.remove(classes.visible);
-  //       }
-  //     }, 100);
-  //     if (!inMemory) {
-  //       tmpY = 0;
-  //       btn.classList.remove(classes.inMemory);
-  //     }
-  //     inMemory = false;
-  //   }
-  //   function addResetScroll() {
-  //     window.addEventListener('scroll', resetScroll);
-  //   }
-  //   function removeResetScroll() {
-  //     window.removeEventListener('scroll', resetScroll);
-  //   }
-  //   addResetScroll();
-  //   let onClick = function() {
-  //     removeResetScroll();
-  //     if (window.pageYOffset > 0 && tmpY === 0) {
-  //       inMemory = true;
-  //       tmpY = window.pageYOffset;
-  //       btn.classList.add(classes.inMemory);
-  //       scrollTo(0, () => {
-  //         addResetScroll();
-  //       });
-  //     } else {
-  //       btn.classList.remove(classes.inMemory);
-  //       scrollTo(tmpY, () => {
-  //         tmpY = 0;
-  //         addResetScroll();
-  //       });
-  //     }
-  //   };
-  //   btn.addEventListener('click', onClick);
-  // })(window);
-
+  });
   $('.js-to-quiz-step').on('click', function (event) {
     event.preventDefault();
     var index = $(this).data('to-step');
     $('.js-quiz-step').hide();
     $('.js-quiz-step[data-step="' + index + '"]').fadeIn();
-  }); // let $app = $('.app');
-  // let $appHeader = $('.header__in');
-  // let $mainNav = $('.main-nav');
-  // let remodalOverlay = $('.remodal-overlay');
-  // let bodyGutter = 0;
-  // function setUpBodyGutter() {
-  //   bodyGutter = window.innerWidth - $app.outerWidth();
-  // }
-  // function setUpFixedMoves() {
-  //   $app.css({
-  //     margingRight: bodyGutter,
-  //   });
-  //   $appHeader.css({
-  //     marginRight: bodyGutter,
-  //   });
-  //   $mainNav.css({
-  //     paddingRight: bodyGutter,
-  //   });
-  // }
-  // function restoreFixedMoves() {
-  //   $app.css({
-  //     margingRight: '',
-  //   });
-  //   $appHeader.css({
-  //     marginRight: '',
-  //   });
-  //   $mainNav.css({
-  //     paddingRight: '',
-  //   });
-  // }
-  // setUpBodyGutter();
-  // $(window).on('resize', function() {
-  //   setUpBodyGutter();
-  // });
-  // if (bodyGutter) {
-  //   $(document).on('opening', '.remodal', function () {
-  //     setUpFixedMoves();
-  //   });
-  //   $(document).on('closed', '.remodal', function () {
-  //     restoreFixedMoves();
-  //   });
-  // }
-  // // var modalDirection = $('.remodal--direction').remodal();
-  // // $(document).on('opening', '.remodal', function () {
-  // //   $('.js-modal-close').addClass('is-active');
-  // // });
-  // // $(document).on('closed', '.remodal', function () {
-  // //   $('.js-modal-close').removeClass('is-active');
-  // // });
-  // // $('.js-modal-close').on('click', function(){
-  // //   modalDirection.close();
-  // // });
-
-  console.log(1212);
+  });
+  let $app = $('.app');
+  let bodyGutter = window.innerWidth - $app.outerWidth();
+  $(document).on('opening', '.remodal', function () {
+    $('.header__in1').css({
+      'padding-right': bodyGutter
+    });
+  });
+  $(document).on('closed', '.remodal', function () {
+    $('.header__in1').css({
+      'padding-right': 0
+    });
+  });
   $(document).on('click', function (event) {
     if ($(event.target).closest('.js-list-btn').length) return;
     $('.s-list').removeClass('is-opened');
