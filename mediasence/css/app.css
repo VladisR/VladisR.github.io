@@ -1405,7 +1405,10 @@ html {
   color: #2e2e41;
   font-size: 18px;
 }
-.feedback-form__item input:not([type="file"]):not([type="checkbox"]):not([type="radio"]):placeholder {
+.feedback-form__item input:not([type="file"]):not([type="checkbox"]):not([type="radio"])::-moz-placeholder {
+  color: #b8b8b8;
+}
+.feedback-form__item input:not([type="file"]):not([type="checkbox"]):not([type="radio"])::placeholder {
   color: #b8b8b8;
 }
 .feedback-form__item input:not([type="file"]):not([type="checkbox"]):not([type="radio"]):focus::-moz-placeholder {
@@ -2613,7 +2616,7 @@ html.remodal-is-locked {
   display: inline-block;
 }
 .remodal-wrapper {
-  padding: 3 10px 0;
+  padding: 0 10px 0;
 }
 .remodal.remodal-is-opening,
 .remodal.remodal-is-closing {
